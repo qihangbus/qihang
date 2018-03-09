@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>借阅</title>
+    <include file="Common:head" />
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+    <script class="js_prejs" type="text/javascript" src="__STATIC__/lib/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#navon1").click(function () {
+                PageTab(0);
+            })
+            $("#navon2").click(function () {
+                PageTab(1);
+            })
+
+
+        })
+
+        function PageTab(state) {
+            if (state == 0) {
+                document.getElementById("jy").className = "li_cur";
+                document.getElementById("gh").className = "";
+                document.getElementById("div1").style.display = "";
+                document.getElementById("div2").style.display = "none";
+            }else
+            {
+                document.getElementById("jy").className = "";
+                document.getElementById("gh").className = "li_cur";
+                document.getElementById("div1").style.display = "none";
+                document.getElementById("div2").style.display = "";
+            }
+        }
+    </script>
+</head>
+<body >
+    <div class="wrap2">
+        <div class="head-cate">
+            <ul class="ul_2">
+                <li id="jy" class="li_cur">
+                    <a id="navon1" href="javascript:void(0)"><span>借阅</span></a>
+                </li>
+                <li id="gh">
+                    <a id="navon2" href="javascript:void(0)"><span>归还</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="div1">
+            <ul class="cart_list order_list">
+				<empty name="borrows">
+					<div class="data-empty">
+					<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+					<p>暂无数据</p>
+					</div>
+				</empty>
+                <volist name="borrows" id="vo">
+                    <eq name="vo['circul_status']" value="2">
+                        <li class="li_cart">
+                            <dl class="cart_pro">
+                                <dt class="dt_tx"><img src="{$vo['student_avatar']}" alt="" /></dt>
+                                <dd class="dd_pname2">
+                                    <p><b>{$vo['student_name']} </b></p>
+                                    <p><b>绘本名称 </b>{$vo['book_name']}</p>
+                                    <p><b>绘本位置 </b>A-9-999</p>
+                                </dd>
+                            </dl>
+                            <div class="i_btn"><a href="./getborrow?circulation_id={$vo['circulation_id']}" class="ibtn_1">借阅</a></div>
+                        </li>
+                    </eq>
+                </volist>
+            </ul>
+        </div>
+        <div id="div2" style="display:none">
+            <ul class="cart_list order_list">
+				<empty name="borrows">
+					<div class="data-empty">
+					<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+					<p>暂无数据</p>
+					</div>
+				</empty>	
+                <volist name="borrows" id="vo">
+                    <eq name="vo['circul_status']" value="1">
+                        <li class="li_cart">
+                            <dl class="cart_pro">
+                                <dt class="dt_tx"><img src="{$vo['student_avatar']}" alt="" /></dt>
+                                <dd class="dd_pname2">
+                                    <p><b>{$vo['student_name']} </b></p>
+                                    <p><b>绘本名称 </b>{$vo['book_name']}</p>
+                                    <p><b>绘本位置 </b>A-9-999</p>
+                                </dd>
+                            </dl>
+                            <div class="i_btn"><a href="./getborrowReturn?circulation_id={$vo['circulation_id']}" class="ibtn_1">归还</a></div>
+                        </li>
+                    </eq>
+                </volist>
+            </ul>
+        </div>
+    </div>
+      <a href="{:U('mobile.php/TIndex/index',array('teacher_id'=>$user_id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="m">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="renderer" content="webkit">
+		<title>图书馆</title>
+		<include file="Common:theme" />
+	</head>
+
+	<body>
+
+		<div class="wrap2">
+			<div class="head-cate">
+				<ul class="ul_1">
+					<li class="li_cur"><span>在库图书 </span></li>
+				</ul>
+			</div>
+
+			<ul class="cart_list">
+				<volist name = "data" id = "data">
+				<li class="li_cart">
+					<dl class="cart_pro">
+						<dt class=""><img src="__STATIC__/images/pp.png" alt="" /></dt>
+						<dd class="dd_pname2 p_padr">
+							<p><b>{$data.book_name}</b></p>
+							<p><b>所在班级 </b>{$data.class_name}</p>
+							<p><b>入库时间 </b> <span class="color1">{$data.add_time}</span></p>
+						</dd>
+						<dd class="dd_r dd_r3">
+							
+							<div class="d_zhungt">
+								<eq name="data['book_status']" value="1">
+									未借阅
+								<else/>已借阅</eq>
+	
+							</div>
+							<a href="{:U('mobile.php/Teacher/history/',array('book_id'=>$data['book_id'],'tid'=>$id))}" class="ibtn_1">借阅历史</a>
+						</dd>
+					</dl>
+				</li>
+				</volist>
+			</ul>
+			<a href="{:U('mobile.php/SIndex/Index',array('id'=>$id))}">
+<span class="f_index">首页</span>
+</a>
+		</div>
+		<script class="js_prejs" type="text/javascript" src="__STATIC__/lib/jquery.min.js"></script>
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>

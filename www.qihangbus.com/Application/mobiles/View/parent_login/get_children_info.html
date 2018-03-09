@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>身份确认</title>
+	<meta type="html/text" charset="utf-8"/>
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<meta name="renderer" content="webkit">
+	<style>
+		body{font-size: 2.7em;letter-spacing:2px;font-family: "微软雅黑";color: rgb(51,51,51);background-color: #F2F2F2;}
+		.content{background-color: rgb(247,247,247);}
+		.info{background-color: #fff}
+		.info ul{list-style-type:none;}
+		.info ul li{line-height: 2.5em;border-bottom:1px solid rgb(229,229,229);}
+		.info ul li .right{float:right;margin-right: 25px;font-size: 0.9em}
+		.order{background-color: #fff}
+		.order ul{list-style-type:none;}
+		.order ul li{line-height: 2.5em;}
+		.order ul li .right{float:right;margin-right: 25px;font-size: 0.9em}
+		.order ul li .title{font-size: 1em}
+		.order .red{color: rgb(233,59,61)}
+		.order .btn{
+			width: 100%;
+			height: 100px;
+			color: rgb(255,255,255);
+			font-size: 48px;
+			border-radius: 15px;
+			border: 5px solid rgb(6,186,4);
+			background-color: rgb(6,186,4) !important;
+		}
+		.order .pay{
+			padding: 10px 20px 30px 20px;
+		}
+		.pay button{letter-spacing:2px;font-family: "微软雅黑";}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="info">
+		<ul>
+			<li>
+				<span>学生姓名</span>
+				<span class="right">{$student_info.student_name}</span>
+			</li>
+			<li>
+				<span>幼儿园</span>
+				<span class="right">{$student_info.school_name}</span>
+			</li>
+			<li>
+				<span>班级</span>
+				<span class="right">{$student_info.class_name}</span>
+			</li>
+			<li>
+				<span>任课老师</span>
+				<span class="right">{$student_info.teacher_name}</span>
+			</li>
+		</ul>
+	</div>
+	<div class="order">
+		<ul>
+			<eq name="charge_type" value="1">
+				<li>
+					<span class="title">资费标准</span>
+					<span class="right red">{$cate_price} 元/月</span>
+				</li>
+				<li style="text-align: right;margin-right:25px;">
+					<strong class="title">本学期合计:</strong>
+					<span class="red">{$order_amount|default='0.00'} 元</span>
+				</li>
+				<else/>
+				<li>
+					<strong class="title red">您还未开通，请联系任课老师。</strong>
+				</li>
+			</eq>
+		</ul>
+		<eq name="charge_type" value="1">
+			<div class="pay">
+				<button class="btn" type="button" onclick="callpay()">微信支付</button>
+			</div>
+		</eq>
+	</div>
+</div>
+{$jsapi}
+</body>
+</html>

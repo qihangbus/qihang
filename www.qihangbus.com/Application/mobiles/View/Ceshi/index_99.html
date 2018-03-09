@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>赔偿管理</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+<style type="text/css">
+.i_ic {
+    padding-left: 20px!important;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap2"> 
+	<div class="head-cate">
+		<ul class="ul_3">
+			<li <if condition="$flag eq 1">class="li_cur"</if>><a href="{:U('mobile.php/Borrowtoread/index',array('student_id'=>$student_id,'flag'=>1,'user_flag'=>$user_flag))}"><span><i class="i_ic">当前阅读</i> </span></a></li>
+			<li <if condition="$flag eq 2">class="li_cur"</if>><a href="{:U('mobile.php/Borrowtoread/index',array('student_id'=>$student_id,'flag'=>2,'user_flag'=>$user_flag))}"><span><i class="i_ic">即将阅读</i></span></a></li>
+			<li <if condition="$flag eq 99">class="li_cur"</if>><a href="{:U('mobile.php/Borrowtoread/index',array('student_id'=>$student_id,'flag'=>99,'user_flag'=>$user_flag))}"><span><i class="i_ic">赔偿管理</i></span></a></li>
+		</ul>
+	</div>
+	<div class="line_hr"></div>
+	<ul class="cart_list order_list">
+		<empty name="list">
+			<div class="data-empty">
+				<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+				<p>暂无数据</p>
+			</div>
+		</empty>
+		<if condition="$list[0].book_name neq ''">
+			<volist name="list" id="vo">
+				<li class="li_cart" style="padding-top:5px;padding-bottom:1px">
+					<dl class="cart_pro">
+						<dt class="dt_tx">
+							<a href="{:U('mobile.php/Borrowtoread/info',array('book_id'=>$vo['book_id'],'student_id'=>$student_id,'user_flag'=>$user_flag))}">
+								<img src="{$vo.book_thumb}" alt="" />
+							</a>
+						</dt>
+						<dd class="dd_pname2">
+							<a href="#">
+								<p style="padding-top: 6px;"><strong>{$vo.book_name}</strong></p>
+							</a>
+
+							<p style="text-align:right;"><a href="{:U('mobile.php/Borrowtoread/pay',array('book_id'=>$vo['book_id'],'student_id'=>$student_id,'hf'=>$vo['compen_type']))}" class="ibtn_1">去支付</a></p>
+						</dd>
+					</dl>
+				</li>
+			</volist>
+		</if>
+	</ul>
+	<div class="line_hr"></div>
+ <a href="{:U('mobile.php/Ucenter/index')}">
+<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+ </div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/mobile/layer.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.each($(".ck_list"),function(b, c) {
+		$.each($(c).find(".li_cart"),function(b2, c2) {
+			$(c2).click(function(event){
+				$(this).toggleClass("li_cart_ck");
+			});	
+		});
+	});
+
+	$(".ibtn_cancel").click(function(){
+		var oid = $(this).attr('oid');
+		
+		layer.open({
+            title: false,
+            content: '确定取消此订单',
+            btn:['确定','取消'],
+            yes:function(index,layero){
+                
+                $.post("{:U('mobile.php/Order/cancel')}",{order_id:oid},function(result){
+					if(result > 0){
+
+						layer.open({
+                            title:false,
+                            content:'取消订单成功',
+                            btn:['关闭'],
+                            yes:function(index){
+                                layer.closeAll();
+                                location.reload();
+                            },
+                        });
+					}
+				});
+
+            },
+            btn2:function(index,layero){
+                layer.closeAll();
+            }
+        });		
+	});
+})
+</script>
+</body>
+</html>

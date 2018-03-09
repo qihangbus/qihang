@@ -1,0 +1,161 @@
+	<include file='Common:header' />
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container" id="main-container">
+
+			<!-- #section:basics/sidebar -->
+
+	<include file='Common:left' />
+
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="page-content">
+
+                        
+                        
+                        <!--主题-->
+						<div class="page-header">
+							<h1>
+								您当前操作
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									修改密码
+								</small>
+							</h1>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12">
+								<form class="form-horizontal" id="validation-form" method="post">
+
+
+									<div class="form-group">
+										<label class="control-label col-xs-12 col-sm-3 no-padding-right">旧密码：</label>
+										<div class="col-xs-12 col-sm-9">
+											<div class="clearfix">
+												<input type="password" name="pwd" id="pwd" placeholder="密码必须大于6位，小于15位" class="col-xs-10 col-sm-6" />
+											</div>
+										</div>
+									</div>
+									<div class="space-2"></div>
+
+									<div class="form-group">
+										<label class="control-label col-xs-12 col-sm-3 no-padding-right">新密码：</label>
+										<div class="col-xs-12 col-sm-9">
+											<div class="clearfix">
+												<input type="password" name="new_pwd" id="new_pwd" placeholder="两次密码需一致" class="col-xs-10 col-sm-6" />
+											</div>
+										</div>
+									</div>
+									<div class="space-2"></div>
+
+									<div class="form-group">
+										<label class="control-label col-xs-12 col-sm-3 no-padding-right">确认新密码：</label>
+										<div class="col-xs-12 col-sm-9">
+											<div class="clearfix">
+												<input type="password" name="new_pwd2" id="new_pwd2" placeholder="两次密码需一致" class="col-xs-10 col-sm-6" />
+											</div>
+										</div>
+									</div>
+									<div class="space-2"></div>
+
+
+									<div class="clearfix form-actions">
+										<div class="col-md-offset-3 col-md-9">
+											<button class="btn btn-info" type="submit">
+												<i class="ace-icon fa fa-check bigger-110"></i>
+												保存
+											</button>
+
+											&nbsp; &nbsp; &nbsp;
+											<button class="btn" type="reset">
+												<i class="ace-icon fa fa-undo bigger-110"></i>
+												重置
+											</button>
+										</div>
+									</div>
+								</form>
+                        	</div>
+                        </div>
+									<div class="hr hr-24"></div>
+
+<include file='Common:header_nav' />
+
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+	<include file='Common:footer' />
+
+		</div><!-- /.main-container -->
+	</body>
+	<script src="__PUBLIC__/assets/js/jquery.validate.js"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#validation-form').validate({
+				//debug: 'true',
+				errorElement: 'div',
+				errorClass: 'help-block',
+				focusInvalid: true,
+				rules: {
+					pwd: {required:true},
+					new_pwd: {required:true,minlength: 6},
+					new_pwd2: {equalTo: "#new_pwd"},
+				},
+
+				messages: {
+					pwd: {required: "请输入密码"},
+					new_pwd: {required:"请输入新密码",minlength: "密码不能小于6位"},
+					new_pwd2: {equalTo: "两次密码不一致"},
+				},
+
+
+				highlight: function (e) {
+					$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+				},
+
+				success: function (e) {
+					$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+					$(e).remove();
+				},
+
+				errorPlacement: function (error, element) {
+					if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+						var controls = element.closest('div[class*="col-"]');
+						if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+						else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+					}
+					else if(element.is('.select2')) {
+						error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+					}
+					else if(element.is('.chosen-select')) {
+						error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+					}
+					else error.insertAfter(element.parent());
+				},
+
+				submitHandler: function (form) {
+					$(form).ajaxSubmit({
+						//beforeSubmit: showRequest,
+						success: function(data){
+							if(data.status==1){
+								layer.msg(data.info, {time:800,icon: 6}, function(index){
+									layer.close(index);
+									window.location.href=data.url;
+								});
+							}else{
+								layer.msg(data.info, {time:800,icon: 5}, function(index){
+									layer.close(index);
+								});
+								return false;
+							}
+						},
+						dataType: 'json'
+					});
+				},
+			});
+		});
+	</script>
+</html>

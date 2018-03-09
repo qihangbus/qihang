@@ -1,0 +1,1092 @@
+[ 2017-12-11T21:59:44+08:00 ] 171.11.145.106 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000395s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:00:04+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=3b32fd93e4f63a0050aa6870736cb7fedbef2c19&timestamp=1513000439&nonce=334971885&openid=oKJMMwvfE642JPsrwCyBSzrYVABQ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvfE642JPsrwCyBSzrYVABQ' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvfE642JPsrwCyBSzrYVABQ' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='林',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='mHmMVIosEBaRL6hbL6KZVEOOj3JJ3Fwyjz2H2P7j1j28JMGUQp0y0REp8dX1D1BCXhf8G8lTk_YjwhxNyTB5m41JJc7OVPjxHh4aqVqWvaoqu4J13EfOXUZpXeAYWASyPOBhAGAXWJ',`expire_in`='1513173604',`headimgurl`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLBXNs5aZ67GfxZS2t23706MVQx7wh8eyjSveeicCQ9oS7ibmVwGde3nS7XDXXGx7NuYZuEtGKQicAVNA/0' WHERE `uid` = 1517 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-12-11T22:00:04+08:00 ] 42.224.239.26 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000369s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:02:00+08:00 ] 140.207.54.76 /admin.php/Weixin?signature=4ed207e332b036a73fa69077c687c676959cf956&timestamp=1513000556&nonce=1711495102&openid=oKJMMwiBOr_Q27H1rBfSgg8WyNCI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwiBOr_Q27H1rBfSgg8WyNCI' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwiBOr_Q27H1rBfSgg8WyNCI' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='乐乐妈妈',`sex`='2',`country`='中国',`province`='河南',`city`='洛阳',`access_token`='3XRB_Foxo2mOrOzt_fW3kY-negp4GE5Pf0FFZMeS4AHYSrVbIXYeuVj_MBS1zrBnMIfuRjm69lthI5lNi6-3_bbKThPqm-IQ2Zdw01tomshdvnaOBHZaebZN1vjmL1hfUAAiAEANTT',`expire_in`='1513173720',`headimgurl`='http://wx.qlogo.cn/mmopen/IONgDsicR9dLtHXdKAe1WX2bbf9ED7tmeraoNUpkYuFJm31DD6MY0aau4Tk7Cic9Vh2B2FC9J4FPx20Zp5rLtBYznn9JAictkxn/0' WHERE `uid` = 2240 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-12-11T22:02:01+08:00 ] 125.43.69.133 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000391s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:06:35+08:00 ] 125.43.69.133 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000378s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:06:35+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=c3bd2a154bc2e1262245fbbf9d0aea0f5c6ead97&timestamp=1513000831&nonce=948841048&openid=oKJMMwiBOr_Q27H1rBfSgg8WyNCI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000309s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwiBOr_Q27H1rBfSgg8WyNCI' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-12-11T22:07:20+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=3095925ae809431a6eeb240b2095eb68b5027c9b&timestamp=1513000875&nonce=1904782514&openid=oKJMMwvWpP6ffHRkTb0tVHL5LQNw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvWpP6ffHRkTb0tVHL5LQNw' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvWpP6ffHRkTb0tVHL5LQNw' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='木子',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='GAdz2Xo90lxPe3Mce74SMg9o4S8pXvC4-rMYoPvqWDbdKa8GVt-a9DkC68Gi-7zj9OdZvvvWf8PENwx28KwIW0Zl_qWPW0IAkk_AfB49dkhxnTHEefaHyQJudmkKatWEQXHfADACJT',`expire_in`='1513174040',`headimgurl`='http://wx.qlogo.cn/mmopen/icUM3vGLtwX0KicSYkGc9KbCdpJqDP49WdibpZlq6EcFDO0f9pudGUAzbJI3uhw7ZG0cEVeCZmKQ9FZ62ib4GSG5qFs2qBoxut8x/0' WHERE `uid` = 1573 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-12-11T22:07:20+08:00 ] 219.157.254.210 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000363s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:07:30+08:00 ] 219.157.254.210 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:07:30+08:00 ] 140.207.54.76 /admin.php/Weixin?signature=655c723afa086d4116ebaa88c1a9b669baffb308&timestamp=1513000886&nonce=1084850920&openid=oKJMMwvWpP6ffHRkTb0tVHL5LQNw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0004s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvWpP6ffHRkTb0tVHL5LQNw' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-12-11T22:08:17+08:00 ] 140.207.54.76 /admin.php/Weixin?signature=ab6ee28549dbc31242b8b2efde6dd0170eb2fbde&timestamp=1513000933&nonce=750485022&openid=oKJMMwlR6bWCRrnRvnA0soPm-QjA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwlR6bWCRrnRvnA0soPm-QjA' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2017-12-11T22:08:17+08:00 ] 123.151.77.91 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000363s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:10:30+08:00 ] 115.60.186.170 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:10:31+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=8720e18c311ec21383cd3864f86351b91f3661b9&timestamp=1513001066&nonce=1674576537&openid=oKJMMwq8AR_LhGYX_Ar9DQsth22I
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwq8AR_LhGYX_Ar9DQsth22I' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwq8AR_LhGYX_Ar9DQsth22I' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='🌸🌸',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='Hul8b7BmMrgAtb0j84VIPXl6sdLe1Wmen6Bia7_Mqb2vkn3E0ee1WKR62abMaYDB5PxNw5Qu-UkeWdBy_N8Fm2xGIfoCLPXMIqwE8denHBG_C2ENs3tcReeMZvDlnVeFMXKbAIAALY',`expire_in`='1513174231',`headimgurl`='http://wx.qlogo.cn/mmopen/IONgDsicR9dLtHXdKAe1WX810cbAOPBxRicCG5Iz0eiaichPQdK7LzK3eGGC9Cu2o8T22OydGMFsabMkibZ2MDv1IF4HiaYdPxibvjG/0' WHERE `uid` = 1212 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-12-11T22:11:30+08:00 ] 1.193.124.241 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:11:30+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=d18e14eaca10855ce7332b755d896b8bc9b4b171&timestamp=1513001126&nonce=1500097596&openid=oKJMMwuIm_PJ4V5-v3Ft8N40HAZU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwuIm_PJ4V5-v3Ft8N40HAZU' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwuIm_PJ4V5-v3Ft8N40HAZU' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='高丽',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='qHg15fcF-bIhiiqHx8OEEvB_tAqSaBPhwIGUN1lfIOVGIGH2QkvYOsyQB3QxkW72yrxBhfd7dEH1pxt2enHxgUhSH0AnZ4hnKROrhH9bM4GIujdktQHtKJZYLih1WLt9HIVhACABCP',`expire_in`='1513174290',`headimgurl`='http://wx.qlogo.cn/mmopen/icUM3vGLtwX3hvN7j0dc1vBHGlJc2m34umfBfTBUiavv6uvRYzLBGmc0sHfcFQibCHuM0j0qcKia0UvNvNb0ibXHyZ5UjUvVwPAtl/0' WHERE `uid` = 1608 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-12-11T22:13:01+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=6854b0c2d35be39150a417cbcb376198dd047bbc&timestamp=1513001217&nonce=521582028&openid=oKJMMwuIm_PJ4V5-v3Ft8N40HAZU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwuIm_PJ4V5-v3Ft8N40HAZU' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-12-11T22:13:02+08:00 ] 1.193.124.241 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:13:04+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=db3b3a49806870eac9f412adc033b95b70bfecf1&timestamp=1513001220&nonce=1635173353&openid=oKJMMwuIm_PJ4V5-v3Ft8N40HAZU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000312s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwuIm_PJ4V5-v3Ft8N40HAZU' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-12-11T22:19:15+08:00 ] 115.60.187.205 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000368s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:19:15+08:00 ] 140.207.54.76 /admin.php/Weixin?signature=44a1c61c77c64bac73d5fa1e5236a4ca69f0c565&timestamp=1513001591&nonce=1072239136&openid=oKJMMwm3Fge8c785Y6N2BiB-SaOc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0004s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwm3Fge8c785Y6N2BiB-SaOc' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwm3Fge8c785Y6N2BiB-SaOc' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='张丹',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='PTwkDAq5JOM8mbmiMVUBKxKbVHVVO3LsLs9xDT3iyoBQ2ekw7IneP7rNHWBvbCe8jTu2uxTxYy-6wzZAcedOz2HI1JEygAcPr7btywA2DaTkbywLPzJk1tHd20YH282YLRQhAEABHG',`expire_in`='1513174755',`headimgurl`='http://wx.qlogo.cn/mmopen/icUM3vGLtwX0KicSYkGc9KbO8hoibjkLIicKqMLMmjRcWo1Q0xzkDyMlzWnbFyw5IzHP3pHHsHLgcCVicqXDM66rlp2yC696W8EC9/0' WHERE `uid` = 1602 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-12-11T22:23:19+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=b165a09673eea38c000a5347dbe0a243777fd178&timestamp=1513001834&nonce=1631896801&openid=oKJMMwi6QLGU8kIchafAGSSn9vUo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwi6QLGU8kIchafAGSSn9vUo' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwi6QLGU8kIchafAGSSn9vUo' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='秦小溪',`sex`='2',`country`='中国',`province`='河南',`city`='洛阳',`access_token`='_23aHS4aA4j2vMDywr5YdFrXayReIoSS9N-A_dzz2ubKHOz5QDQlHLjmPqLhyBc7mwUre4tcgpHprX1SsvBKj-1gZXHwWfiMnkpp2r2F5BWM8bDFPHEUx9ZezqCGRPuzOSWfABABFJ',`expire_in`='1513174999',`headimgurl`='http://wx.qlogo.cn/mmopen/icUM3vGLtwX0KicSYkGc9KbJFlrkQ9vVfIZNxK4Pu7Moh6IwtBlmRyTmbvHQFksga5Q7YI3xaibXg97Ml9pVtydDhCm6ibtCsL1S/0' WHERE `uid` = 2088 [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-12-11T22:23:19+08:00 ] 123.151.77.74 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:27:26+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=dc50d7fc134a778a45714a797c225a67d34ca210&timestamp=1513002081&nonce=1715102641&openid=oKJMMwvMflPL1MUbkr91ioahHAP8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0007s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvMflPL1MUbkr91ioahHAP8' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwvMflPL1MUbkr91ioahHAP8' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='杨燕子',`sex`='2',`country`='中国',`province`='河南',`city`='平顶山',`access_token`='yPdCDw3Qmywaatp5n-QXFWaAPqGxHwBGWBQtOOYeYDGPBQ9FFdJBbCo5hce3k1Pv8KREqcYRnYLRwhxsmApIdIgQjpmIjTDMYU3RqFN8SN_7bnFQEFJ7EvrUxImHsWyCXKXjAIAGTG',`expire_in`='1513175246',`headimgurl`='http://wx.qlogo.cn/mmopen/IONgDsicR9dJb7AnvdfLTBB9qDOzyIoA0sjGI05gpRM3kKNoE6gePqOoruNAkU5PzpsXZskFyQ6iarM99paVagqvjg1vXePmp6/0' WHERE `uid` = 2435 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-12-11T22:27:26+08:00 ] 123.151.77.90 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:29:21+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=76bc47afdfa7d6beb2c6ebf710dfe1e8c71192f2&timestamp=1513002197&nonce=757906146&openid=oKJMMwt7Pf3AlEYfIgrgIxoDnedg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000413s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwt7Pf3AlEYfIgrgIxoDnedg' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwt7Pf3AlEYfIgrgIxoDnedg' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='李惠利',`sex`='2',`country`='中国',`province`='河南',`city`='濮阳',`access_token`='--ztwTCabboSWsBmYbl7P8eS-ay8KkDl-PJVANoG7F3O3fRl8gA6M2C4XGT18pfy9EWN3b6WLFAudvcp1EAphSFXqCIR5tnn8x9mvH_l5rqfyFXMi2RUyfjomFNAJwv3GWUjADANDB',`expire_in`='1513175361',`headimgurl`='http://wx.qlogo.cn/mmopen/svXAlAY8w2PVdDM8okjbEILAlegTRg3EhTib2aFpEu32odoP02SnvEkku5ePLkJicQlUDoqRUKVOawcGS1pPVIXtenfvFLVmLw/0' WHERE `uid` = 1339 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2017-12-11T22:29:22+08:00 ] 111.30.142.78 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:29:53+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=7abfa3f3f15ad1bb4111a07825e13dae05466a06&timestamp=1513002228&nonce=754615650&openid=oKJMMwqH_H7Tk5htUT9mPuExDxPA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000326s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwqH_H7Tk5htUT9mPuExDxPA' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwqH_H7Tk5htUT9mPuExDxPA' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='凯丽13333827355',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='mHmMVIosEBaRL6hbL6KZVBrsLia6cGa5PPx1aCn3TL8eB8hX6iiYzWuUAGK3AA5Hjz7efVRm0pQNnaMPkGGr9aF1o9kEA4YcGCP4ln26ByCVu2q_1O-CcQFupcbpcWyfUAVjABACID',`expire_in`='1513175393',`headimgurl`='http://wx.qlogo.cn/mmopen/uBzdDG2ibnResZNpwhhvM7ZDVR0V4VJljKMqPALN4SmY0qrgxkia8vchU7jhbLZNSZQdj1xFETnXjUNC5zN2dUmicAggwGvecq1/0' WHERE `uid` = 1529 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-12-11T22:29:54+08:00 ] 140.207.54.80 /admin.php/Weixin?signature=1082eb4b0a17907bd4b63eb1f8dd25a9e1139a63&timestamp=1513002230&nonce=1351776241&openid=oKJMMwqH_H7Tk5htUT9mPuExDxPA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwqH_H7Tk5htUT9mPuExDxPA' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-12-11T22:29:55+08:00 ] 111.30.142.78 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000504s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:29:56+08:00 ] 111.30.142.78 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000422s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:40:02+08:00 ] 140.207.54.76 /admin.php/Weixin?signature=50ab7778fc321fc6484b95597e3193ad18aec557&timestamp=1513002837&nonce=1127585721&openid=oKJMMwgbLXcBruUyEnXOnwsnLlNo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwgbLXcBruUyEnXOnwsnLlNo' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwgbLXcBruUyEnXOnwsnLlNo' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='琪',`sex`='2',`country`='中国',`province`='河南',`city`='洛阳',`access_token`='--ztwTCabboSWsBmYbl7Pzmfc1IHMp2KCkeeJQr8PHh-rOUVNEjKTM9FCAlxegSIsZ8ipEu_K-ZN1az1X8RYKP0rAu8D8w4t4-3pBpdOOZYFWZbABARIL',`expire_in`='1513176002',`headimgurl`='http://wx.qlogo.cn/mmopen/gwhELYibibFdRId5T8F3jE9n6zj0MMdPiaXsLUSCBuXL7iaOtuttpblMkAGTluPJI3bQhUTCzBca0oU7CrJgG5e4qicRicEcGr727ic/0' WHERE `uid` = 2119 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-12-11T22:40:04+08:00 ] 123.151.77.70 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:40:40+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=a918b646751bb67798a073306cac2b3e17ecd5c6&timestamp=1513002875&nonce=1049091446&openid=oKJMMwqGuDLvKeO_H6rJJTvpnF_A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000310s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwqGuDLvKeO_H6rJJTvpnF_A' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwqGuDLvKeO_H6rJJTvpnF_A' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='心想事成',`sex`='1',`country`='德国',`province`='法兰克福',`city`='',`access_token`='iJpkZ0k8vdYba3RGZD-33JeA4na4cSoFcJmJ318rzOyM_t1c8aMWGBUan1iuY3t497jhghIlCDNKtkj0tEWmhzPuTpUyhBDM_cxhMAl2W77vNT24HxsaWHJRvBH69ZkLXIWcABAGRF',`expire_in`='1513176040',`headimgurl`='http://wx.qlogo.cn/mmopen/svXAlAY8w2PVdDM8okjbEMvH1OcBgtPH9xpPaJnOAMZtKpkWFC8ia8Vq3btnanm0TyojH3RqNDOetsEZKoooKic5HiajudLPg6w/0' WHERE `uid` = 2211 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-12-11T22:40:40+08:00 ] 123.151.77.132 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:41:32+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=833742707bd62e93aca40f4945000f2675bf051d&timestamp=1513002928&nonce=1424562368&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='木卜车干',`sex`='0',`country`='',`province`='',`city`='',`access_token`='HRk7ksKZKJ94Q_u1I6lH041iGAfd-ShJr2-GBBeMd5SP5-Gu_WLguONckaagsA3TpwGQ8J612NoLZ1cnnIickPP6RyPMKLjikXWFaPScuE-j0WRgFovsPhnPW_LLpJ41EHBbAHAHKE',`expire_in`='1513176092',`headimgurl`='http://wx.qlogo.cn/mmopen/svXAlAY8w2OHmibwp55rCc9Pibeb2Sduu2zudOmZiaoOyPzgIbNFTmGEgtqAZmJMM2L4UJQI075gIwe5nq5ZhER5rFpFKBGtR95/0' WHERE `uid` = 1597 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-12-11T22:41:32+08:00 ] 123.151.77.121 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:42:52+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=40e406ddbdedba82e19b505b99a8209dbadbcf29&timestamp=1513003008&nonce=2014322535&openid=oKJMMwgIOzzjo25LHrWiRUFBddGs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwgIOzzjo25LHrWiRUFBddGs' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwgIOzzjo25LHrWiRUFBddGs' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='A00穹味商贸秦莎莎',`sex`='2',`country`='中国',`province`='河南',`city`='郑州',`access_token`='I46JXYDRUZyKFNaOeH_7ceMgtIX2O8NhSonNSDcUzkL02qiPdst3ZsZEK6J_OUVxFtd5Aqs46DYaX5AFqsBlyOokzqk3nWRECgongRB2_wXoA5WSbHTK-kWk_2n_nmRUHSGcACALWK',`expire_in`='1513176172',`headimgurl`='http://wx.qlogo.cn/mmopen/icUM3vGLtwX0KicSYkGc9KbA7PBkyjg3vGmNNnRg6DxLuc6YrHQicRJ7re2URhSs9ib7B5e4oFHbYXkWdrKAT95ZPmEqtdmkbHvq/0' WHERE `uid` = 1229 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-12-11T22:42:53+08:00 ] 123.151.77.70 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:43:42+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=4be9f2b58a2a36c9858bce92401fd9515a900b20&timestamp=1513003058&nonce=1666753569&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000325s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-12-11T22:43:42+08:00 ] 123.151.77.121 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:44:47+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=90c1e7623a9c767cbfc366dc891bf6e65ac6923c&timestamp=1513003123&nonce=716242286&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-12-11T22:44:48+08:00 ] 123.151.77.121 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:44:55+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=10decccd51c066ea118648198d74d459f26a657d&timestamp=1513003131&nonce=149358391&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-12-11T22:44:55+08:00 ] 123.151.77.121 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:45:52+08:00 ] 140.207.54.80 /admin.php/Weixin?signature=781f4339f30615f05902ef33500662934eacc3c6&timestamp=1513003188&nonce=598403200&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-12-11T22:45:52+08:00 ] 123.151.77.121 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:45:59+08:00 ] 140.207.54.79 /admin.php/Weixin?signature=6338894ed8835c100ed228ad862ad2fe32c620da&timestamp=1513003195&nonce=491328236&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2017-12-11T22:45:59+08:00 ] 123.151.77.121 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0007s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:46:55+08:00 ] 140.207.54.80 /admin.php/Weixin?signature=ec489f0d900cf863fa8acb82cc0f721982abdf78&timestamp=1513003251&nonce=1300795601&openid=oKJMMwnzjAJrIU9QxjU8KzHNpH70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000328s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwnzjAJrIU9QxjU8KzHNpH70' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-12-11T22:46:56+08:00 ] 111.30.142.227 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000363s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T22:50:47+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=051ebc006c81032dcc1832b4f095bba9122ba9b0&timestamp=1513003482&nonce=1948902693&openid=oKJMMwhyXoF0bPSI9kJkCOwehIVQ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwhyXoF0bPSI9kJkCOwehIVQ' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwhyXoF0bPSI9kJkCOwehIVQ' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='兰',`sex`='2',`country`='',`province`='',`city`='',`access_token`='mLzfKd3Nbih3wH1N3tsEwSIQIBIDuEeNOrMHLkQpKfbyNrLlN-s-Yuo4qwkuTlLNM1_2CN48zf9HahisnSMeBjzdohUVtWGSn5lyDd3NezEFLNfABAWCE',`expire_in`='1513176647',`headimgurl`='http://wx.qlogo.cn/mmopen/IONgDsicR9dLlb1Xdq7lxRLTuibxc2yhTjY01vcA8ZFibLYs4tHwxPqBjpicQOZnf1TEcDOzeHJP3Sk4WFoCbPH4DvuSRfSlAkU0/0' WHERE `uid` = 57 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-12-11T22:50:53+08:00 ] 123.14.187.126 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T23:12:44+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=1c488f76aa5cf5a4521d809f73c7dde091ea83f3&timestamp=1513004799&nonce=1058490153&openid=oKJMMwmv06kqAf_LAHgf2EUQ9iCw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwmv06kqAf_LAHgf2EUQ9iCw' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwmv06kqAf_LAHgf2EUQ9iCw' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/WeixinController.class.php 第 157 行.
+SQL: UPDATE `fh_weixin_user` SET `from_id`='1',`isfollow`='1',`nickname`='@无言',`sex`='2',`country`='中国',`province`='河南',`city`='平顶山',`access_token`='Z_jXxsxTt3wPOy7xt93jJ4sA3GfJN7zXtmpaEhyijTSejp-Dvx9stkQoXG5mBzeVH-Y6GAcvMISMnUKEy8fg-gcXttvzpFeTnNhaX5GgBjTGdIaAg03zuLA--U1DiicvDGSgACAORD',`expire_in`='1513177964',`headimgurl`='http://wx.qlogo.cn/mmopen/svXAlAY8w2PVdDM8okjbEHburRLkFoHZJ5nyuVaqvsw5puVbJXias4NSCLReQllicpgotkrC2E0nTVpKxeTsBaibIAqZTBSdiaRS/0' WHERE `uid` = 2408 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-12-11T23:12:44+08:00 ] 123.151.77.74 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+
+[ 2017-12-11T23:13:34+08:00 ] 140.207.54.75 /admin.php/Weixin?signature=7bd3415327ab1fa6ce3d45598f6b5696484271e6&timestamp=1513004850&nonce=977379686&openid=oKJMMwmv06kqAf_LAHgf2EUQ9iCw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Latitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 326 行.
+NOTIC: [8] Undefined index: Longitude /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 327 行.
+NOTIC: [8] Undefined index: Precision /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/Weixin/Wechat.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwmv06kqAf_LAHgf2EUQ9iCw' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-12-11T23:13:34+08:00 ] 123.151.77.74 /admin.php/Oauth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+NOTIC: [8] Constant LANG_SET already defined /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/Freehand/Controller/OauthController.class.php 第 20 行.
+

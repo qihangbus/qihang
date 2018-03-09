@@ -1,0 +1,165 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+	<!-- #section:basics/sidebar -->
+
+	<include file='Common:left' />
+
+
+	<!-- /section:basics/sidebar -->
+	<div class="main-content">
+		<div class="main-content-inner">
+			<div class="page-content">
+
+
+
+				<!--主题-->
+				<div class="page-header">
+					<h1>
+						您当前操作
+						<small>
+							<i class="ace-icon fa fa-angle-double-right"></i>
+							导入教师数据
+						</small>
+					</h1>
+				</div>
+
+
+				<div class="row">
+					<div class="col-xs-12">
+						<a href="/database/excel/教师模板.xlsx">
+							<button class="btn btn-info" style="float:right;">
+								点击下载Excel模板
+								<i class="ace-icon fa fa-download  align-top bigger-125 icon-on-right"></i>
+							</button>
+						</a>
+						<form class="form-horizontal" id="dir-replace" method="post"	 enctype="multipart/form-data">
+							<div class="form-group">
+								<label class="col-sm-2  control-label no-padding-right" > 添加学生表格： </label>
+								<div class="col-sm-10" style="width:400px; margin:12px;">
+									<div class="clearfix">
+										<input id="dir_excel"  type="file" name="dir_replace" multiple />
+									</div>
+									<div class="help-block"></div>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group" id="load" style="display: none;">
+								<div class="col-sm-8" style="margin-left: 5%">
+									<h5 class="header blue lighter smaller">
+										<i class="ace-icon fa fa-spinner"></i>
+										<span class="pMsg">执行中</span>
+									</h5>
+
+									<div id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1"><div class="ui-progressbar-value ui-widget-header ui-corner-left progress-bar progress-bar-success" style="width: 0%;"></div></div>
+								</div><!-- ./col -->
+							</div>
+							<div class="space-4"></div>
+
+							<div class="clearfix form-actions">
+								<div class="col-md-offset-3 col-md-9">
+									<button class="btn btn-info" type="submit">
+										<i class="ace-icon fa fa-check bigger-110"></i>
+										提交
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="hr hr-24"></div>
+
+				<include file='Common:header_nav' />
+
+			</div><!-- /.page-content -->
+		</div>
+	</div><!-- /.main-content -->
+
+	<include file='Common:footer' />
+
+</div><!-- /.main-container -->
+</body>
+<script src="__PUBLIC__/assets/js/bootstrap.js"></script>
+<script src="__PUBLIC__/assets/js/ace.js"></script>
+<script src="__PUBLIC__/assets/js/ace-elements.js"></script>
+<script>
+
+	$(function(){
+
+		$('#dir-replace').submit(function(){
+			return test($('input[name=dir_replace]'),'请上传学生数据','file');
+		});
+
+		function test(selecter,warning,type){
+			if(type == 'file'){
+				if( '' == $.trim(selecter.val())){
+					selecter.parent().parent().parent().parent().addClass('has-error');
+					selecter.parent().parent().next().html(warning);
+					selecter.focus();
+					return false;
+				}else{
+					selecter.parent().parent().parent().parent().removeClass('has-error');
+					selecter.parent().parent().next().html('');
+				}
+			}else{
+				if( '' == $.trim(selecter.val())){
+					selecter.parent().parent().parent().addClass('has-error');
+					selecter.parent().next().html(warning);
+					selecter.focus();
+					return false;
+				}else{
+					selecter.parent().parent().parent().removeClass('has-error');
+					selecter.parent().next().html('');
+				}
+			}
+		}
+
+		function start(){
+			$('#load').css('display','block');
+		}
+
+		function updateProgress(pMsg,pWidth){
+			$('.pMsg').html(pMsg);
+			$('.progress-bar-success').css('width',pWidth);
+
+		}
+	});
+
+	//图片上传
+	jQuery(function($) {
+		var file_input = $('#dir_excel');
+		var upload_in_progress = false;
+
+		file_input.ace_file_input({
+			style : 'well',
+			btn_choose : '点击选择EXCEL文件',
+			btn_change: null,
+			droppable: true,
+			thumbnail: 'large',
+
+			maxSize: 6000000,//bytes
+			allowExt: ["xlsx"],
+			allowMime: [],
+
+			before_remove: function() {
+				if(upload_in_progress)
+					return false;//if we are in the middle of uploading a file, don't allow resetting file input
+				return true;
+			},
+
+			preview_error: function(filename , code) {
+				//code = 1 means file load error
+				//code = 2 image load error (possibly file is not an image)
+				//code = 3 preview failed
+			}
+		})
+		file_input.on('file.error.ace', function(ev, info) {
+			if(info.error_count['ext'] || info.error_count['mime']) layer.alert('文件类型错误! 请选择Excel文件!',{icon:5});
+			if(info.error_count['size']) layer.alert('文件大小错误! 最大 5M',{icon:5});
+		});
+	});
+</script>
+</html>

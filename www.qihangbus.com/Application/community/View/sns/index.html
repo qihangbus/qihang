@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html data-dpr="2" style="font-size: 64.6875px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>启航巴士</title>
+<link href="__PUBLIC__/css/mobiles/main.min.css" rel="stylesheet">
+<link href="__PUBLIC__/css/mobiles/swiper.min.css" rel="stylesheet">
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/lib/swiper.min.js"></script>
+
+</head>
+<body>
+<div id="default-wrapper" class="default-wrapper" style="visibility: visible;">
+	<div class="default-timeline-wrapper">
+		<!-- Swiper -->
+		<div class="swiper-home swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="__PUBLIC__/images/mobiles/ban_mx.jpg" style="width:100%;height:100%;">
+				</div>
+				<div class="swiper-slide">
+					<img src="__PUBLIC__/images/mobiles/ban_mx.jpg" style="width:100%;height:100%;">
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiperp_box"><div class="swiper-pagination"></div></div>
+			<div class="swiper-button-next" style="display:none;"></div>
+			<div class="swiper-button-prev" style="display:none;"></div>
+		</div>
+        <!-- Swiper -->
+		<div class="rd-box">
+			<div class="shop-mod">
+				<a href="{:U('sns.php/Forum/bbs',array('school_id'=>$school_id,'user_id'=>$user_id,'user_flag'=>$user_flag,'fake_id'=>$fake_id))}" class="shop-link">
+					<h3 class="shop-title ellipsis">{$school_name}</h3>
+					<span class="shop-goBtn">进来逛逛<i class="zk"></i></span>
+				</a>
+			</div>
+			<div class="j-banners" style="width: 0px;"></div>
+		</div>
+		<ul class="timeline-tab border border-b layout-box">
+			<li class="<if condition='$cate eq 1'>tab-curr</if> box-col"><span><a href="{:U('sns.php/Index/index',array('cate_id'=>1,'fake_id'=>$fake_id))}">启航要闻</a></span><i class="line-gradients"></i></li>
+			<li class="<if condition='$cate eq 2'>tab-curr</if> box-col"><span><a href="{:U('sns.php/Index/index',array('cate_id'=>2,'fake_id'=>$fake_id))}">启航论坛</a></span><i class="line-gradients"></i></li>
+			<li class="<if condition='$cate eq 3'>tab-curr</if> managePart box-col"><span><a href="{:U('sns.php/Index/index',array('cate_id'=>3,'fake_id'=>$fake_id))}">专家讲坛</a></span><i class="line-gradients"></i></li>
+			<li class="<if condition='$cate eq 4'>tab-curr</if> managePart box-col"><span><a href="{:U('sns.php/Index/index',array('cate_id'=>4,'fake_id'=>$fake_id))}">园所风采</a></span><i class="line-gradients"></i></li>
+		</ul>
+		<div class="contentArea">
+			<div id="msg-list-wrapper" class="msg-list-wrapper">
+				
+				<ul id="msgList" class="msg-wrap">
+					<if condition="$cate eq 1">
+					<li class="msg j-msg">
+						<div class="po-over-test">
+							<header class="msg-infor">
+								<div class="user layout-box">			
+									<a class="avatar" href="http://www.qihangbus.com/admin.php/Pages/index">
+										<img class="avatar-img logo-w35" src="http://www.qihangbus.com/Public/images/mobiles/login_logo.png">
+									</a>
+									<div class="msgmsg-corner-tip -con itemList">
+										<a href="http://www.qihangbus.com/admin.php/Pages/index" class="name ellipsis">
+											<h4 style="height:20px;line-height:20px;"><img src="__PUBLIC__/images/mobiles/top.png" style="float:left;margin-right:5px;">关于启航巴士</h4>
+										</a>
+										<div>
+											<span class="time"><a href="http://www.qihangbus.com/admin.php/Pages/index">“启航巴士”是通过微信公众号，随时供园长、管理员、教师、家长使用的家园共育幼儿亲子图书借阅的平台</a></span>
+										</div>
+									</div>
+									<div class="zhanwei"></div>
+								</div>
+							</header>
+						</div>
+						<div class="cmt-card none"><ul class="cmt media-main"></ul></div>
+					</li>
+					
+					<li class="msg j-msg">
+						<div class="po-over-test">
+							<header class="msg-infor">
+								<div class="user layout-box">			
+									<a class="avatar" href="http://www.qihangbus.com/admin.php/Pages/parents">
+										<img class="avatar-img logo-w35" src="http://www.qihangbus.com/Public/images/mobiles/login_logo.png">
+									</a>
+									<div class="msgmsg-corner-tip -con itemList">
+										<a href="http://www.qihangbus.com/admin.php/Pages/parents" class="name ellipsis">
+											<h4><img src="__PUBLIC__/images/mobiles/top.png" style="float:left;margin-right:5px;">产品介绍&家长端操作指南</h4>
+										</a>
+										<div>
+											<span class="time"><a href="http://www.qihangbus.com/admin.php/Pages/parents">“启航巴士|产品介绍&家长端操作指南</a></span>
+										</div>
+									</div>
+									<div class="zhanwei"></div>
+								</div>
+							</header>
+						</div>
+						<div class="cmt-card none"><ul class="cmt media-main"></ul></div>
+					</li>
+					</if>
+					<volist name="list" id="vo">
+					<li class="msg j-msg">
+						<div class="po-over-test">
+							<header class="msg-infor">
+								<div class="user layout-box">			
+									<a class="avatar" href="{:U('sns.php/Index/info',array('id'=>$vo['id']))}">
+										<img class="avatar-img logo-w35" style="border-radius:0;" src="{$vo.thumb|default='/Public/images/mobiles/default.png'}">
+									</a>
+									<div class="msgmsg-corner-tip -con itemList">
+										<a href="{:U('sns.php/Index/info',array('id'=>$vo['id']))}" class="name ellipsis">
+											<h4>
+										<if condition="$vo.is_top eq 1">
+											<img src="__PUBLIC__/images/mobiles/top.png" style="float:left;margin-right:5px;">
+										</if>
+											{$vo.title}
+											</h4>
+										</a>
+										<div>
+											<span class="time"><a href="{:U('sns.php/Index/info',array('id'=>$vo['id']))}">{$vo.description}</a></span>
+										</div>
+									</div>
+									<div class="zhanwei"></div>
+								</div>
+							</header>
+						</div>
+						<div class="cmt-card none"><ul class="cmt media-main"></ul></div>
+					</li>
+					</volist>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<link href="__PUBLIC__/css/mobiles/dropload.css" rel="stylesheet">
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/dropload.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		loop: true,
+        paginationClickable: true
+    });
+	
+	var counter = 0;
+    var num = 4;
+	var p = 2;
+    var pageStart = 0,pageEnd = 0;
+	var cate = "{$cate}";
+	var number = "{$number}";
+	
+	if(number >= 5){
+    $('#msg-list-wrapper').dropload({
+        scrollArea : window,
+        domUp : {
+            domClass   : 'dropload-up',
+            domRefresh : '<div class="dropload-refresh">下拉刷新</div>',
+            domUpdate  : '<div class="dropload-update">释放更新</div>',
+            domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中...</div>'
+        },
+        domDown : {
+            domClass   : 'dropload-down',
+            domRefresh : '<div class="dropload-refresh">&nbsp;</div>',
+            domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+            domNoData  : '<div class="dropload-noData">&nbsp;</div>'
+        },
+        /*loadUpFn : function(me){
+            $.ajax({
+                type: 'GET',
+                url: "/sns.php?m=sns.php/Index.php&c=Index&a=ajax_more&cate_id="+cate+"&p="+p,
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    for(var i = 0; i < data.lists.length; i++){
+									
+						result += '<li class="msg j-msg">'
+								 +'<div class="po-over-test">'
+								 +'<header class="msg-infor">'
+								 +'<div class="user layout-box">'			
+								 +'<a class="avatar" href="'+data.lists[i].link+'">'
+								 +'<img class="avatar-img logo-w35" src="'+data.lists[i].pic+'">'
+								 +'</a>'
+								 +'<div class="msgmsg-corner-tip -con itemList box-col">'
+								 +'<a href="'+data.lists[i].link+'" class="name ellipsis">'
+								 +'<span class="namedom">'+data.lists[i].title+'</span>'
+								 +'</a>'
+								 +'<div>'
+								 +'<span class="time">'+data.lists[i].time_formated+'</span>'
+								+'</div>'
+								+'</div>'
+								+'<div class="zhanwei"></div>'
+								+'</div>'
+								+'</header>'
+								+'<div class="weibo-detail">'
+								+'<div class="forum-name othercss">'
+								+'<a href="'+data.lists[i].link+'"><span class="msg-content">'+data.lists[i].description+'</span></a>'
+								+'</div>'
+								+'</div>'
+								+'</div>'
+								+'<div class="cmt-card none"><ul class="cmt media-main"></ul></div>'
+								+'</li>';			
+								}
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        $('#msgList').html(result);
+                        // 每次数据加载完，必须重置
+                        me.resetload();
+                        // 重置索引值，重新拼接more.json数据
+                        counter = 0;
+                        // 解锁
+                        me.unlock();
+                        me.noData(false);
+                    },1000);
+                },
+                error: function(xhr, type){
+                    alert('加载数据出错!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        },*/
+        loadDownFn : function(me){
+            $.ajax({
+                type: 'GET',
+                url: "/sns.php?m=sns.php/Index.php&c=Index&a=ajax_more&cate_id="+cate+"&p="+p,
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+					
+					for(var i = 0; i < data.lists.length; i++){
+                        result += '<li class="msg j-msg">'
+								 +'<div class="po-over-test">'
+								 +'<header class="msg-infor">'
+								 +'<div class="user layout-box">'			
+								 +'<a class="avatar" href="'+data.lists[i].link+'">'
+								 +'<img class="avatar-img logo-w35" style="border-radius:0;" src="'+data.lists[i].pic+'">'
+								 +'</a>'
+								 +'<div class="msgmsg-corner-tip -con itemList box-col">'
+								 +'<a href="'+data.lists[i].link+'" class="name ellipsis">'
+								 +'<h4>'+data.lists[i].title+'</h4>'
+								 +'</a>'
+								 +'<div>'
+								 +'<span class="time"><a href="'+data.lists[i].link+'">'+data.lists[i].description+'</span>'
+								+'</div>'
+								+'</div>'
+								+'<div class="zhanwei"></div>'
+								+'</div>'
+								+'</header>'
+								+'</div>'
+								+'<div class="cmt-card none"><ul class="cmt media-main"></ul></div>'
+								+'</li>';	
+                    
+						if(data.lists.length < 1){
+							// 锁定
+                            me.lock();
+                            // 无数据
+                            me.noData(false);
+                            break;
+                        }
+                    }
+					
+					if(data.lists.length < 1){
+						me.lock();
+						me.noData(false);
+					}else{
+						p++;
+					}
+					
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        $('#msgList').append(result);
+                        // 每次数据加载完，必须重置
+                        me.resetload();
+                    },1000);
+                },
+                error: function(xhr, type){
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        },
+        threshold : 50
+    });
+	}
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+  <title>角色权限_{:L('_WEBSITE_NAME_')}</title>
+  <link href="__PUBLIC__/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+  <link href="__PUBLIC__/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+  <link rel="stylesheet" href="__PUBLIC__/js/data-tables/DT_bootstrap.css" />
+
+  <link href="__PUBLIC__/css/style.css" rel="stylesheet">
+  <link href="__PUBLIC__/css/style-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="__PUBLIC__/js/html5shiv.js"></script>
+  <script src="__PUBLIC__/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="./"><img src="__PUBLIC__/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="./"><img src="__PUBLIC__/images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="__PUBLIC__/images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">John Doe</a></h4>
+                        <span>"Hello There..."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                  <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                  <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                </ul>
+            </div>
+
+            <include file="common:menu"/>
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <include file="common:header"/>
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                角色权限
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">后台首页</a>
+                </li>
+                <li>
+                    <a href="#">系统设置</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <style type="text/css">
+            .col-lg-4{color:#65cea7}
+            .col-lg-4 label{color:#cccccc}
+            .adv-table table tr td {
+                line-height: 30px;
+                padding: 0px;
+            }
+        </style>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            角色权限
+                            <span class="pull-right">
+                                <a href="{:U('/Role/index')}" class="btn btn-primary">角色管理</a>
+                                <a href="{:U('/Role/edit/id/0')}" class="btn btn-primary">添加角色</a>
+                             </span>
+                        </header>
+                        <div class="panel-body">
+                            <form class="form-horizontal adminex-form" method="post" action="{:U('/Role/act_role_priv')}">
+                            <div class="adv-table">
+                                <table  class="display table table-bordered table-striped" id="dnd-example">
+                                    <thead>
+                                    <tr>
+                                        <th><span onClick="javascript:$('input[name=menuid[]]').attr('checked', true)">全选</span>/<span onClick="javascript:$('input[name=menuid[]]').attr('checked', false)">取消</span></th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    <tr>
+                                       <td class="col-lg-12">{$categorys}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="clearfix">
+                                <div class="btn-group col-lg-offset-1">
+                                    <input type="hidden" name="roleid" value="{$roleid}"/>
+                                    <input type="submit" value="提交" name="dosubmit" id="editable-sample_new" class="btn btn-primary">
+                                </div>
+                            </div>
+                            <div class="space15"></div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+        <include file="common:footer"/>
+    </div>
+    <!-- main content end-->
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__PUBLIC__/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery.nicescroll.js"></script>
+<!--easy pie chart-->
+<script src="__PUBLIC__/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="__PUBLIC__/js/easypiechart/easypiechart-init.js"></script>
+<!--Sparkline Chart-->
+<script src="__PUBLIC__/js/sparkline/jquery.sparkline.js"></script>
+<script src="__PUBLIC__/js/sparkline/sparkline-init.js"></script>
+<!--icheck -->
+<script src="__PUBLIC__/js/iCheck/jquery.icheck.js"></script>
+<script src="__PUBLIC__/js/icheck-init.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.resize.js"></script>
+<!--Morris Chart-->
+<script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+<!--Calendar-->
+<script src="__PUBLIC__/js/calendar/clndr.js"></script>
+<script src="__PUBLIC__/js/calendar/evnt.calendar.init.js"></script>
+<script src="__PUBLIC__/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<!--common scripts for all pages-->
+<script src="__PUBLIC__/js/scripts.js"></script>
+<!--Dashboard Charts-->
+<script src="__PUBLIC__/js/dashboard-chart-init.js"></script>
+<script type="text/javascript">
+    function checknode(obj)
+    {
+        var chk = $("input[type='checkbox']");
+        var count = chk.length;
+        var num = chk.index(obj);
+        var level_top = level_bottom =  chk.eq(num).attr('level')
+        for (var i=num; i>=0; i--)
+        {
+            var le = chk.eq(i).attr('level');
+            if(eval(le) < eval(level_top))
+            {
+                chk.eq(i).attr("checked",'checked');
+                var level_top = level_top-1;
+            }
+        }
+        for (var j=num+1; j<count; j++)
+        {
+            var le = chk.eq(j).attr('level');
+            if(chk.eq(num).attr("checked")=='checked') {
+                if(eval(le) > eval(level_bottom)) chk.eq(j).attr("checked",'checked');
+                else if(eval(le) == eval(level_bottom)) break;
+            }
+            else {
+                if(eval(le) > eval(level_bottom)) chk.eq(j).attr("checked",false);
+                else if(eval(le) == eval(level_bottom)) break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

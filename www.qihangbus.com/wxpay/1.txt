@@ -1,0 +1,49 @@
+
+
+2017-09-12 14:49:19--select book_id,book_number from `fh_order_goods` where `order_id`=232
+
+2017-09-12 14:56:54--select book_id,book_number from `fh_order_goods` where `order_id`=229
+
+2017-09-12 14:59:29--select book_id,book_number from `fh_order_goods` where `order_id`=234
+
+2017-09-12 15:02:39--select book_id,book_number from `fh_order_goods` where `order_id`=225
+
+2017-09-12 15:07:29--select book_id,book_number from `fh_order_goods` where `order_id`=219
+
+2017-09-12 15:10:30--select book_id,book_number from `fh_order_goods` where `order_id`=221
+
+2017-09-12 15:25:04--select book_id,book_number from `fh_order_goods` where `order_id`=236
+
+2017-09-12 16:21:23--select book_id,book_number from `fh_order_goods` where `order_id`=185
+
+2017-09-13 18:43:47--select book_id,book_number from `fh_order_goods` where `order_id`=237
+
+2017-09-14 14:44:25--select book_id,book_number from `fh_order_goods` where `order_id`=239
+
+2017-09-14 18:07:25--select book_id,book_number from `fh_order_goods` where `order_id`=274
+
+2017-09-18 16:37:40--select book_id,book_number from `fh_order_goods` where `order_id`=295
+
+2017-09-21 15:46:55--select book_id,book_number from `fh_order_goods` where `order_id`=302
+
+2017-09-25 17:25:10--select book_id,book_number from `fh_order_goods` where `order_id`=345
+
+2017-09-25 17:30:05--select book_id,book_number from `fh_order_goods` where `order_id`=346
+
+2017-09-25 17:31:27--select book_id,book_number from `fh_order_goods` where `order_id`=347
+
+2017-09-25 17:34:07--select book_id,book_number from `fh_order_goods` where `order_id`=348
+
+2017-09-25 17:35:23--select book_id,book_number from `fh_order_goods` where `order_id`=349
+
+2017-09-25 17:40:29--select book_id,book_number from `fh_order_goods` where `order_id`=350
+
+2017-11-03 13:50:11--select book_id,book_number from `fh_order_goods` where `order_id`=424
+
+2017-11-04 03:28:31--select book_id,book_number from `fh_order_goods` where `order_id`=425
+
+2017-11-05 18:25:00--select book_id,book_number from `fh_order_goods` where `order_id`=426
+
+2017-12-01 13:54:23--select book_id,book_number from `fh_order_goods` where `order_id`=437
+
+2017-12-12 12:47:52--select book_id,book_number from `fh_order_goods` where `order_id`=556

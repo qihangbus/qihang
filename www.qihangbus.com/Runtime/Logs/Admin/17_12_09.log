@@ -1,0 +1,13 @@
+[ 2017-12-09T20:00:01+08:00 ] 118.190.78.211 /default.php/Admin/TimedTask/bookReminder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0007s ]
+SQL: SELECT `school_id`,`book_reminder_first`,`book_reminder_second` FROM `fh_schools`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+

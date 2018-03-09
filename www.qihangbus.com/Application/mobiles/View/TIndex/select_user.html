@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="renderer" content="webkit">
+    <title>选择用户</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+    <style type="text/css">
+        .avatar {
+            border-radius: 50%;
+        }
+
+        .ck_list .li_cart:before {
+            top: 40%;
+        }
+
+        .cart_pro {
+            position: relative;
+            height: 45px;
+            padding: 0 10px;
+            margin-bottom: 0px;
+        }
+
+        .cart_pro dt {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            background: none;
+            background-size: 40% auto;
+        }
+
+        .cart_pro dt img {
+            height: 45px;
+            width: 100%;
+        }
+
+        .cart_pro .dd_pname {
+            padding-left: 60px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <ul class="cart_list ck_list" id="cart_list">
+
+        <volist name="list" id="vo" empty="暂无数据">
+            <li class="li_cart li_cart_ck" uid="{$vo.user_id}">
+                <dl class="cart_pro">
+                    <dt><img src="{$vo.thumb|default='/Public/images/mobiles/default.png'}" alt="" class="avatar"/></dt>
+                    <dd class="dd_pname">{$vo.user_name}</dd>
+                </dl>
+            </li>
+        </volist>
+
+    </ul>
+
+    <a href="{:U('mobile.php/TIndex/index',array('teacher_id'=>$user_id))}">
+        <span class="f_index" style="bottom:35px;"><span class="iconfont icon-shouyeshouye"></span></span>
+    </a>
+</div>
+<div class="footer2" style="z-index: 9;">
+    <ul class="footer_pbtn">
+        <input type="hidden" id="user_id" value="{$user_id}">
+        <input type="hidden" id="user_flag" value="{$user_flag}">
+        <li class="fbtn_l"><span class="pay_quan pay_quan_ed" id="a_ckall">全选</span></li>
+        <li class="fbtn_r"><a href="javascript:void(0);" class="btn_js">去发送</a></li>
+    </ul>
+</div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $(".btn_js").click(function () {
+            var list = $("#cart_list li");
+            var values = [];
+            var key = 0;
+            for (var i = 0; i < list.length; i++) {
+                f = list.eq(i).hasClass('li_cart_ck');
+                if (f) {
+                    values[key] = list.eq(i).attr('uid');
+                    key++;
+                }
+            }
+            ;
+            var uid = "{$user_id}";
+            var t = "{$type}";
+            location.href = "/mobile.php?m=mobile.php&c=TIndex&a=send_message&user_id=" + uid + "&type=" + t + "&receive_id=" + values.join(',');
+        });
+
+        addCkVal();
+        $("#a_ckall").bind("click", function () {
+            if ($(this).hasClass("pay_quan_ed")) {
+                $(this).removeClass("pay_quan_ed");
+                $.each($("#cart_list .li_cart"), function (b, c) {
+                    $(c).removeClass("li_cart_ck");
+                });
+            } else {
+                if ($("#cart_list .li_cart").length > 0) {
+                    $(this).addClass("pay_quan_ed");
+                    $.each($("#cart_list .li_cart"), function (b, c) {
+                        $(c).addClass("li_cart_ck");
+                    });
+                } else {
+                    alert("暂无数据！");
+                }
+            }
+            addCkVal();
+        });
+
+        $("#cart_list .li_cart").click(function (event) {
+            $(this).toggleClass("li_cart_ck")
+
+            var l = $("#cart_list .li_cart").length;
+            var l2 = $("#cart_list .li_cart_ck").length;
+            if (l2 == l) {
+                $("#a_ckall").addClass("pay_quan_ed");
+            } else {
+                $("#a_ckall").removeClass("pay_quan_ed");
+            }
+
+            addCkVal();
+            event.stopPropagation();
+        });
+
+    })
+    function addCkVal() {
+        var n = $("#cart_list").find(".li_cart_ck").length;
+        //$("#ck_val").text(n);
+        if (n > 0) {
+            $("#a_del").fadeIn();
+        }
+    }
+
+</script>
+</body>
+</html>

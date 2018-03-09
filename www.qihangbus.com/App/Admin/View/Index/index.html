@@ -1,0 +1,82 @@
+	<include file='Common:header' />
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container" id="main-container">
+
+			<!-- #section:basics/sidebar -->
+
+	<include file='Common:left' />
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="page-content">
+
+                        
+								<div class="alert alert-block alert-success">
+									<button type="button" class="close" data-dismiss="alert">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									<i class="ace-icon fa fa-check green"></i>
+									为了您更好的使用本系统，建议您安装chrome谷歌浏览器
+								</div>
+
+								<div class="col-sm-7 sl-indextop7">
+										<!-- /section:pages/dashboard.infobox -->
+										<div class="space-6"></div>
+
+
+									<div class="widget-box sl-indextop10">
+											<div class="widget-header">
+												<h5 class="widget-title"><span style="font-size:14px; font-family:Microsoft YaHei">系统版本：开发信息</span></h5>
+
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<p class="alert alert-info sl-line-height25">
+														框架版本：ThinkPHP{$info.ThinkPHPTYE}&nbsp;&nbsp;上传附件限制：{$info.ONLOAD}<br />
+														系统版本：{$info.RUNTYPE}&nbsp;&nbsp;MYSQL版本：{$info.MYSQL_VER}<br />
+													</p>
+													<p class="alert alert-success">
+														技术开发人员：炫世<br />
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- /.row -->
+
+
+						<style>
+							.font12{ font-size:14px;}
+						</style>
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="hidden">
+
+									<div id="sidebar2" class="sidebar h-sidebar navbar-collapse collapse menu-min">
+										<ul class="nav nav-list">
+											<li>
+												<a href="{:U('Index/index')}">
+													<o class="font12">首页</o>
+												</a>
+											</li>
+										</ul><!-- /.nav-list -->
+									</div><!-- .sidebar -->
+								</div>
+
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+	<include file='Common:footer' />
+    
+		</div><!-- /.main-container -->
+
+
+	</body>
+</html>

@@ -1,0 +1,1 @@
+a:6:{i:0;s:9:"region_id";i:1;s:9:"parent_id";i:2;s:11:"region_name";i:3;s:12:"region_level";s:3:"_pk";s:9:"region_id";s:5:"_type";a:4:{s:9:"region_id";s:21:"mediumint(8) unsigned";s:9:"parent_id";s:7:"int(10)";s:11:"region_name";s:11:"varchar(60)";s:12:"region_level";s:10:"tinyint(1)";}}

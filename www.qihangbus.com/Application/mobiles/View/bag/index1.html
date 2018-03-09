@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="m">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<meta name="renderer" content="webkit">
+	<title>班级书架</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+
+<div class="wrap2">
+	<div class="c_t">
+		<div class="iban">
+			<a href="#">
+				<img src="__PUBLIC__/images/mobiles/ban_mx.jpg" alt="" />
+			</a>
+		</div>
+		<div class="mxjilu_t" style="display:none;"><span>您的孩子当前处于<b class="color2">{$grade_name}</b>阶段</span> <a href="{:U('mobile.php/Mybag/advice_read')}" class="ibtn_1">建议阅读</a></div>
+		<div class="line_hr"></div>
+		<div class="head-cate">
+			<ul class="ul_3 ul-control">
+				<a href="{:U('mobile.php/Mybag/index')}&type=class&user_id={$user_id}&user_flag={$user_flag}"><li style="width:50%" <if condition="$type eq 'class'">class="li_cur"</if> data-m="c_nian2" type="classs"><span>班级图书</span></li></a>
+				<a href="{:U('mobile.php/Mybag/index')}&type=subscribe&user_id={$user_id}&user_flag={$user_flag}"><li style="width:50%" <if condition="$type eq 'subscribe'">class="li_cur"</if> data-m="c_nian2" type="subscribe"><span>可预约图书</span></li></a>
+			</ul>
+		</div>
+	</div>
+
+	<ul class="prolist clearfix">
+		<volist name="list" id="vo">
+			<if condition="$vo['book_id'] neq ''">
+				<li>
+					<a href="{:U('mobile.php/Mybag/read_info/',array('book_id'=>$vo['book_id'],'user_id'=>$user_id,'user_flag'=>$user_flag))}">
+						<dl class="dl_pro"><dt><img src="{$vo.book_thumb}"></dt><dd class="dd_p" style="margin-top: 2px;color: #ffae00;"><notempty name="vo.sub_name">{$vo.sub_name}<else/> &nbsp; </notempty></dd><dd class="dd_name" style="padding-top: 0px;color:#6f6a5f;">【{$vo.book_name}】</dd><!--<dd class="dd_price s_price" style="padding:0">{$vo.points_price}金豆</dd>--><dd class="dd_price_s" style="display:none;">市场价：{$vo.shop_price}元</dd></dl>
+					</a>
+				</li>
+			</if>
+		</volist>
+	</ul>
+	<a href="{:U('mobile.php/Ucenter/index')}">
+		<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+	</a>
+</div>
+</body>
+</html>

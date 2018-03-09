@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+  <title>广告信息_{:L('_WEBSITE_NAME_')}</title>
+  <link href="__PUBLIC__/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+  <link href="__PUBLIC__/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+  <link rel="stylesheet" href="__PUBLIC__/js/data-tables/DT_bootstrap.css" />
+
+  <link href="__PUBLIC__/css/style.css" rel="stylesheet">
+  <link href="__PUBLIC__/css/style-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="__PUBLIC__/js/html5shiv.js"></script>
+  <script src="__PUBLIC__/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="./"><img src="__PUBLIC__/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="./"><img src="__PUBLIC__/images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="__PUBLIC__/images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">John Doe</a></h4>
+                        <span>"Hello There..."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                  <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                  <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                </ul>
+            </div>
+
+            <include file="common:menu"/>
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <include file="common:header"/>
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                <if condition="$info.ad_id gt 0">修改<else/>添加</if>广告信息
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">后台首页</a>
+                </li>
+                <li>
+                    <a href="#">广告管理</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <style type="text/css">
+            .col-lg-4{color:#65cea7}
+            .col-lg-4 label{color:#cccccc}
+        </style>
+        <div class="wrapper">
+            <div class="row">
+                        <div class="col-lg-12">
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    <if condition="$info.ad_id gt 0">修改<else/>添加</if>广告
+                                    <span class="pull-right">
+                                        <a href="{:U('Ads/index')}" class="btn btn-primary">广告列表</a>
+                                        <a href="javascript:void(0);" class="btn disabled">添加广告</a>
+                                     </span>
+                                </header>
+
+                                <div class="panel-body">
+                                    <form class="form-horizontal" enctype='multipart/form-data' method="post" name="myform" action="{:U('Ads/edit_handle')}" role="form">
+                            
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">广告名称</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" name="ad_name" value="{$info.ad_name}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">媒介类型</label>
+                                            <div class="col-lg-4">
+                                                <select name="media_type" id="media_type" class="form-control m-bot15">
+                                                    <option>请选择</option>
+                                                    <option value="1" <eq name="info.media_type" value="1">selected</eq>>图片</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">广告位置</label>
+                                            <div class="col-lg-4">
+                                                <select name="position_id" id="position_id" class="form-control m-bot15">
+                                                    <option>请选择</option>
+                                                    <volist name="positions" id="vo">
+                                                        <option value="{$vo['position_id']}" <eq name="info.position_id" value="$vo.position_id">selected</eq>>{$vo['position_name']}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">开始日期</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" id="start_time" name="start_time" value="{$info.start_time}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">结束日期</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" id="end_time" name="end_time" value="{$info.end_time}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">广告链接</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" name="ad_link" value="{$info.ad_link}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">上传广告图片</label>
+                                            <div class="col-lg-3">
+                                                <input type="file" name="ad_code">
+                                                <input type="hidden" name="old_ad_code" value="{$info.ad_code}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">广告联系人</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" name="link_man" value="{$info.link_man}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">联系人Email</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" name="link_email" value="{$info.link_email}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">联系人手机</label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control" name="link_phone" value="{$info.link_phone}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-lg-offset-1 col-lg-10">
+                                                <input type="hidden" name="ad_id" value="{$info.ad_id}"/>
+                                                <input type="submit" class="btn btn-primary" value="提交"/>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+
+                        </div>
+
+
+            </div>
+        </div>
+        <!--body wrapper end-->
+        <include file="common:footer"/>
+    </div>
+    <!-- main content end-->
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__PUBLIC__/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery.nicescroll.js"></script>
+<!--easy pie chart-->
+<script src="__PUBLIC__/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="__PUBLIC__/js/easypiechart/easypiechart-init.js"></script>
+<!--Sparkline Chart-->
+<script src="__PUBLIC__/js/sparkline/jquery.sparkline.js"></script>
+<script src="__PUBLIC__/js/sparkline/sparkline-init.js"></script>
+<!--icheck -->
+<script src="__PUBLIC__/js/iCheck/jquery.icheck.js"></script>
+<script src="__PUBLIC__/js/icheck-init.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.resize.js"></script>
+<!--Morris Chart-->
+<script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+<!--Calendar-->
+<script src="__PUBLIC__/js/calendar/clndr.js"></script>
+<script src="__PUBLIC__/js/calendar/evnt.calendar.init.js"></script>
+<script src="__PUBLIC__/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<!--common scripts for all pages-->
+<script src="__PUBLIC__/js/scripts.js"></script>
+<!--Dashboard Charts-->
+<script src="__PUBLIC__/js/dashboard-chart-init.js"></script>
+<script src="__PUBLIC__/js/laydate/laydate.js"></script>
+<script>
+    laydate({
+        elem: '#start_time'
+    });
+    laydate({
+        elem: '#end_time'
+    });
+    function change_grade(){
+        var sid = $('#school_id').val();
+        $.ajax({
+            type:'post',
+            url:"{:U('/Student/ajax_grade')}",
+            data:{school_id:sid},
+            dataType:'json',
+            success:function(data){
+                var arr = '';
+                arr += "<option>请选择</option>";
+                for(var i=0;i<data.length;i++){
+                    arr += "<option value='"+data[i]['grade_id']+"'>"+data[i]['grade_name']+"</option>";
+                }
+                $('#grade_id').html(arr);
+                $('#class_id').html("<option>请选择</option>");
+                $('#teacher_id').html("<option>请选择</option>");
+            }
+        });
+    }
+
+    function change_class(){
+        var gid = $('#grade_id').val();
+        $.ajax({
+            type:'post',
+            url:"{:U('/Student/ajax_class')}",
+            data:{grade_id:gid},
+            dataType:'json',
+            success:function(data){
+                var arr = '';
+                arr += "<option>请选择</option>";
+                for(var i=0;i<data.length;i++){
+                    arr += "<option value='"+data[i]['class_id']+"'>"+data[i]['class_name']+"</option>";
+                }
+                $('#class_id').html(arr);
+                $('#teacher_id').html("<option>请选择</option>");
+            }
+        });
+    }
+
+    function change_teacher(){
+        var cid = $('#class_id').val();
+        $.ajax({
+            type:'post',
+            url:"{:U('/Student/ajax_teacher')}",
+            data:{class_id:cid},
+            dataType:'json',
+            success:function(data){
+                var arr = '';
+                arr += "<option>请选择</option>";
+                for(var i=0;i<data.length;i++){
+                    arr += "<option value='"+data[i]['teacher_id']+"'>"+data[i]['teacher_name']+"</option>";
+                }
+                $('#teacher_id').html(arr);
+            }
+        });
+    }
+</script>
+</body>
+</html>

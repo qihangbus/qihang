@@ -1,0 +1,101 @@
+			<div id="sidebar" class="sidebar responsive">
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-success">
+							<a href="/default.php" target="_blank" style="color:#fff" title="前端首页">
+								<i class="ace-icon fa fa-home"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-pencil"></i>
+						</button>
+
+						<!-- #section:basics/sidebar.layout.shortcuts -->
+						<button class="btn btn-warning" id="cache-clean" title="清除缓存">
+							<i class="ace-icon fa fa-trash-o"></i>
+						</button>
+
+						<button class="btn btn-danger">
+							<i class="ace-icon fa fa-cogs"></i>
+						</button>
+
+						<!-- /section:basics/sidebar.layout.shortcuts -->
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+<php>
+	use Think\Auth;
+	$m = M('auth_rule');
+	$field = 'id,name,title,css';
+	$left = $m->field($field)->where('pid=0 AND status=1')->select();
+	$auth = new Auth();
+	//没有权限的菜单不显示
+	foreach ($left as $k=>$v){
+		if(!$auth->check($v['name'], session('aid')) && session('aid') != 1){
+			unset($left[$k]);
+		}
+	}
+</php>
+
+<foreach name="left" item="v">
+					<li class="<if condition="CONTROLLER_NAME eq $v['name']">active open</if>"><!--open代表打开状态-->
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa {$v.css}"></i>
+							<span class="menu-text">
+								{$v.title}
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+<php>
+	$m = M('auth_rule');
+	$left_child = $m->where(array('pid'=>$v['id'],'status'=>1))->select();
+	foreach ($left_child as $k=>$v){
+		if(!$auth->check($v['name'], session('aid')) && session('aid') != 1){
+			unset($left_child[$k]);
+		}
+	}
+</php>
+    <foreach name="left_child" item="v">
+							<li class="<if condition="($_COOKIE['s'] eq $v['id'])">active</if>">
+								<a href="{:U($v['name'],array('s'=>$v['id']))}">
+									<i class="menu-icon fa fa-caret-right"></i>
+									{$v.title}
+								</a>
+								<b class="arrow"></b>
+							</li>
+	</foreach>
+						</ul>
+					</li>
+</foreach>
+                    
+				</ul><!-- /.nav-list -->
+				<script type="text/javascript">
+					$('#cache-clean').click(function(){
+						$.get("{:U('Index/cacheClean')}",function(data){
+							layer.msg(data.info,{icon:6,time:800});
+						});
+					});
+				</script>
+				<!-- #section:basics/sidebar.layout.minimize -->
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>

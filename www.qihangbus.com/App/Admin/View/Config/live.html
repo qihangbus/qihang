@@ -1,0 +1,104 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+
+
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+
+                <!--主题-->
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            修改<strong>直播设置</strong>信息
+                        </small>
+                    </h1>
+                </div>
+                <style type="text/css">
+                    .row .profile-info-row{line-height: 2.5}
+                    .row .profile-info-row input{padding:0 0;width: 80%}
+                </style>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" id="base" method="post" action="{:U('liveSave')}">
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 专家讲堂： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="live_zj" value="{:C('live_zj')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 老师培训： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="live_ls" value="{:C('live_ls')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 代理培训： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="live_dl" value="{:C('live_dl')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        保存
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="hr hr-24"></div>
+
+                <include file='Common:header_nav' />
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+    <include file='Common:footer' />
+
+</div><!-- /.main-container -->
+
+<script>
+    $(function(){
+        $('#base').ajaxForm({
+            //beforeSubmit: checkForm, // 此方法主要是提交前执行的方法，根据需要设置
+            success: complete, // 这是提交后的方法
+            dataType: 'json'
+        });
+
+        function complete(data){
+            if(data.status==1){
+                layer.msg(data.info, {icon: 6,time:800}, function(index){
+                    layer.close(index);
+                });
+            }else{
+                layer.msg(data.info,{icon:5});
+                return false;
+            }
+        }
+
+    });
+</script>
+</body>
+</html>

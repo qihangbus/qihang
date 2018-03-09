@@ -1,0 +1,69 @@
+<include file='Common:header' />
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div id="sidebar2" class="sidebar h-sidebar navbar-collapse collapse" data-sidebar="true" data-sidebar-hover="true">
+                <ul class="nav nav-list">
+
+
+
+                </ul><!-- /.nav-list -->
+            </div><div class="page-content">
+
+            <!--主题-->
+            <div class="page-header">
+                <h1>
+                    您当前操作
+                    <small>
+                        <i class="ace-icon fa fa-angle-double-right"></i>
+                        查看<strong>入库</strong>详情
+                    </small>
+                </h1>
+            </div>
+            <div class="row">
+                <form id="edit" action="__CONTROLLER__/edit" method="post">
+                <div class="col-xs-12">
+                    <div class="profile-user-info profile-user-info-striped">
+                        <div class="profile-info-row">
+                            <div class="profile-info-name"> 产品名称 : </div>
+                            <div class="profile-info-value"><span>{$data.name}</span></div>
+                            <div class="profile-info-name"> 数量 : </div>
+                            <div class="profile-info-value"><span>{$data.num}</span></div>
+                        </div>
+
+                        <div class="profile-info-row">
+                            <div class="profile-info-name"> 备注 : </div>
+                            <div class="profile-info-value"><span>{$data.des}</span></div>
+                            <div class="profile-info-name"> 添加时间 : </div>
+                            <div class="profile-info-value"><span>{$data.addtime|date='Y-m-d H:i:s',###}</span></div>
+                        </div>
+
+                    </div>
+                    <div class="space-2"></div>
+
+                </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="hidden">
+
+                        <!-- .sidebar -->
+                    </div>
+
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    <include file='Common:footer' />
+</div><!-- /.main-container -->
+</body>
+</html>

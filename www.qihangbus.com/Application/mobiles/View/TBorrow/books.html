@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>借阅</title>
+    <include file="Common:theme" />
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+    <script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script> 
+</head>
+<body>
+    <div class="wrap2">
+        <div class="head-cate">
+            <ul class="ul_2">
+                <li  style="width:33%" 
+                    <eq name="circul_status" value="2"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/TBorrow/index',array('teacher_id'=>$teacher_id,'circul_status'=>2))}">
+                        <span>借阅 </span>
+                    </a>
+                </li>
+                <li  style="width:34%" 
+                    <eq name="circul_status" value="1"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/TBorrow/index',array('teacher_id'=>$teacher_id,'circul_status'=>1))}">
+                        <span>归还</span>
+                    </a>
+                </li>
+                <li style="width:33%" <eq name="circul_status" value="3"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/TBorrow/evaluate',array('teacher_id'=>$teacher_id,'circul_status'=>3))}">
+                        <span>评价</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="line_hr"></div>
+        <div id="div1">
+            <ul class="cart_list order_list">
+				<empty name="list">
+					<div class="data-empty">
+					<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+					<p>暂无数据</p>
+					</div>
+				</empty>
+                <volist name="list" id="vo">
+                    <li class="li_cart">
+                        <dl class="cart_pro">
+                            <dt class="dt_tx"><img src="{$vo['book_thumb']|default='Public/images/mobiles/default.png'}" alt="" /></dt>
+                            <dd class="dd_pname2">
+								<p>&nbsp;</p>
+                                <p><strong>NO.{$vo.book_no}</strong> - {$vo['book_name']}</p>
+                                <p><a href="javascript:;" cid="{$circulation_id}" bid="{$vo['book_id']}" class="ibtn_1 change_book" style="float:right;">确认更换</a></p>
+                            </dd>
+                        </dl>
+                        <div class="i_btn"></div>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+      <a href="{:U('mobile.php/TIndex/index',array('teacher_id'=>$teacher_id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/mobile/layer.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".change_book").click(function(){
+        var cid = "{$circulation_id}";
+		var tid = "{$teacher_id}";
+		var sid = "{$student_id}";
+		var cs = "{$circul_status}";
+		var bid = $(this).attr("bid");
+        $.post("{:U('mobile.php/TBorrow/randombook')}",{circulation_id:cid,book_id:bid},function(ret){
+            if(ret > 0){
+                layer.open({
+                    title:false,
+                    content:'更换图书成功',
+                    btn:['关闭'],
+                    yes:function(index){
+                        layer.closeAll();
+						window.location.href="/mobile.php?m=mobile.php&c=TBorrow&a=getborrow&circulation_id="+cid+"&teacher_id="+tid+"&circul_status="+cs+"&student_id="+sid;
+                    },
+                });
+            }
+        },'json');
+    });
+})
+</script>
+</body>
+</html>

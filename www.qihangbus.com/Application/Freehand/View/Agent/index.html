@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>渠道管理_{:L('_WEBSITE_NAME_')}</title>
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="__PUBLIC__/js/data-tables/DT_bootstrap.css" />
+
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="./"><img src="__PUBLIC__/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="./"><img src="__PUBLIC__/images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="__PUBLIC__/images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">John Doe</a></h4>
+                        <span>"Hello There..."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                </ul>
+            </div>
+
+            <include file="common:menu"/>
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <include file="common:header"/>
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                渠道列表
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">后台首页</a>
+                </li>
+                <li>
+                    <a href="#">用户管理</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <style type="text/css">
+            .col-lg-4{color:#65cea7}
+            .col-lg-4 label{color:#cccccc}
+        </style>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+
+                        <header class="panel-heading">
+                            渠道列表
+                            <span class="pull-right">
+                                <a href="javascript:void(0);" class="btn disabled">渠道列表</a>
+                                <a href="{:U('add')}" class="btn btn-primary">添加渠道</a>
+                             </span>
+                        </header>
+
+                        <div class="panel-body">
+                            <form class="form-horizontal adminex-form" method="get">
+                                <div class="adv-table">
+                                    <table  class="display table table-bordered table-striped" id="dynamic-table">
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-1">序号</th>
+                                            <th class="col-lg-2">名称</th>
+                                            <th class="col-lg-2">联系方式</th>
+                                            <th class="col-lg-2">省</th>
+                                            <th class="col-lg-1">市</th>
+                                            <th class="col-lg-2">管理操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <volist name="list" id="vo" key="k">
+                                            <tr>
+                                                <td>{$vo.id}</td>
+                                                <td>{$vo.name}</td>
+                                                <td>{$vo.mobile}</td>
+                                                <td>{$vo.province}</td>
+                                                <td>{$vo.city}</td>
+                                                <td>
+                                                    <a href="{:U('schools/index',array('id'=>$vo[id]))}">查看学校</a> |
+                                                    <a href="{:U('sendMes',array('id'=>$vo[id]))}">发送消息</a> |
+                                                    <a href="{:U('edit',array('id'=>$vo[id]))}" class="edit">修改</a> |
+                                                    <a href="javascript:void(0)" class="delete" data-id = "{$vo.id}">删除</a>
+                                                </td>
+                                            </tr>
+                                        </volist>
+                                    </table>
+                                    <div class="row-fluid" style="">
+                                        <div class="span6" style="display:none;">
+                                            <div id="dynamic-table_info" class="dataTables_info">Showing 1 to 10 of 57 entries</div>
+                                        </div>
+                                        <div class="span6">
+                                            <div class="dataTables_paginate paging_bootstrap pagination">
+                                                <ul>
+                                                    {$page}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+        <include file="common:footer"/>
+    </div>
+    <!-- main content end-->
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__PUBLIC__/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery.nicescroll.js"></script>
+<!--easy pie chart-->
+<script src="__PUBLIC__/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="__PUBLIC__/js/easypiechart/easypiechart-init.js"></script>
+<!--Sparkline Chart-->
+<script src="__PUBLIC__/js/sparkline/jquery.sparkline.js"></script>
+<script src="__PUBLIC__/js/sparkline/sparkline-init.js"></script>
+<!--icheck -->
+<script src="__PUBLIC__/js/iCheck/jquery.icheck.js"></script>
+<script src="__PUBLIC__/js/icheck-init.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.resize.js"></script>
+<!--Morris Chart-->
+<script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+<!--Calendar-->
+<script src="__PUBLIC__/js/calendar/clndr.js"></script>
+<script src="__PUBLIC__/js/calendar/evnt.calendar.init.js"></script>
+<script src="__PUBLIC__/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<!--common scripts for all pages-->
+<script src="__PUBLIC__/js/scripts.js"></script>
+<!--Dashboard Charts-->
+<script src="__PUBLIC__/js/dashboard-chart-init.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/skin/layer.css"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.delete').click(function(){
+            var id = $(this).attr('data-id');
+            layer.alert('确定要删除吗',{icon:3,title:'提示'},function(){
+                $.ajax({
+                    type:'post',
+                    url: "{:U('del')}",
+                    data: {id:id},
+                    dataType: 'json',
+                    timeout: 5000,
+                    success: function(data){
+                        if(data.status == 1){
+                            layer.msg('删除成功！',{icon:6,time:1000},function(index){
+                                layer.close(index);
+                                window.location.reload();
+                            });
+                        }else{
+                            layer.msg('删除失败!',{icon:5,time:2000});
+                        }
+                    },
+                    error: function showError(responseText, statusText){
+                        if(statusText=='timeout'){
+                            layer.msg("服务器繁忙，请稍后再试！", {time:1000});
+                            return;
+                        }else{
+                            layer.msg(statusText,{time:1000});
+                        }
+                    },
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

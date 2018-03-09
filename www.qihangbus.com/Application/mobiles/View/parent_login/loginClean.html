@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="renderer" content="webkit">
+    <title>登录清除</title>
+    <link rel="stylesheet" href="/Public/css/mobiles/base.css">
+    <link rel="stylesheet" href="/Public/css/mobiles/app.css">
+    <link rel="stylesheet" href="/Public/css/mobiles/iconfont.css">
+</head>
+<body>
+
+<div class="wrap2">
+
+        <ul class="ul_form ul_form_jz">
+
+            <li>
+                <span class="s_label">手机号</span>
+                <span class="s_input">
+                    <input type="text" maxlength="11" name="mobile" style="text-align: right;"/>
+                </span>
+            </li>
+        </ul>
+        <div class="btn_box btn_boxadd" style="margin-top: 20px;">
+            <a href="javascript:void(0);" id="clean" class="btn btn2 btn_addjz">登 录 清 除</a>
+        </div>
+</div>
+<script class="js_prejs" type="text/javascript" src="/Public/js/mobiles/lib/jquery.min.js"></script>
+<script src="/Public/js/mobiles/layer/layer.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#clean').click(function(){
+            var mobile = $('input[name="mobile"]').val();
+            if(!mobile){
+                layer.msg('请填写手机号',{time:800});
+                return false;
+            }
+            $.post(
+                "{:U('loginClean')}",
+                {mobile:mobile},
+                function(data){
+                    if(data.status == 1){
+                        layer.msg(data.info,{icon:6,time:800});
+                    }else{
+                        layer.msg(data.info,{icon:5,time:800});
+                    }
+                },
+                'json'
+            );
+        });
+    });
+
+</script>
+</body>
+</html>

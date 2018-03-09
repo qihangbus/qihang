@@ -1,0 +1,171 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div>
+                                <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                                    <form>
+                                    <thead>
+                                    <tr>
+                                        <th width="5%" class="center">
+                                            <label class="pos-rel">
+                                                <input type="checkbox" class="ace"  id='chkAll' onclick='CheckAll(this.form)' value="全选"/>
+                                                <span class="lbl"></span>
+                                            </label>
+                                        </th>
+                                        <th width="37%">广告标题</th>
+                                        <th width="13%">发布时间</th>
+                                        <th width="13%">排序</th>
+                                        <th width="22%" style="border-right:#CCC solid 1px;">操作</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                    <foreach name="data" item="v">
+                                        <tr>
+                                            <td class="center">
+                                                <label class="pos-rel">
+                                                    <input name='left_id[]' class="ace"  type='checkbox' value='{$v.id}'>
+                                                    <span class="lbl"></span>
+                                                </label>
+                                            </td>
+
+                                            <td><span>{$v.name}</span> <strong>(ID：{$v.id})</strong></td>
+                                            <td>{$v.addtime|date='Y-m-d',###}</td>
+                                            <td><input name="{$v.c_id}" value=" {$v.sort}" class="list_order"/></td>
+                                            <td>
+                                                <div class="hidden-sm hidden-xs action-buttons">
+
+                                                    <a class="green" href="{:U('bannerEdit',array('id'=>$v['id']))}" title="修改">
+                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                                    </a>
+                                                    <a class="red" href="javascript:;" data-id="{$v.id}" title="删除">
+                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </foreach>
+                                    </form>
+                                    <tr>
+                                        <td colspan="2" align="left"><button  id="btnsubmit" class="btn btn-white btn-yellow btn-sm">删</button>&nbsp;<button  id="btnorder" class="btn btn-white btn-yellow btn-sm">排序</button></td>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <include file='Common:header_nav' />
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+
+    <script>
+        $(function(){
+            $("#btnsubmit").click(function(){
+                layer.confirm('你确定要删除吗？', {icon: 3}, function(index){
+                    layer.close(index);
+                    var ids='';
+                    $("input[name='left_id[]']:checkbox:checked").each(function() {
+                        ids += $(this).val() + ',';
+                    });
+                    ids = ids.substring(0,ids.length-1);
+                    if(ids == ''){
+                        layer.msg('至少选择一个!',{time:1000});
+                        return;
+                    }
+                    $.post(
+                        "{:U('bannerDelFew')}",
+                        {ids:ids},
+                        function(data){
+                            if(data.status == 1){
+                                layer.alert(data.info,{icon:6},function(){
+                                    window.location.reload();
+                                });
+                            }else{
+                                layer.alert(data.info,{icon:5});
+                            }
+                        }
+                    );
+                });
+            });
+
+            $("#btnorder").click(function(){
+                var data = '';
+                $("input[name='left_id[]']:checkbox:checked").each(function () {
+                    data += $(this).val() +'-'+ $(this).parent().parent().next().next().next().children().val()+',';
+                });
+                data = data.substring(0,data.length-1);
+                if(data == ''){
+                    layer.msg('至少选择一项',{time:1000});
+                    return;
+                }
+                $.post(
+                    "{:U('bannerOrder')}",
+                    {data:data},
+                    function(data){
+                        if(data.status == 1){
+                            layer.msg(data.info,{icon:6,time:800},function(){
+                                window.location.reload();
+                            });
+                        }else{
+                            layer.msg(data.info,{icon:5});
+                        }
+                    }
+                );
+            });
+
+            $('.red').click(function() {
+                var id = $(this).attr('data-id');
+                layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+                    $.post(
+                        "{:U('bannerDel')}",
+                        {id: id},
+                        function (data) {
+                            if (data.status == 1) {
+                                layer.alert(data.info, {icon: 6}, function () {
+                                    window.location.reload();
+                                });
+                            } else {
+                                layer.alert(data.info, {icon: 5});
+                            }
+                        }
+                    );
+                });
+            });
+        });
+
+        function unselectall(){
+            if(document.myform.chkAll.checked){
+                document.myform.chkAll.checked = document.myform.chkAll.checked&0;
+            }
+        }
+        function CheckAll(form){
+            for (var i=0;i<form.elements.length;i++){
+                var e = form.elements[i];
+                if (e.Name != 'chkAll'&&e.disabled==false)
+                    e.checked = form.chkAll.checked;
+            }
+        }
+    </script>
+    <include file='Common:footer' />
+
+</div><!-- /.main-container -->
+</body>
+</html>

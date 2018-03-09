@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title></title>
+<include file="Common:theme"/>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+
+    <div class="wrap2">
+        <div class="w_tit"><span>归还信息</span></div>
+        <ul class="ul_jiey clearfix">
+            <li>
+                <dl class="jieyu_shu">
+                    <dt>
+                        <img src="{$circulations.book_thumb|default='Public/images/mobiles/pp.png'}" alt="" />
+                    </dt>
+                    <dd>{$circulations.book_name}</dd>
+                </dl>
+            </li>
+            <li class="li_c"></li>
+            <li>
+                <dl class="jieyu_shu">
+                    <dt class="dt_ren">
+                        <img src="{$circulations.student_avatar|default='Public/images/mobiles/tx.png'}" alt="" />
+                    </dt>
+                    <dd>
+                        {$circulations.student_name}
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="line_hr"></div>
+        <ul class="jieyu_form">
+            <input type="hidden" name="teacher_id" id="teacher_id" value="{$teacher_id}">
+            <li><input type="text" id="book_sn" value="" class="input_sn" placeholder="输入书籍编码" /></li>
+            <li class="border_b"><a href="javascript:void(0);" class="btn btn2">确认归还</a></li>
+            <li><a href="javascript:void(0);" class="btn btn3 ">扫码</a></li>
+        </ul>
+    </div> 
+      <a href="{:U('mobile.php/TIndex/index',array('teacher_id'=>$teacher_id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/mobile/layer.js"></script>
+<script type="text/javascript">
+wx.config({
+    debug: false,
+    appId: "{$signPackage['appId']}",
+    timestamp: "{$signPackage['timestamp']}",
+    nonceStr: "{$signPackage['nonceStr']}",
+    signature: "{$signPackage['signature']}",
+    jsApiList: [
+        'scanQRCode',
+        'showAllNonBaseMenuItem'
+    ]
+});
+
+$(function(){
+    $(".btn3").click(function(){
+        wx.ready(function(){
+            wx.scanQRCode({
+                needResult: 1,
+                scanType: ["qrCode","barCode"],
+                success: function (res) {
+                    var result = res.resultStr;
+                    var ret = result.split(",");
+                    //alert(result);
+                    if (res.errMsg === "scanQRCode:ok"){
+                        $("#book_sn").val(ret[1]);
+                    }
+                }
+            });
+        })
+    })
+
+    $(".btn2").click(function(){
+        var sn = $("#book_sn").val();
+        var student_id = "{$circulations['student_id']}";
+        var teacher_id = $("#teacher_id").val();
+        if(sn == '' || sn == null){
+            layer.open({
+                title:false,
+                content:'请先扫码确认书籍编码',
+                btn:['关闭'],
+                yes:function(index){
+                    layer.closeAll();
+                    location.reload();
+                },
+            });
+        }
+	
+		
+		
+        $.post("{:U('mobile.php/TBorrow/setborrow2')}",{book_sn:sn,student_id:student_id},function(result){
+            if(result == 1){
+                layer.open({
+                    title:false,
+                    content:'归还成功',
+                    btn:['关闭'],
+                    yes:function(index){
+                        layer.closeAll();
+                        location.href="mobile.php?m=mobile.php&c=TBorrow&a=index&teacher_id="+teacher_id+"&circul_status=1"
+                    },
+                });
+                
+            }else if(result == 99){
+
+                layer.open({
+                    title:false,
+                    content:'ISBN码错误，请重新扫码或输入',
+                    btn:['关闭'],
+                    yes:function(index){
+                        layer.closeAll();
+                    },
+                });
+            }else if(result == 98){
+
+                layer.open({
+                    title:false,
+                    content:'ISBN码错误，请重新扫码或输入',
+                    btn:['关闭'],
+                    yes:function(index){
+                        layer.closeAll();
+                    },
+                });
+            }
+        });
+    });
+})  
+</script>
+</body>
+</html>

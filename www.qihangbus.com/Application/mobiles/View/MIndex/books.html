@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>图书管理</title>
+    <include file="Common:theme" />
+    <script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+    <div class="wrap2">
+<!--         <div class="head-cate">
+            <ul class="ul_2">
+                <li style="width:33.33%" <eq name="t" value="1"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/MIndex/index',array('id'=>$id,'t'=>1))}">
+                        <span>轮换管理 </span>
+                    </a>
+                </li>
+                <li style="width:33.33%" <eq name="t" value="2"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/MIndex/books',array('id'=>$id,'t'=>2))}">
+                        <span>图书管理</span>
+                    </a>
+                </li>
+                <li style="width:33.33%" <eq name="t" value="3"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/MIndex/compen',array('id'=>$id,'t'=>3))}">
+                        <span>损毁管理</span>
+                    </a>
+                </li>
+            </ul>
+            </div> -->
+<!--             <div class="line_hr"></div> -->
+            <div class="address_t" style="text-align:center;">
+                <span id="month_stat" style="margin-left:20px;padding:2px 8px;color:#6cc">图书总数：{$total}本</span>
+            </div>
+            <div class="line_hr"></div>
+            <div class="head-cate">
+                <ul class="ul_3">
+                    <li style="width:25%"><span><i class="i_ic">班级</i></span></li>
+                    <li style="width:25%"><span><i class="i_ic">任课老师</i></span></li>
+                    <li style="width:25%"><span><i class="i_ic">数量</i></span></li>
+                    <li style="width:25%"><span><i class="i_ic">操作</i></span></li>
+                </ul>
+            </div>
+
+            <table class="item-table table-center">
+                <volist name="list" id="vo" empty="暂无数据">
+                <tr>
+                    <td>{$vo.class_name}</td>
+                    <td>{$vo.teacher_name}</td>
+                    <td>{$vo.total_num}</td>
+                    <td><a href="{:U('mobile.php/MIndex/book_list',array('cid'=>$vo['class_id'],'id'=>$id,'t'=>2))}" class="ibtn_1 compensate">详情</a><br>
+                    </td>
+                </tr>
+                </volist>
+            </table>    
+
+            <div class="line_hr"></div>
+            <style type="text/css">
+            .cart_pro{height:30px;line-height:30px;margin-bottom:5px;}
+            .dd_pname{padding-left:40px!important;}
+            </style>
+            <!-- <div class="head-cate" style="margin:0;height:76px;">
+                <volist name="list" id="vo" empty="暂无数据">
+                <ul class="ul_3" style="height:68px;border-bottom:1px solid #F2F2F2;padding:8px 0;">
+                    <li style="width:25%"><span style="border:none;">{$vo.class_name}</span></li>
+                    <li style="width:25%"><span style="border:none;">{$vo.teacher_name}</span></li>
+                    <li style="width:25%"><span style="border:none;">{$vo.total_num}</span></li>
+                    <li style="width:25%"><span style="border:none;">
+                        <a href="{:U('mobile.php/MIndex/book_list',array('cid'=>$vo['class_id'],'id'=>$id,'t'=>2))}" class="ibtn_1 compensate">详情</a>     
+                    </span></li>
+                </ul>
+                </volist>
+                
+            </div>         -->
+          <a href="{:U('mobile.php/MIndex/index',array('id'=>$id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+    </div>
+</body>
+</html>

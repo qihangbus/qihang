@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="effect">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="UEMO">
+    <link type="text/css" href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/css/bxslider.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/animate.min.css">
+    <link type="text/css" href="__PUBLIC__/css/stylem.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/380m.css">
+    <title>{$name}_{:C('site_title')}</title>
+</head>
+<body>
+<include file="Common:header"/>
+<div id="sitecontent" class="transform">
+    <div id="header">
+        <div id="openlc" class="fl btn">
+            <div class="lcbody">
+                <div class="lcitem top">
+                    <div class="rect top"></div>
+                </div>
+                <div class="lcitem bottom">
+                    <div class="rect bottom"></div>
+                </div>
+            </div>
+        </div>
+        <a id="logo" href="/default.php"><img src="__PUBLIC__/image/mlogo.png"/></a>
+    </div>
+    <div class="scrollView">
+        <div class="npagePage">
+            <div class="content plr10">
+                <div id="newpost">
+                    <div class="fw postbody">
+                        {$data.content}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include file="Common:footer"/>
+        <div id="bgmask" class="iPage hide"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">var YYConfig = {};</script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.bxslider.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/wow.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/masonry_4.min.js"></script>
+<script type="text/javascript">$(function () {
+    new WOW({scrollContainer: ".scrollView"}).init();
+})</script>
+<script type="text/javascript" src="__PUBLIC__/js/org.min.js" data-main="IndexMain"></script>
+</html>

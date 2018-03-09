@@ -1,0 +1,381 @@
+[ 2017-12-14T11:18:47+08:00 ] 123.151.77.71 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-12-14T11:18:48+08:00 ] 61.158.147.40 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2017-12-14T11:52:49+08:00 ] 221.13.129.100 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-12-14T11:52:49+08:00 ] 221.13.129.100 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-12-14T11:52:58+08:00 ] 120.204.17.69 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-12-14T14:04:54+08:00 ] 123.151.77.70 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-12-14T14:04:54+08:00 ] 125.43.69.136 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2017-12-14T14:07:25+08:00 ] 123.151.77.70 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-12-14T14:07:25+08:00 ] 125.43.69.136 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-12-14T14:07:42+08:00 ] 123.151.77.70 /default.php/Home/List/index/id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( id = 49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xs_article` WHERE ( columnid = 49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-12-14T14:07:47+08:00 ] 123.151.77.70 /default.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `xs_column` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 0 ) ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_column` WHERE ( column_leftid = 53 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 48 and image <> '' ) ORDER BY id desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_article` WHERE ( columnid = 49 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `content` FROM `xs_column` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2017-12-14T14:11:50+08:00 ] 223.104.105.45 /default.php/Home/BookCounter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+

@@ -1,0 +1,1 @@
+<?php return array('site_name' => '启航巴士','site_title' => '启航巴士-为您提供最优质的亲子教育服务','site_des' => '','site_keywords' => '','site_qq' => '','site_tel' => '0371-55053766','site_join' => '18538581688','site_addr' => '郑州市郑东新区商务内环与商务东三街交叉口万达期货大厦1号楼1单元1903',);

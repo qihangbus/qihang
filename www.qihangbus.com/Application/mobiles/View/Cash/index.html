@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+</head>
+<body>
+ <header class="demo-header">
+    <div class="head " data-am-widget="navbar"><span class="head_back" id="btn-back" ></span><h2 >提现</h2>
+    	<a href="{:U('mobile.php/Cash/withdraw_list',array('user_id'=>$user_id,'user_flag'=>$user_flag))}">
+    	<span class="head_tx"></span>
+    	</a>
+    </div>
+</header>
+<div class="wrap3"> 
+<div class="line_hr"></div>
+
+
+<div class="clearfix">
+<ul class="tx_step">
+	<li class="li_1"><span>提交申请</span></li>
+	<li class="li_line"><em class="em2"></em></li>
+	<li class="li_2"><span>等待付款</span></li>
+	<li class="li_line"><em></em></li>
+	<li class="li_3"><span>支付成功</span></li>
+</ul>
+</div>
+<form name="myform">
+<ul class="ul_tixian2">
+	<li class="li_text"><span>当前可提现佣金为 </span>  <b class="color2">{$money}元</b></li>
+</ul>
+<div class="line_hr"></div>
+<div class="tx_list_tit">提现账号</div>
+<div class="tx_apply">
+<input type="hidden" id="mobile" value="{$info.teacher_mobile}">	
+<input type="hidden" id="money" value="{$money}">
+<input type="hidden" id="account_type" value="1">
+<input type="hidden" id="user_id" value="{$user_id}">
+<input type="hidden" id="user_flag" value="{$user_flag}">
+<dl class="dl_tx tx_wx dl_tx_act" id="1">
+<dd class="dd_info"><p>微信支付提现（当前微信账号）</p></dd>
+</dl>
+<dl class="dl_tx tx_yin" id="2">
+<dd class="dd_info"><p>银联提现（中国银行）</p><span>{$info.bank_card}</span></dd>
+</dl></div>
+<div class="line_hr"></div>
+<ul class="ul_tixian2">	
+	<li><span class="s_label">提现金额 </span> <span class="s_input "><input type="number" id="withdraw_money" name="withdraw_money" placeholder="" maxlength="11" value="" /></span> </li>
+	<li class="li_getcode"><span class="s_label">手机验证码 </span> <span class="s_input "><input type="number" placeholder="" name="code" id="code" maxlength="6" value="" /></span> <span class="s_getcode"><em id="getcode">获取短信验证码</em></span> </li>
+</ul>
+<br><br><br>
+	<div class="btn_box btn_boxadd"><a href="javascript:void(0);" id="btn2" class="btn btn2">确认提现</a></div>
+	
+ </div>
+</form>
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/layer/layer.js"></script>
+<script type="text/javascript">
+var InterValObj;
+var count = 60;
+var curCount;
+
+$(function(){
+	$("#getcode").bind("click",function(){
+		var mobile = $('#mobile').val();
+		if(mobile == '' || mobile == null){
+			//$("#mobile").attr('placeholder','手机号码不能为空');
+		}
+
+		curCount = count;
+     	$(".s_getcode").html("<em>剩余"+curCount+"秒</em>");
+    	InterValObj = window.setInterval(SetRemainTime, 1000);
+
+		$.post("{:U('mobile.php/Cash/send_code')}",{mobile:mobile},function(result){
+			if(result > 0){
+				$("#code").focus();
+			}
+		});	
+	});
+
+	$(".tx_apply .dl_tx").bind("click",function(){
+		$(this).addClass("dl_tx_act").siblings("dl").removeClass("dl_tx_act");
+		var account_type = $(this).attr('id');
+		$("#account_type").val(account_type);
+	})	
+
+	$("#withdraw_money").bind('change',function(){
+		var wmoney = $("#withdraw_money").val();
+		var tmoney = $("#money").val();
+		if(wmoney > tmoney){
+			$("#withdraw_money").val(tmoney);
+		}
+	});
+
+	$("#btn2").bind('click',function(){
+		var money = document.getElementById("money").value;
+		var accounttype = document.getElementById("account_type").value;
+		var userid = document.getElementById("user_id").value;
+		var userflag = document.getElementById("user_flag").value;
+		var withdrawmoney = document.getElementById("withdraw_money").value;
+
+		if(withdrawmoney < 1){
+			tpsyy("可提金额不足");
+		}else{
+
+			$.post("{:U('mobile.php/Cash/add_withdraw')}",{money:money,account_type:accounttype,user_id:userid,user_flag:userflag,withdraw_money:withdrawmoney},function(result){
+				if(result > 0){
+					tpsyy("提交申请成功");
+				}else{
+					tpsyy("提交申请失败,请重试");
+				}
+			});
+		}
+	})
+})
+	
+function SetRemainTime() {
+    if (curCount == 0) {                
+        window.clearInterval(InterValObj);
+        $(".s_getcode").html('<em id="getcode">获取短信验证码</em>');
+    }else{
+        curCount--;
+        $(".s_getcode").html("<em>剩余"+curCount + "秒</em>");
+    }
+}
+ 
+function tpsyy(tt){
+	layer.msg(tt, {
+	 	time: 2000000, //20s后自动关闭
+	  	btn: ['关闭'],
+	  	yes: function(){
+		   layer.closeAll();
+		}
+	});
+}
+</script>
+</body>
+</html>

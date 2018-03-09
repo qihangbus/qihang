@@ -1,0 +1,46 @@
+<div id="leftcontrol">
+    <ul id="nav">
+        <li>
+            <div id="closelc" class="fr btn hide">
+                <div class="lcbody">
+                    <div class="lcitem top">
+                        <div class="rect top"></div>
+                    </div>
+                    <div class="lcitem bottom">
+                        <div class="rect bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="navitem active">
+            <a class="transform" href="/default.php">
+                <span class="circle transform"></span>
+                首页
+            </a>
+        </li>
+        <foreach name="column" item="v">
+            <li class="navitem">
+                <notempty name="v.submenu">
+                    <a href="javascript:;" class="hassub">
+                        <span class="circle transform"></span>
+                        {$v.name}
+                    <span class="more">
+                        <span class="h"></span>
+                        <span class="h v transform"></span>
+                    </span>
+                    </a>
+                    <ul class="subnav transform" data-height="100">
+                        <foreach name="v.submenu" item="vv">
+                            <li><a href="{:U('List/index',['id'=>$vv['id']])}"><i class="fa fa-angle-right"></i>{$vv.name}</a></li>
+                        </foreach>
+                    </ul>
+
+                    <else/>
+                    <a class="transform" href="<eq name='v.type' value='2'>{$v.jump_url}<else/>{:U('List/index',['id'=>$v['id']])}</eq>">
+                        <span class="circle transform"></span>{$v.name}
+                    </a>
+                </notempty>
+            </li>
+        </foreach>
+    </ul>
+</div>

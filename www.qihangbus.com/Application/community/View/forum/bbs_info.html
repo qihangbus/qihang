@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html data-dpr="2" style="font-size: 64.6875px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>启航巴士幼儿亲子读书计划，{$info.title}</title>
+<link href="__PUBLIC__/css/mobiles/main.min.css?v={:rand(0,100)}" rel="stylesheet">
+<link href="__PUBLIC__/css/mobiles/swiper.min.css" rel="stylesheet">
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/lib/swiper.min.js"></script>
+
+</head>
+<body>
+<div id="default-wrapper" class="default-wrapper" style="visibility: visible;">
+	<div class="default-timeline-wrapper">
+		<div class="contentArea">
+			<div id="msg-list-wrapper" class="msg-list-wrapper">
+				
+			<ul id="msgList" class="msg-wrap">
+					
+					<li class="msg j-msg">
+						<div class="po-over-test">
+							<header class="msg-infor">
+								<div class="user layout-box">
+
+									<a class="avatar" href="#" style="width:0.8rem;margin:0 0;text-align: center;">
+										<img class="avatar-img logo-w35" src="{$info.avatar|default='/Public/images/mobiles/default.png'}">
+										<span style="color: #98a1a8;font-size: .2rem;position: relative;top: -3px;">{$info.name|default='启航巴士'}</span>
+									</a>
+									<div class="msgmsg-corner-tip -con itemList box-col">
+										<a href="#" class="name ellipsis">
+											<span class="namedom">{$info.title}</span>
+										</a>
+										<div>
+											<span class="time" style="height: auto;"> {$info.add_time|date='Y-m-d H:i:s',###}</span>
+										</div>
+									</div>
+									<div class="zhanwei"></div>
+								</div>
+							</header>
+							<style>.content img{width: 100%}</style>
+							<div class="weibo-detail">
+								<div class="forum-name othercss">
+									<div class="content" style="margin-top:2px;" >
+										<span class="msg-content">{$info.content}</span>
+									</div>
+									<div style="clear: both;">
+										<volist name="list" id="vo">
+											<a href="{$vo['fp_pic']}"><img src="{$vo['fp_pic']}" style="width:33.33%;margin:0 1px 0 1px;height:90px;"></a>
+										</volist>
+									</div>
+								</div>
+							</div>
+							<footer class="user-compose" style="clear:both;">
+								<div class="tplTo"></div>
+								<ul class="count more-detail">
+									<li><if condition="$user_flag eq 4"><a href="javascript:;" class="bbs_del" id="{$info.forum_id}"><img src="__PUBLIC__/images/mobiles/del.png" style="width:0.4rem;margin-bottom:-7px;"></a></if></li>
+									<li><div class="comment-btn heig"><i class="cmt-icon iconfont"></i><span class="like-count cmt-count">{$num}</span></div></li>
+									<li><div class="like heig"><span class="like-txt  b-s-contain "></span><span class="like-count">{$info.zan}</span></div></li>
+								</ul>
+							</footer>
+						</div>
+						<div class="cmt-card none"><ul class="cmt media-main"></ul></div>
+					</li>
+					
+					<notempty name="comments">
+					<li class="j-msg">
+						<div class="po-over-test" style="margin-bottom: 60px;">
+								<div class="comments">
+									<div class="comments_sort"><span class="sequenceBtn"></span>正序</div>
+									<div class="comments-num"><span>{$num}</span>条评论</div>
+									
+								</div>
+								<foreach name="comments" item="data">
+								<div class="user layout-box" style="padding:5px 15px;border-bottom:1px solid #e9ecf1;">			
+									
+									<img class="avatar-img logo-w35" style="width:0.7rem;height:0.7rem;margin-right:0.1rem;" src="{$data.avatar|default='/Public/images/mobiles/default.png'}">
+									
+									<div class=" -con itemList box-col" style="display:inline;">
+											<font style="color:#ff964b">{$data.name}</font> <!--回复 <font style="color:#ff964b">{$data.title}</font>-->
+											<span class="namedom" style="margin:10px 0px;display:block;">{$data.content}</span>
+										
+										<div>
+												<span style="color: #98a1a8;font-size: .2rem;display: block;margin-top: 3px;overflow: hidden;">{$data.add_time|date='Y-m-d H:i',###}</span>
+											<span class="bktis" style="display:none;">版块：<a class="topic-block j-section-block ellipsis">{$info.cate_name}</a></span>
+										</div>
+									</div>
+									<div class="zhanwei"></div>
+								</div>
+								</foreach>
+							
+						</div>
+						<div class="cmt-card none"><ul class="cmt media-main"></ul></div>
+					</li>
+					</notempty>
+			</ul>	
+		</div>
+	</div>
+</div>
+</div>
+<div class="foot" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+	<a href="{:U('sns.php/Forum/bbs/',array('user_id'=>$user_id,'user_flag'=>$user_flag,'school_id'=>$school_id,'fake_id'=>$fake_id))}" class="backHome b-s-contain">
+	<span class=""></span>
+	</a>
+	<a id="showSendMsg" href="{:U('sns.php/Forum/show_comments/',array('id'=>$info['forum_id'],'user_id'=>$user_id,'user_flag'=>$user_flag,'school_id'=>$school_id,'fake_id'=>$fake_id))}" class="b-s-contain showSendMsg1">
+	<div class="comment-btn heig"><i class="cmt-icon iconfont"></i><span class="like-count cmt-count" style="font-size:15px;">评论</span></div>
+	</a>
+	
+	<a href="#" class="personal b-s-contain" style="top: 0.31rem;">
+		<span class="like-txt  b-s-contain"></span>
+	</a>
+</div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/mobile/layer.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/layer.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".bbs_del").on("click",function(){
+		layer.open({
+			title:false,
+			content:'删除当前帖子？',
+			btn:['确定','取消'],
+			yes:function(index){
+				var id = $(this).attr("id");
+		
+				$.ajax({
+					type: 'GET',
+					url: "/sns.php?m=sns.php/forum.php&c=Forum&a=forum_del&forum_id="+fid,
+					dataType: 'text',
+					success: function(data){
+						layer.open({
+							title:false,
+							content:'删除成功',
+							btn:['关闭'],
+							yes:function(index){
+								layer.closeAll();
+								location.reload();
+							},
+						});
+					},
+				});
+			},
+			btn2:function(index){
+				layer.closeAll();
+			},
+		});
+	});
+
+	$(".like-txt").click(function(){
+		var fid = "{$info.forum_id}";
+		
+		$.ajax({
+                type: 'GET',
+                url: "/sns.php?m=sns.php/forum.php&c=Forum&a=ajax_zan&forum_id="+fid,
+                dataType: 'text',
+                success: function(data){
+					layer.msg('感谢您的支持！',{icon:6,time:1000},function(){
+						location.reload();
+					});
+                },
+            });
+	});
+});	
+</script>	
+</body>
+</html>

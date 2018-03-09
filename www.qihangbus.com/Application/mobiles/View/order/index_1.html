@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>我的订单</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+<style type="text/css">
+.i_tit{background:#FFF !important;color:#333!important;}
+.i_ic {
+    padding-left: 20px!important;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap2"> 
+	<div class="head-cate">
+		<ul class="ul_3">
+			<li <if condition="$status eq 1">class="li_cur"</if>><a href="{:U('mobile.php/order/index',array('user_id'=>$user_id,'status'=>1,'user_flag'=>$user_flag))}"><span><i class="i_ic i_ic_fk">待付款</i> </span></a></li>
+			<li <if condition="$status eq 2">class="li_cur"</if>><a href="{:U('mobile.php/order/index',array('user_id'=>$user_id,'status'=>2,'user_flag'=>$user_flag))}"><span><i class="i_ic i_ic_sh">待收货</i></span></a></li>
+			<li <if condition="$status eq 99">class="li_cur"</if>><a href="{:U('mobile.php/order/index',array('user_id'=>$user_id,'status'=>99,'user_flag'=>$user_flag))}"><span><i class="i_ic i_ic_all">全部订单</i></span></a></li>
+		</ul>
+	</div>
+	
+	<div class="line_hr"></div>
+	<ul class="cart_list order_list">
+		<empty name="points_list">
+			<div class="data-empty">
+			<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+			<p>暂无数据</p>
+			</div>
+		</empty>
+		<volist name="points_list" id="vo">
+		<if condition="$vo.order_amount gt '0'">
+		<li class="li_cart" style="margin-bottom:0px;">
+			
+			
+			<div class="i_tit">下单时间 <span class="color4">{$vo.add_time|date="Y-m-d H:i:s",###}</span></div>
+			<volist name="vo.goods_list" id="gl">
+			<dl class="cart_pro" style="border-bottom: 1px solid #f2f2f2;padding:0;height:85px;">
+				
+			<dt><img src="{$gl.img_url|default='/Public/images/mobiles/nodata.png'}" alt="" /></dt>
+			
+			<dd class="dd_pname2">
+			<p><b>商品名称 </b><span class="color1">{$gl.product_name}</span></p>
+ 			<p><b>商品金额 </b><span class="s_price">{$gl.product_price}</span> 金豆</p>
+			<p style="padding-left:25%">×{$gl.num}本</p>
+			</dd>
+			
+			</dl>
+			</volist>
+			<div class="i_tit" style="margin-bottom:0px;padding-bottom:0px;">
+			订单编号 <span class="color4">{$vo.order_sn}</span>
+			<label style="display:block;">订单金额 <span class="s_price">{$vo.order_amount}</span> 元</label>
+			<label style="display:block;">订单状态 <span class="color1">{$vo.order_status_name} {$vo.shipping_status_name} {$vo.pay_status_name}</span>
+			<a href="javascript:void(0);" oid="{$vo.order_id}" class="ibtn_cancel">取消订单</a>
+			<a href="{:U('mobile.php/Order/donetwo',array('order_id'=>$vo['order_id'],'user_id'=>$user_id,'user_flag'=>$user_flag))}" class="ibtn_1">去结算</a>
+			</label>
+			
+			</div>
+			
+		</li>
+		<div class="line_hr"></div>
+		</if>
+		</volist>
+	</ul>
+
+ <a href="{$url}">
+<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+ </div>
+ <script src="__PUBLIC__/js/mobiles/layer/mobile/layer.js"></script>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.each($(".ck_list"),function(b, c) {
+		$.each($(c).find(".li_cart"),function(b2, c2) {
+			$(c2).click(function(event){
+				$(this).toggleClass("li_cart_ck");
+			});	
+		});
+	});
+
+	
+$(".ibtn_cancel").click(function(){
+		var order_id = $(this).attr("oid");
+		  layer.open({
+    		content: '您确定要取消该订单吗？'
+   			,btn: ['确定', '取消']
+    		,yes: function(index){
+    		$.post("{:U('mobile.php/Order/cancel')}",{order_id:order_id},function(result){
+    			if(result>0){
+    				location.reload();
+    			}
+    		});
+      		// location.reload();
+      		layer.close(index);
+    		}
+  		});
+	});
+})
+</script>
+</body>
+</html>

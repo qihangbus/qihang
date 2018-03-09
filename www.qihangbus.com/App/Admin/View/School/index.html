@@ -1,0 +1,363 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+
+                <div class="row maintop hidden-xs">
+                    <div class="col-xs-10">
+                        <form name="admin_list_sea" class="form-search" method="get">
+                            <div class="input-group col-xs-12">
+                                <div class="col-sm-7 col-xs-12" style="padding-left:1px;position: relative;display: table;border-collapse: separate;">
+                                    <span class="input-group-addon col-xs-1" style="border-width: 1px 1px;padding: 7px 19px 7px 6px;">
+                                                <i class="ace-icon fa fa-check"></i>
+                                    </span>
+                                    <input name="value" value="{$value}" type="text" class="admin_sea col-sm-3 col-xs-10" style="margin-right:5px" placeholder="输入学校名称">
+                                </div>
+                                <div class="col-xs-5">
+                                    <span class="input-group-btn inline">
+                                        <button type="submit" class="btn btn-xs  btn-purple">
+                                            <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                            搜索
+                                        </button>
+                                    </span>
+                                    &nbsp;
+                                    <span class="input-group-btn inline"  style="margin: 0px 48px;">
+                                        <button id="clear" type="reset" class="btn btn-xs btn-warning">
+                                            <span class="ace-icon fa fa-trash icon-on-right bigger-110"></span>
+                                            清空
+                                        </button>
+                                    </span>
+                                    &nbsp;
+                                    <span class="input-group-btn inline">
+                                        <a href="__URL__/index">
+                                            <button type="button" class="btn btn-xs  btn-purple">
+                                                <span class="ace-icon fa fa-globe icon-on-right bigger-110"></span>
+                                                显示全部
+                                            </button>
+                                        </a>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-1 hidden-xs">
+                        <div class="input-group-btn">
+                            <a href="javascript:void(0);" id="tpl-sms">
+                                <button type="button" class="btn btn-xs  btn-info">
+                                    发送模板消息
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 hidden-xs">
+                        <div class="input-group-btn">
+                            <a href="javascript:void(0);" id="send-few">
+                                <button type="button" class="btn btn-xs  btn-success">
+                                    <span class="ace-icon fa  fa-envelope-o icon-on-right bigger-110"></span>
+                                    批量发消息
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div>
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dynamic-table">
+                                <form>
+                                    <thead>
+                                    <tr>
+                                        <th width="5%" class="center hidden-xs">
+                                            <label class="pos-rel">
+                                                <input type="checkbox" class="ace"  id='chkAll' onclick='CheckAll(this.form)' value="全选"/>
+                                                <span class="lbl"> </span>
+                                            </label>
+                                        </th>
+                                        <th>名称</th>
+                                        <th>省份</th>
+                                        <th>城市</th>
+                                        <th>规模</th>
+                                        <th>注册人数</th>
+                                        <th>交费人数</th>
+                                        <th>今日交费</th>
+                                        <th class="hidden-xs">订购率</th>
+                                        <th>收费金额</th>
+                                        <th class="hidden-xs">图书损耗</th>
+                                        <th class="hidden-xs">补发目录</th>
+                                        <th class="hidden-xs">导入年级班级</th>
+                                        <th class="hidden-xs">绘本目录</th>
+                                        <th class="hidden-xs">绘本替换</th>
+                                        <th style="border-right:#CCC solid 1px;">操作</th>
+                                    </tr>
+                                    </thead>
+                                    <form>
+                                        <foreach name="data" item="v">
+                                            <tr>
+                                                <td class="center hidden-xs">
+                                                    <label class="pos-rel">
+                                                        <input name='left_id[]' class="ace"  type='checkbox' value='{$v.school_id}'>
+                                                        <span class="lbl"> </span>
+                                                    </label>
+                                                </td>
+                                                <td><a href="{:U('grade',['school_id'=>$v['school_id']])}">{$v.school_name}</a></td>
+                                                <td>{$v.province_name}</td>
+                                                <td>{$v.city_name}</td>
+                                                <td>{$v.school_num}</td>
+                                                <td>
+                                                    <eq name="v.reg_num" value="0">
+                                                        {$v.reg_num}
+                                                        <else/>
+                                                        <a href="{:U('student',['school_id'=>$v['school_id'],'type'=>1])}">
+                                                            {$v.reg_num}
+                                                        </a>
+                                                    </eq>
+                                                </td>
+                                                <td>
+                                                    <if condition="$v['pay_num'] eq 0 or $v['pay_num'] eq '等待开学'">
+                                                        {$v.pay_num}
+                                                        <else/>
+                                                        <a href="{:U('student',['school_id'=>$v['school_id'],'type'=>2])}">
+                                                            {$v.pay_num}
+                                                        </a>
+                                                    </if>
+                                                </td>
+                                                <td>{$v.pay_today}</td>
+                                                <td class="hidden-xs">{$v.pay_percent}%</td>
+                                                <td>￥{$v.fee}</td>
+                                                <td class="hidden-xs">{$v.book_lose_num}</td>
+                                                <td class="hidden-xs">
+                                                    <a href="{:U('reissue',['id'=>$v['school_id']])}">
+                                                        <button type="button" class="btn btn-minier btn-info">导出</button>
+                                                    </a>
+                                                </td>
+
+                                                <td class="hidden-xs">
+                                                    <eq name="v.import_flag" value="1">
+                                                        <button type="button" class="btn btn-minier">已导入</button>
+                                                        <else/>
+                                                        <a href="{:U('classLeadin',['id'=>$v['school_id']])}">
+                                                            <button type="button" class="btn btn-minier btn-yellow" data-id = {$v['school_id']}>导入</button>
+                                                        </a>
+                                                    </eq>
+                                                </td>
+
+                                                <td class="hidden-xs">
+                                                    <eq name="v.import_flag" value="1">
+                                                        <a href="{:U('bookList',['id'=>$v['school_id']])}">
+                                                            <button type="button" class="btn btn-minier btn-success">查看</button>
+                                                        </a>
+                                                        <else/>
+                                                        <button type="button" class="btn btn-minier btn-yellow create" data-id = {$v['school_id']}>生成</button>
+                                                    </eq>
+                                                </td>
+
+                                                <td class="hidden-xs">
+                                                    <!--
+                                                    <eq name="v.replace_status" value="1">
+                                                        <button type="button" class="btn btn-minier">已替换</button>
+                                                        <else/>
+                                                        <a href="{:U('dirReplace',['id'=>$v['school_id']])}">
+                                                            <button type="button" class="btn btn-minier btn-yellow">替换</button>
+                                                        </a>
+                                                    </eq>
+                                                    -->
+                                                    <a href="{:U('dirReplace',['id'=>$v['school_id']])}">
+                                                        <button type="button" class="btn btn-minier btn-yellow">替换</button>
+                                                    </a>
+                                                </td>
+
+                                                <td>
+                                                    <div class="action-buttons">
+                                                        <eq name="v.import_flag" value="1">
+                                                            <a class="blue hidden-xs" href="{:U('outExcel',array('id'=>$v['school_id']))}" title="导出图书">
+                                                                <i class="ace-icon fa fa-file-excel-o bigger-130"></i>
+                                                            </a>
+                                                        </eq>
+                                                        <a class="light-orange hidden-xs" href="javascript:void(0);" data-id="{$v['school_id']}" title="全园发送消息">
+                                                            <i class="ace-icon fa fa-envelope-o bigger-130"></i>
+                                                        </a>
+                                                        <a class="green" href="{:U('edit',array('id'=>$v['school_id']))}" title="编辑">
+                                                            <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                                        </a>
+                                                        <a class="red hidden-xs" href="javascript:void(0);" data-id="{$v.school_id}" title="删除">
+                                                            <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                    </form>
+                                    <tr>
+                                        <td colspan="1" align="left" class="center hidden-xs"><button  id="btnsubmit" class="btn btn-white btn-yellow btn-sm">删</button></td>
+                                        <td height="50" colspan="16" align="left">{$page}</td>
+                                    </tr>
+                                    </tbody>
+                                </form>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <include file='Common:header_nav' />
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    <include file='Common:footer' />
+</div><!-- /.main-container -->
+<link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css">
+<script src="__PUBLIC__/assets/js/date-time/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/layer/plugin/layer.js"></script>
+<style>
+    .input-daterange input{ text-align:left; }
+</style>
+</body>
+<script type="text/javascript">
+    jQuery(function($) {
+        $('.input-daterange').datepicker({autoclose: true});
+    });
+
+    $("#btnsubmit").click(function(){
+        layer.confirm('你确定要删除吗？', {icon: 3}, function(index){
+            layer.close(index);
+            var ids='';
+            $("input[name='left_id[]']:checkbox:checked").each(function() {
+                ids += $(this).val() + ',';
+            });
+            ids = ids.substring(0,ids.length-1);
+            if(ids == ''){
+                layer.msg('至少选择一项!',{time:1000});
+                return;
+            }
+            $.post(
+                    "{:U('delFew')}",
+                    {ids:ids},
+                    function(data){
+                        if(data.status == 1){
+                            layer.msg(data.info,{icon:6,time:800},function(){
+                                window.location.reload();
+                            });
+                        }else{
+                            layer.msg(data.info,{icon:5});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('.red').click(function(){
+        var id = $(this).attr('data-id');
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            $.post(
+                    "{:U('del')}",
+                    {id: id},
+                    function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.info, {icon: 6,time:1000}, function () {
+                                window.location.reload();
+                            });
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('.light-orange').click(function(){
+        var id = $(this).attr('data-id');
+        layer.prompt({
+            formType: 2,
+            title: '全园发送消息'
+        }, function(value, index, elem){
+            $.post(
+                    "{:U('sendMes')}",
+                    {id:id,message:value},
+                    function(data){
+                        layer.close(index);
+                        if (data.status == 1) {
+                            layer.msg(data.info, {icon: 6,time:1000});
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('#send-few').click(function(){
+        layer.prompt({
+            formType: 2,
+            title: '批量全园发送消息'
+        }, function(value, index, elem){
+            $.post(
+                    "{:U('sendFewMes')}",
+                    {message:value},
+                    function(data){
+                        layer.close(index);
+                        if (data.status == 1) {
+                            layer.msg(data.info, {icon: 6,time:1000});
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    }
+            );
+        });
+    });
+
+    //生成目录
+    $('.create').click(function(){
+        var id = $(this).attr('data-id');
+        var load = layer.load(2);
+        $.post(
+                "{:U('createDir')}",
+                {id:id},
+                function(data){
+                    layer.close(load);
+                    if(data.status == 1){
+                        layer.msg(data.info,{icon:6,time:1000});
+                        location.href = location.href;
+                    }else{
+                        layer.msg(data.info,{icon:5,time:1000});
+                    }
+                }
+        );
+    });
+
+    function unselectall(){
+        if(document.myform.chkAll.checked){
+            document.myform.chkAll.checked = document.myform.chkAll.checked&0;
+        }
+    }
+    function CheckAll(form){
+        for (var i=0;i<form.elements.length;i++){
+            var e = form.elements[i];
+            if (e.Name != 'chkAll'&&e.disabled==false)
+                e.checked = form.chkAll.checked;
+        }
+    }
+
+    $('#tpl-sms').click(function(){
+        var ids='';
+        $("input[name='left_id[]']:checkbox:checked").each(function() {
+            ids += $(this).val() + ',';
+        });
+        ids = ids.substring(0,ids.length-1);
+        if(ids == ''){
+            layer.msg('至少选择一项',{icon:5,time:3000});
+            return false;
+        }
+        location.href="/default.php/Admin/School/sendTplSms/ids/"+ids;
+    });
+</script>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>管理员信息_{:L('_WEBSITE_NAME_')}</title>
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="__PUBLIC__/js/data-tables/DT_bootstrap.css" />
+
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="./"><img src="__PUBLIC__/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="./"><img src="__PUBLIC__/images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="__PUBLIC__/images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">John Doe</a></h4>
+                        <span>"Hello There..."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                </ul>
+            </div>
+
+            <include file="common:menu"/>
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <include file="common:header"/>
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                管理员列表
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">后台首页</a>
+                </li>
+                <li>
+                    <a href="#">系统设置</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <style type="text/css">
+            .col-lg-4{color:#65cea7}
+            .col-lg-4 label{color:#cccccc}
+        </style>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        
+                        <header class="panel-heading">
+                            管理员列表
+                            <span class="pull-right">
+                                <a href="javascript:void(0);" class="btn disabled">管理员管理</a>
+                                <a href="{:U('/Administrator/add')}" class="btn btn-primary">添加管理员</a>
+                             </span>
+                        </header>
+                        <div class="panel-body">
+                            <form class="form-horizontal adminex-form" method="get">
+                                <div class="adv-table">
+                                    <table  class="display table table-bordered table-striped" id="dynamic-table">
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-1">序号</th>
+                                            <th class="col-lg-1">用户名</th>
+                                            <th class="col-lg-2">所属角色</th>
+                                            <th class="col-lg-2">登录IP</th>
+                                            <th class="col-lg-1">登录时间</th>
+                                            <th class="col-lg-2">真实姓名</th>
+                                            <th class="col-lg-1">联系方式</th>
+                                            <th class="col-lg-2">管理操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <volist name="list" id="vo" key="k">
+                                            <tr>
+                                            <td>{$vo['uid']}</td>
+                                            <td>{$vo['username']}</td>
+                                            <td>{$vo['role_name']}</td>
+                                            <td><if condition="$vo['login_ip'] neq ''">{$vo['login_ip']}</if></td>
+                                            <td><if condition="$vo['login_time'] gt 0">{$vo['login_time']|date='Y-m-d',###}</if></td>
+                                            <td>{$vo['nickname']}</td>
+                                            <td>{$vo['user_mobile']}</td>
+                                            <td>
+                                                <a href='{:U("/Administrator/edit/id/$vo[uid]")}' class="edit">修改</a> |
+                                                <if condition="$vo['role_id'] eq 1">
+                                                    <label class="delete">删除</label>
+                                                    <else/>
+                                                    <a href="javascript:confirmurl('{:U("/Administrator/del",array('id'=>$vo['uid']))}', '是否删除?')" class="delete">删除</a>
+                                                </if>
+                                            </td>
+                                            </tr>
+                                        </volist>
+                                    </table>
+                                    {$page}
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+        <include file="common:footer"/>
+    </div>
+    <!-- main content end-->
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__PUBLIC__/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery.nicescroll.js"></script>
+<!--easy pie chart-->
+<script src="__PUBLIC__/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="__PUBLIC__/js/easypiechart/easypiechart-init.js"></script>
+<!--Sparkline Chart-->
+<script src="__PUBLIC__/js/sparkline/jquery.sparkline.js"></script>
+<script src="__PUBLIC__/js/sparkline/sparkline-init.js"></script>
+<!--icheck -->
+<script src="__PUBLIC__/js/iCheck/jquery.icheck.js"></script>
+<script src="__PUBLIC__/js/icheck-init.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.resize.js"></script>
+<!--Morris Chart-->
+<script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+<!--Calendar-->
+<script src="__PUBLIC__/js/calendar/clndr.js"></script>
+<script src="__PUBLIC__/js/calendar/evnt.calendar.init.js"></script>
+<script src="__PUBLIC__/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<!--common scripts for all pages-->
+<script src="__PUBLIC__/js/scripts.js"></script>
+<!--Dashboard Charts-->
+<script src="__PUBLIC__/js/dashboard-chart-init.js"></script>
+</body>
+</html>

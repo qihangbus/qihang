@@ -1,0 +1,129 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="keywords" content="#">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="#">
+    <title><?php echo ($name); ?>小朋友的今日读书分享</title>
+    <link rel="stylesheet" href="/Public/2017/css/share1.css">
+    <link rel="stylesheet" href="/Public/2017/css/share2.css" type="text/css" />
+    <style>
+        .w_320 .animated img{margin-top:25px;width:95%;}
+    </style>
+    <style>
+        #shareit {
+            -webkit-user-select: none;
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            text-align: center;
+            top: 0;
+            left: 0;
+            z-index: 105;
+        }
+        #shareit img {
+            max-width: 95%;
+        }
+        .arrow {
+            position: absolute;
+            right: 10%;
+            top: 5%;
+        }
+        #share-text {
+            margin-top: 400px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="main">
+
+    <div class="header wow bounceInRight"  data-wow-duration="1.5s" >
+        <a href="#" target="_blank"><img src="/Public/2017/image/banner.jpg"/></a>
+    </div>
+    <div class="w_320" >
+        <div class="nr_left wow rollIn"  data-wow-duration="1.5s">
+            <b><?php echo ($book1["book_name"]); ?></b></br>
+            <?php echo ($book1["book_desc"]); ?>
+        </div>
+        <div class="nr_right wow bounceInRight" style="text-align: right" data-wow-duration="1.5s">
+            <img src="<?php echo ($book1["book_img"]); ?>">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="w_xx wow flipInX"   data-wow-duration="1.5s">
+        <img src="/Public/2017/image/w_xx.jpg">
+    </div>
+    <?php if(!empty($book2)): ?><div class="w_320">
+        <div class="nr_right wow bounceInDown" style="text-align: left" data-wow-duration="1.5s">
+            <img src="<?php echo ($book2["book_img"]); ?>">
+        </div>
+
+        <div class="nr_left wow bounceInRight"  data-wow-duration="1.5s">
+            <b><?php echo ($book2["book_name"]); ?></b></br>
+            <?php echo ($book2["book_desc"]); ?>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="w_xx wow flipInX"  data-wow-duration="1.5s">
+        <img  src="/Public/2017/image/w_yy.jpg">
+    </div><?php endif; ?>
+    <div class="w_320" >
+        <div class="nr_left wow bounceInDown"  data-wow-duration="1.5s">
+            <b><?php echo ($name); ?>小朋友的今日读书分享</b></br>
+            <?php echo ($data["content"]); ?>
+        </div>
+        <div class="nr_right wow bounceInRight"  data-wow-duration="1.5s">
+            <img src="<?php echo ((isset($data["image"]) && ($data["image"] !== ""))?($data["image"]):'/Public/images/mobiles/default.png'); ?>">
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="shareit">
+    <img class="arrow" src="/Public/2017/image/share-it.png">
+    <a href="#" id="follow">
+        <img id="share-text" src="/Public/2017/image/share-text.png">
+    </a>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="/Public/2017/js/wow.js"></script>
+<script type="text/javascript" src="/Public/2017/js/jquery-1.8.3.min.js"></script>
+<script>
+    $(function(){
+        $("#hed").click(function(){
+            //$(".nav_list").addClass("show ");
+            $(".nav_list").animate({right:0},500);
+        })
+        $(".close").click(function(){
+// $(".nav_list").removeClass("show")
+            $(".nav_list").animate({right:"-40%"},200);
+        })
+    })
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+    $(function(){
+
+        $("#shareit").on("click", function(){
+            $("#shareit").hide();
+        });
+    });
+    var num=0;
+    $(window).scroll(function(){
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+        if(scrollTop + windowHeight == scrollHeight){
+            if(num == 0){
+                $("#shareit").show();
+                num++;
+            }
+
+        }
+    });
+</script>

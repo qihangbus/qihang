@@ -1,0 +1,78 @@
+<include file='Common:header'/>
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left'/>
+
+
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+
+
+                <!--主题-->
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            导入客户
+                        </small>
+                    </h1>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="load">
+                            <div class="col-sm-8" style="margin-left: 5%">
+                                <h5 class="header blue lighter smaller">
+                                    <i class="ace-icon fa fa-spinner"></i>
+                                    <span class="pMsg">执行中</span>
+                                </h5>
+
+                                <div id="progressbar"
+                                     class="ui-progressbar ui-widget ui-widget-content ui-corner-all progress progress-striped active"
+                                     role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1">
+                                    <div class="ui-progressbar-value ui-widget-header ui-corner-left progress-bar progress-bar-success"
+                                         style="width: 0%;"></div>
+                                </div>
+                            </div><!-- ./col -->
+                        </div>
+                        <div class="space-4"></div>
+
+                    </div>
+                </div>
+                <div class="hr hr-24"></div>
+
+                <include file='Common:header_nav'/>
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+    <include file='Common:footer'/>
+
+</div><!-- /.main-container -->
+</body>
+<script src="/Public/assets/js/bootstrap.js"></script>
+<script src="/Public/assets/js/ace.js"></script>
+<script src="/Public/assets/js/ace-elements.js"></script>
+<script>
+    function updateProgress(pMsg, pWidth) {
+        $('.pMsg').html(pMsg);
+        $('.progress-bar-success').css('width', pWidth);
+
+    }
+    function success() {
+        $('.fa-spinner').attr('class', 'ace-icon fa fa-check');
+    }
+    function error(){
+        $('.fa-spinner').attr('class', 'ace-icon fa fa-close');
+    }
+</script>
+</html>

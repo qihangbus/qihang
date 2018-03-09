@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>借阅</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+</head>
+<body>
+
+<div class="wrap2"> 
+  <ul class="cart_list order_list">
+
+	<li class="li_cart">
+	<div class="i_tit">当前阅读</div>
+	<dl class="cart_pro">
+		<if condition="$now_info.book_name neq ''">
+		<dt><img src="{$now_info.book_thumb}" alt="" /></dt>
+		<dd class="dd_pname2">
+		<p><b>绘本名称 </b>{$now_info.book_name}</p>
+		<p><b>借阅时间 </b>{$now_info.add_time|date="Y-m-d H:i:s",###}</p>
+		<p><b>归还时间 </b>{$now_info.return_time} 17:00:00</p>
+		</dd>
+		</if>
+	</dl>
+	</li>
+
+	<li class="li_cart">
+	<div class="i_tit">即将阅读</div>
+		<if condition="$next_info.book_name neq ''">
+		<dl class="cart_pro">
+		<dt><img src="{$next_info.book_thumb}" alt="" /></dt>
+		<dd class="dd_pname2">
+		<p><b>绘本名称 </b>{$next_info.book_name}</p>
+		<p><b>借阅时间 </b>{$next_info.add_time|date="Y-m-d H:i:s",###}</p>
+		<p><b>归还时间 </b>{$next_info.return_time} 17:00:00</p>
+		</dd>
+		</if>
+	</dl>
+<div class="i_btn"><a href="{:U('mobile.php/Borrowtoread/info',array('book_id'=>$next_info['book_id'],'student_id'=>$student_id,'user_flag'=>$user_flag))}" class="ibtn_1">绘本介绍</a><a href="javascript:void(0);" id="refresh" bid="{$next_info.book_id}" sid="{$student_id}" class="ibtn_1">换一下(<label id="book_rank_num">{$book_rand_num}</label>)</a></div>
+	</li>
+</ul>
+</div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/layer.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#refresh").click(function(){
+		var bid = $(this).attr('bid');
+		var sid = $(this).attr('sid');
+		var num = $("#book_rank_num").text();
+		if(num >= 0){
+			$.post("{:U('mobile.php/Borrowtoread/refresh')}",{book_id:bid,student_id:sid,num:num},function(result){
+				if(result >= 0){
+					$("#book_rank_num").html(result);
+				}
+			});	
+		}else{
+			layer.msg('每天可以更换3次图书', {
+			 	time: 2000000, //20s后自动关闭
+			  	btn: ['关闭'],
+			  	yes: function(){
+				   layer.closeAll();
+				}
+			});
+		}
+	});
+})
+</script>
+</body>
+</html>

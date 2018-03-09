@@ -1,0 +1,346 @@
+<include file='Common:header' xmlns="http://www.w3.org/1999/html"/>
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+	<!-- #section:basics/sidebar -->
+
+	<include file='Common:left' />
+
+
+	<!-- /section:basics/sidebar -->
+	<div class="main-content">
+		<div class="main-content-inner">
+			<div class="page-content">
+
+				<!--主题-->
+				<div class="page-header">
+					<h1>
+						您当前操作
+						<small>
+							<i class="ace-icon fa fa-angle-double-right"></i>
+							添加图书
+						</small>
+					</h1>
+				</div>
+
+
+				<div class="row">
+					<div class="col-xs-12">
+						<form class="form-horizontal" name="book-add" id="book-add" method="post">
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 名称：  </label>
+								<div class="col-sm-10">
+									<input type="text" name="book_name" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 作者：  </label>
+								<div class="col-sm-10">
+									<input type="text" name="book_author" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2  control-label no-padding-right"> 作者简介： </label>
+								<div class="col-sm-10">
+									<textarea class="col-sm-6" rows="3" name="author_desc" placeholder="50字以内" class="col-xs-10 col-sm-10" maxlength="50"/></textarea>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2  control-label no-padding-right" > 缩略图： </label>
+								<div class="col-sm-10" style="width:400px; margin:12px;">
+									<div class="clearfix">
+										<input id="slt" type="file" name="image_upload" multiple/>
+									</div>
+									<div class="help-block"></div>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 市场价：  </label>
+								<div class="col-sm-10">
+									<input type="number" name="market_price" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 本店价：  </label>
+								<div class="col-sm-10">
+									<input type="number" name="shop_price" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 促销价：  </label>
+								<div class="col-sm-10">
+									<input type="number" name="promotion_price" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 金豆价：  </label>
+								<div class="col-sm-10">
+									<input type="number" name="points_price" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 系列：  </label>
+								<div class="col-sm-10">
+									<input type="text" name="sub_name" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 奖项：  </label>
+								<div class="col-sm-10">
+									<input type="text" name="prize" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 出版社：  </label>
+								<div class="col-sm-10">
+									<input type="text" name="press" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> ISBN：  </label>
+								<div class="col-sm-10">
+									<input type="number" name="book_isbn" class="col-xs-10 col-sm-6"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 排序：  </label>
+								<div class="col-sm-10">
+									<input type="number" name="sort" class="col-xs-10 col-sm-3"/>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label no-padding-right"> 适合年级： </label>
+								<div class="col-sm-10">
+									<select name="class"  class="col-sm-3 " >
+										<option value="">请选择适合年级</option>
+										<option value="class_2">小班 </option>
+										<option value="class_3">中班 </option>
+										<option value="class_4">大班 </option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-2  control-label no-padding-right"> 图书简介： </label>
+								<div class="col-sm-10">
+									<textarea class="col-sm-6" rows="3" name="book_desc" placeholder="300字以内" class="col-xs-10 col-sm-10" maxlength="300"/></textarea>
+								</div>
+							</div>
+							<div class="space-4"></div>
+
+							<div class="form-group">
+
+								<label class="col-sm-2 control-label no-padding-right"> 内容： </label>
+
+								<div class="col-sm-10">
+									<link href="__PUBLIC__/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet">
+									<script src="__PUBLIC__/umeditor/umeditor.config.js"></script>
+									<script src="__PUBLIC__/umeditor/umeditor.min.js"></script>
+									<script>
+										$(function(){
+											//载入在线编辑器
+											UM.getEditor("myEditor",{
+												"imageUrl":"{:U('uploadImage')}", //图片上传提交地址
+												"imagePath":"/Uploads/" //图片显示地址
+											});
+										});
+									</script>
+
+									<script type="text/plain" id="myEditor" style="width:700px;height:500px;" name="contents"></script>
+
+
+								</div>
+
+							</div>
+							<div class="space-4"></div>
+
+							<div class="clearfix form-actions">
+								<div class="col-md-offset-3 col-md-9">
+									<button class="btn btn-info" type="submit">
+										<i class="ace-icon fa fa-check bigger-110"></i>
+										保存
+									</button>
+
+									&nbsp; &nbsp; &nbsp;
+									<button class="btn" type="reset">
+										<i class="ace-icon fa fa-undo bigger-110"></i>
+										重置
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="hr hr-24"></div>
+
+				<include file='Common:header_nav' />
+
+			</div><!-- /.page-content -->
+		</div>
+	</div><!-- /.main-content -->
+
+	<include file='Common:footer' />
+
+</div><!-- /.main-container -->
+<script src="__PUBLIC__/assets/js/bootstrap.js"></script>
+<script src="__PUBLIC__/assets/js/ace.js"></script>
+<script src="__PUBLIC__/assets/js/ace-elements.js"></script>
+<script type="text/javascript">
+	jQuery(function($) {
+		var file_input = $('#slt');
+		var upload_in_progress = false;
+
+		file_input.ace_file_input({
+			style : 'well',
+			btn_choose : '点击或拖拽到这',
+			btn_change: null,
+			droppable: true,
+			thumbnail: 'large',
+
+			maxSize: 4096000,//bytes
+			allowExt: ["jpeg", "jpg", "png", "gif"],
+			allowMime: ["image/jpg", "image/jpeg", "image/png", "image/gif"],
+
+			before_remove: function() {
+				if(upload_in_progress)
+					return false;//if we are in the middle of uploading a file, don't allow resetting file input
+				return true;
+			},
+
+			preview_error: function(filename , code) {
+				//code = 1 means file load error
+				//code = 2 image load error (possibly file is not an image)
+				//code = 3 preview failed
+			}
+		})
+		file_input.on('file.error.ace', function(ev, info) {
+			if(info.error_count['ext'] || info.error_count['mime']) layer.alert('文件类型错误! 请选择一个图片!',{icon:5});
+			if(info.error_count['size']) layer.alert('文件大小错误! 最大 4M',{icon:5});
+		});
+	});
+	//编辑缩略图
+	$('.profile-picture').click(function(){
+		$(this).parent().remove();
+	});
+</script>
+<script src="__PUBLIC__/assets/js/jquery.validate.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$("form[name='book-add']").validate({
+			//debug: 'true',
+			errorElement: 'span',
+			errorClass: 'help-inline middle col-sm-5',
+			focusInvalid: true,
+			rules: {
+				book_name: {required:true},
+				book_author: {required:true},
+				image_upload: {required:true},
+				market_price: {required:true},
+				shop_price: {required:true},
+				promotion_price: {required:true},
+				points_price: {required:true},
+				press: {required:true},
+				book_isbn: {required:true},
+				columnid: {required:true},
+				class: {required:true},
+			},
+
+			messages: {
+				book_name: "请填写名称",
+				book_author: "请输入作者",
+				image_upload: "请选择缩略图",
+				market_price: "请输入市场价",
+				shop_price: "请输入本店价",
+				promotion_price: "请输入促销价",
+				points_price: "请输入金豆价",
+				press: "请输入出版社",
+				book_isbn: "请输入isbn编码",
+				columnid: "请选择年级",
+				class: "请选择班级",
+			},
+
+			highlight: function (e) {
+				$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+			},
+
+			success: function (e) {
+				$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+				$(e).remove();
+			},
+
+			errorPlacement: function (error, element) {
+				if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+					var controls = element.closest('div[class*="col-"]');
+					if(controls.find(':checkbox,:radio').length > 1)
+						controls.append(error);
+					else
+						error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+				}else
+					error.insertAfter(element);
+			},
+
+			submitHandler: function (form) {
+				$(form).ajaxSubmit({
+					beforeSubmit: function(){
+						wait = layer.load(2);
+					},
+					success: function(data){
+						layer.close(wait);
+						if(data.status==1){
+							layer.msg(data.info, {icon:6,time:1000}, function(index){
+								layer.close(index);
+								window.location.href=data.url;
+							});
+						}else{
+							layer.msg(data.info, {time:800}, function(index){
+								layer.close(index);
+							});
+							return false;
+						}
+					},
+					error: function showError(responseText, statusText){
+						layer.close(wait);
+						if(statusText=='timeout'){
+							layer.msg("服务器繁忙，请稍后再试！", {time:1000});
+							return;
+						}else{
+							layer.msg(statusText,{time:1000});
+						}
+					},
+					timeout: 5000,
+					dataType: 'json'
+				});
+			},
+		});
+	});
+</script>
+</body>
+</html>

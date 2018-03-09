@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="effect">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="UEMO">
+    <link type="text/css" href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/css/bxslider.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/animate.min.css">
+    <link type="text/css" href="__PUBLIC__/css/stylem.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/380m.css">
+    <title>{:C('site_title')}</title>
+</head>
+<body>
+<include file="Common:header"/>
+<div id="sitecontent" class="transform">
+    <div id="header">
+        <div id="openlc" class="fl btn">
+            <div class="lcbody">
+                <div class="lcitem top">
+                    <div class="rect top"></div>
+                </div>
+                <div class="lcitem bottom">
+                    <div class="rect bottom"></div>
+                </div>
+            </div>
+        </div>
+        <a id="logo" href="/default.php"><img src="__PUBLIC__/image/mlogo.png"/></a>
+    </div>
+    <div class="scrollView">
+        <div id="indexPage">
+            <div id="mslider">
+                <ul class="slider">
+                    <foreach name="banner" item="v">
+                    <li style="background-image:url({$v.image})">
+                        <a href="{$v.url}">
+                            <div><p class="title ellipsis">{$v.name}</p></div>
+                        </a>
+                    </li>
+                    </foreach>
+                </ul>
+            </div>
+            <div id="mproject" class="module">
+                <div class="content">
+                    <div class="header">
+                        <p class="title">启航动态</p>
+                        <p class="subtitle">Company dynamics</p>
+                    </div>
+                    <div id="projectlist">
+                        <div class="wrapper plr5">
+                            <foreach name="company_news" item="v">
+                            <div class="projectitem wow fadeIn">
+                                <a href="{:U('List/view',['id'=>$v['id']])}">
+                                    <img src="{$v.image}" width="500" height="320"/>
+                                    <div class="project_info">
+                                        <div>
+                                            <p class="title">{$v.title}</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </foreach>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="{:U('List/index',['id'=>48])}" id="projectmore">MORE</a></div>
+            </div>
+            <div id="mnews" class="module">
+                <div class="content">
+                    <div class="header">
+                        <p class="title">行业资讯</p>
+                        <p class="subtitle">Industry news</p>
+                    </div>
+                    <div id="newslist">
+                        <foreach name="industry_news" item="v">
+                        <div class="newstitem plr10 wow fadeIn" data-wow-delay="0.0s">
+                            <a class="newsinfo" href="{:U('List/view',['id'=>$v['id']])}">
+                                <div class="newsdate">
+                                    <p class="md">{$v.addtime|date='m-d',###}</p>
+                                    <p class="year">{$v.addtime|date='Y',###}</p>
+                                </div>
+                                <div class="newsbody">
+                                    <p class="title ellipsis">{$v.title}</p>
+                                    <p class="description">
+                                        {$v.description}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        </foreach>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="{:U('List/index',['id'=>49])}" class="more">MORE</a>
+                    <div style="height:0">&nbsp;</div>
+                </div>
+            </div>
+            <div id="mpage" class="module">
+                <div class="content">
+                    <div class="plr10">
+                        <div class="header">
+                            <p class="title">关于我们</p>
+                            <p class="subtitle">About US</p>
+                        </div>
+                        <div class="description">
+                            {$about}
+                        </div>
+                    </div>
+                    <a href="{:U('List/index',['id'=>56])}" class="more">MORE</a>
+                    <div class="fimg wow fadeIn" style="background-image:url()"></div>
+                    <div style="height:0">&nbsp;</div>
+                </div>
+            </div>
+            <div id="mcontact" class="module">
+                <div class="content plr10 wow fadeIn">
+                    <div class="header">
+                        <p class="title">招商加盟</p>
+                        <p class="subtitle">JOIN US</p>
+                    </div>
+                    <div id="contactlist">
+                        <div id="contactinfo">
+                            <h3 class="ellipsis">{:C('site_name')}</h3>
+                            <p class="ellipsis">客服电话：<a href="tel:{:C('site_tel')}">{:C('site_tel')}</a></p>
+                            <p class="ellipsis">加盟专线：<a href="tel:{:C('site_join')}">{:C('site_join')}</a></p>
+                            <p class="" style="text-overflow: ellipsis;display: inline-block;max-width: 100%;">地点：{:C('site_addr')}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include file="Common:footer"/>
+        <div id="bgmask" class="iPage hide"></div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">var YYConfig = {};</script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.bxslider.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/wow.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/masonry_4.min.js"></script>
+<script type="text/javascript">$(function () {
+    new WOW({scrollContainer: ".scrollView"}).init();
+})</script>
+<script type="text/javascript" src="__PUBLIC__/js/org.min.js" data-main="IndexMain"></script>
+</html>

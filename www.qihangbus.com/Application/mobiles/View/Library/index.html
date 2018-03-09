@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>图书馆</title>
+    <include file="Common:theme" />
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+    <script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+    <script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+
+</head>
+<body>
+    <div class="wrap2">
+
+        <div id="div1" style="">
+            <div id="myChart" style="height:250px;width:65%;margin:0 auto;"></div>
+        </div>
+
+        <style type="text/css">
+        .cart_pro{height:30px;line-height:30px;margin-bottom:5px;}
+        .dd_pname{padding-left:10px!important;}
+        </style>
+
+        <ul class="cart_list order_list">
+                <li class="li_cart">
+                    <dl class="cart_pro">
+                    <dd class="dd_pname">{$name}合计：{$total}本</dd>
+                    </dl>
+                    <dl class="cart_pro">
+                    <dd class="dd_pname"><span style="background-color:#6a8bc0;width:20px;height:20px;display:block;float:left;margin-top:5px;margin-right:5px;"></span>情商培养类：{$total_1}本 <a style="float:right;margin-right:10px;color:#6a8bc0;" href="{:U('mobile.php/Library/detail',array('id'=>$id,'cid'=>1))}">查看详情</a></dd>
+                    </dl>
+                    <dl class="cart_pro">
+                    <dd class="dd_pname"><span style="background-color:#5ab6df;width:20px;height:20px;display:block;float:left;margin-top:5px;margin-right:5px;"></span>好习惯养成类：{$total_2}本 <a style="float:right;margin-right:10px;color:#5ab6df;" href="{:U('mobile.php/Library/detail',array('id'=>$id,'cid'=>2))}" >查看详情</a></dd>
+                    </dl>
+                    <dl class="cart_pro">
+                    <dd class="dd_pname"><span style="background-color:#fe8676;width:20px;height:20px;display:block;float:left;margin-top:5px;margin-right:5px;"></span>科普益智类：{$total_3}本 <a style="float:right;margin-right:10px;color:#fe8676;" href="{:U('mobile.php/Library/detail',array('id'=>$id,'cid'=>3))}">查看详情</a></dd>
+                    </dl>
+                    <dl class="cart_pro">
+                    <dd class="dd_pname"><span style="background-color:#f46a50;width:20px;height:20px;display:block;float:left;margin-top:5px;margin-right:5px;"></span>成长故事类：{$total_4}本 <a style="float:right;margin-right:10px;color:#f46a50;" href="{:U('mobile.php/Library/detail',array('id'=>$id,'cid'=>4))}">查看详情</a></dd>
+                    </dl>
+                    <dl class="cart_pro">
+                    <dd class="dd_pname"><span style="background-color:#bf8cc4;width:20px;height:20px;display:block;float:left;margin-top:5px;margin-right:5px;"></span>其他类：{$total_5}本 <a style="float:right;margin-right:10px;color:#bf8cc4;" href="{:U('mobile.php/Library/detail',array('id'=>$id,'cid'=>5))}">查看详情</a></dd>
+                    </dl>
+                </li>
+             
+        </ul>
+          <a href="{:U('mobile.php/SIndex/Index',array('id'=>$id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+</div>
+<script type="text/javascript">
+Morris.Donut({
+    element: 'myChart',
+    resize:true,
+    data: [
+        {value: {$total_1}, label: '情商培养类', formatted: '{$total_1_per}' },
+        {value: {$total_2}, label: '好习惯养成类', formatted: '{$total_2_per}' },
+        {value: {$total_3}, label: '科普益智类', formatted: '{$total_3_per}' },
+        {value: {$total_4}, label: '成长故事类', formatted: '{$total_4_per}' },
+        {value: {$total_5}, label: '其他类', formatted: '{$total_5_per}' }
+    ],
+    backgroundColor: false,
+    labelColor: '#000',
+    colors: [
+        '#6a8bc0','#5ab6df','#fe8676','#f46a50','#bf8cc4'
+    ],
+    formatter: function (x, data) { return data.formatted; }
+});
+</script>    
+</body>
+</html>

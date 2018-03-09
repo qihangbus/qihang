@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 引入 ECharts 文件 -->
+ <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+</head>
+
+<body>
+{$data}
+<input type="button" value="button" onclick="clicks();"/>
+	<div id="main" style="width:600px;height:400px;"></div>
+	<script type="text/javascript">
+		window.onload = function(){
+			addItems();
+		};
+		
+		function addItems(){
+			//var str = {$data};
+			
+			/*$.each(str, function() {
+				console.log(this.name);
+			});*/
+		}
+
+
+
+		var myChart = echarts.init(document.getElementById('main'));
+		
+		$.get("{:U('school.php/Test/ajax_charts')}", function(data){ 	
+			    myChart.setOption({
+			        title: {
+			            text: '异步数据加载示例'
+			        },
+			        tooltip: {},
+			        legend: {
+			            data:['销量']
+			        },
+			        xAxis: {
+			            data: data.name
+			        },
+			        yAxis: {},
+			        series: [{
+			            name: '销量',
+			            type: 'bar',
+			            data: data.value
+			        }]
+			    });
+			},'json');
+	
+	/* function clicks(){
+			var strJSON = {$data};
+			var obj = new Function("return"+strJSON)();
+			console.log(obj.name);
+		} */
+	
+		/* function clicks(){
+			var strJSON = {$data};
+			//var jsonS = strJSON
+			var obj = eval("("+strJSON+")");
+			console.log(obj.count);
+		}  */
+       
+       /* function clicks(){
+    	   var strJSON = {$data};//得到的JSON
+    	   for(var i=0;i<strJSON.length;i++){
+    		   //console.log(strJSON[i]);
+    		   var jobj = strJSON[i];
+    		   
+    		   console.log(jobj);
+    		   
+    		   for(var key in jobj){
+    			   //console.log(key+jobj[key]);
+    			   //console.log(key);
+    			   //console.log("name--"+jobj[key]);
+    		   }
+    	   }
+       } */
+    </script>
+	
+</body>
+
+</html>

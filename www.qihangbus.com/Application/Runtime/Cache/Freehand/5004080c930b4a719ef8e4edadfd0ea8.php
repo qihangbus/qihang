@@ -1,0 +1,591 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!-- saved from url=(0048)http://mp.weixin.qq.com/s/L6uNo4pYk1GVHSP2-aPemw -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+
+        <title>启航巴士丨产品介绍 &amp; <?php echo ($title); ?></title>
+        
+<style>
+html {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	line-height:1.6
+}
+body {
+	-webkit-touch-callout:none;
+	font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+	background-color:#f3f3f3;
+	line-height:inherit
+}
+body.rich_media_empty_extra {
+	background-color:#fff
+}
+body.rich_media_empty_extra .rich_media_area_primary:before {
+	display:none
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight:400;
+	font-size:16px
+}
+* {
+	margin:0;
+	padding:0
+}
+a {
+	color:#607fa6;
+	text-decoration:none
+}
+.rich_media_inner {
+	font-size:16px;
+	word-wrap:break-word;
+	-webkit-hyphens:auto;
+	-ms-hyphens:auto;
+	hyphens:auto
+}
+.rich_media_area_primary {
+	position:relative;
+	padding:20px 15px 15px;
+	background-color:#fff
+}
+.rich_media_area_primary:before {
+	content:" ";
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:1px;
+	border-top:1px solid #e5e5e5;
+	-webkit-transform-origin:0 0;
+	transform-origin:0 0;
+	-webkit-transform:scaleY(0.5);
+	transform:scaleY(0.5);
+	top:auto;
+	bottom:-2px
+}
+.rich_media_area_primary .original_img_wrp {
+	display:inline-block;
+	font-size:0
+}
+.rich_media_area_primary .original_img_wrp .tips_global {
+	display:block;
+	margin-top:.5em;
+	font-size:14px;
+	text-align:right;
+	width:auto;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal
+}
+.rich_media_area_extra {
+	padding:0 15px 0
+}
+.rich_media_title {
+	margin-bottom:10px;
+	line-height:1.4;
+	font-weight:400;
+	font-size:24px
+}
+.rich_media_meta_list {
+	margin-bottom:18px;
+	line-height:20px;
+	font-size:0
+}
+.rich_media_meta_list em {
+	font-style:normal
+}
+.rich_media_meta {
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:8px;
+	margin-bottom:10px;
+	font-size:16px
+}
+.meta_original_tag {
+	display:inline-block;
+	vertical-align:middle;
+	padding:1px .5em;
+	border:1px solid #9e9e9e;
+	color:#8c8c8c;
+	border-top-left-radius:20% 50%;
+	-moz-border-radius-topleft:20% 50%;
+	-webkit-border-top-left-radius:20% 50%;
+	border-top-right-radius:20% 50%;
+	-moz-border-radius-topright:20% 50%;
+	-webkit-border-top-right-radius:20% 50%;
+	border-bottom-left-radius:20% 50%;
+	-moz-border-radius-bottomleft:20% 50%;
+	-webkit-border-bottom-left-radius:20% 50%;
+	border-bottom-right-radius:20% 50%;
+	-moz-border-radius-bottomright:20% 50%;
+	-webkit-border-bottom-right-radius:20% 50%;
+	font-size:15px;
+	line-height:1.1
+}
+.meta_enterprise_tag img {
+	width:30px;
+	height:30px!important;
+	display:block;
+	position:relative;
+	margin-top:-3px;
+	border:0
+}
+.rich_media_meta_text {
+	color:#8c8c8c
+}
+span.rich_media_meta_nickname {
+	display:none
+}
+.rich_media_thumb_wrp {
+	margin-bottom:6px
+}
+.rich_media_thumb_wrp .original_img_wrp {
+	display:block
+}
+.rich_media_thumb {
+	display:block;
+	width:100%
+}
+.rich_media_content {
+	overflow:hidden;
+	color:#3e3e3e
+}
+.rich_media_content * {
+	max-width:100%!important;
+	box-sizing:border-box!important;
+	-webkit-box-sizing:border-box!important;
+	word-wrap:break-word!important
+}
+.rich_media_content p {
+	clear:both;
+	min-height:1em
+}
+.rich_media_content em {
+	font-style:italic
+}
+.rich_media_content fieldset {
+	min-width:0
+}
+.rich_media_content .list-paddingleft-2 {
+	padding-left:30px
+}
+.rich_media_content blockquote {
+	margin:0;
+	padding-left:10px;
+	border-left:3px solid #dbdbdb
+}
+img {
+	height:auto!important
+}
+@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) {
+	.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips {
+	font-size:17px
+}
+.mm_appmsg .meta_original_tag {
+	font-size:15px
+}
+}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) {
+	.mm_appmsg .rich_media_title {
+	font-size:25px
+}
+}@media screen and (min-width:1024px) {
+	.rich_media {
+	width:740px;
+	margin-left:auto;
+	margin-right:auto
+}
+.rich_media_inner {
+	padding:20px
+}
+body {
+	background-color:#fff
+}
+}@media screen and (min-width:1025px) {
+	body {
+	font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif
+}
+.rich_media {
+	position:relative
+}
+.rich_media_inner {
+	background-color:#fff;
+	padding-bottom:100px
+}
+}.radius_avatar {
+	display:inline-block;
+	background-color:#fff;
+	padding:3px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	overflow:hidden;
+	vertical-align:middle
+}
+.radius_avatar img {
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	background-color:#eee
+}
+.cell {
+	padding:.8em 0;
+	display:block;
+	position:relative
+}
+.cell_hd,.cell_bd,.cell_ft {
+	display:table-cell;
+	vertical-align:middle;
+	word-wrap:break-word;
+	word-break:break-all;
+	white-space:nowrap
+}
+.cell_primary {
+	width:2000px;
+	white-space:normal
+}
+.flex_cell {
+	padding:10px 0;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.flex_cell_primary {
+	width:100%;
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	box-flex:1;
+	flex:1
+}
+.original_tool_area {
+	display:block;
+	padding:.75em 1em 0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	color:#3e3e3e;
+	border:1px solid #eaeaea;
+	margin:20px 0
+}
+.original_tool_area .tips_global {
+	position:relative;
+	padding-bottom:.5em;
+	font-size:15px
+}
+.original_tool_area .tips_global:after {
+	content:" ";
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	height:1px;
+	border-bottom:1px solid #dbdbdb;
+	-webkit-transform-origin:0 100%;
+	transform-origin:0 100%;
+	-webkit-transform:scaleY(0.5);
+	transform:scaleY(0.5)
+}
+.original_tool_area .radius_avatar {
+	width:27px;
+	height:27px;
+	padding:0;
+	margin-right:.5em
+}
+.original_tool_area .radius_avatar img {
+	height:100%!important
+}
+.original_tool_area .flex_cell_bd {
+	width:auto;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal
+}
+.original_tool_area .flex_cell_ft {
+	font-size:14px;
+	color:#8c8c8c;
+	padding-left:1em;
+	white-space:nowrap
+}
+.original_tool_area .icon_access:after {
+	content:" ";
+	display:inline-block;
+	height:8px;
+	width:8px;
+	border-width:1px 1px 0 0;
+	border-color:#cbcad0;
+	border-style:solid;
+	transform:matrix(0.71,0.71,-0.71,0.71,0,0);
+	-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);
+	-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);
+	position:relative;
+	top:-2px;
+	top:-1px
+}
+.weui_loading {
+	width:20px;
+	height:20px;
+	display:inline-block;
+	vertical-align:middle;
+	-webkit-animation:weuiLoading 1s steps(12,end) infinite;
+	animation:weuiLoading 1s steps(12,end) infinite;
+	background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;
+	-webkit-background-size:100%;
+	background-size:100%
+}
+@-webkit-keyframes weuiLoading {
+	0% {
+	-webkit-transform:rotate3d(0,0,1,0deg)
+}
+100% {
+	-webkit-transform:rotate3d(0,0,1,360deg)
+}
+}@keyframes weuiLoading {
+	0% {
+	-webkit-transform:rotate3d(0,0,1,0deg)
+}
+100% {
+	-webkit-transform:rotate3d(0,0,1,360deg)
+}
+}.gif_img_wrp {
+	display:inline-block;
+	font-size:0;
+	position:relative;
+	font-weight:400;
+	font-style:normal;
+	text-indent:0;
+	text-shadow:none 1px 1px rgba(0,0,0,0.5)
+}
+.gif_img_wrp img {
+	vertical-align:top
+}
+.gif_img_tips {
+	background:rgba(0,0,0,0.6)!important;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');
+	border-top-left-radius:1.2em 50%;
+	-moz-border-radius-topleft:1.2em 50%;
+	-webkit-border-top-left-radius:1.2em 50%;
+	border-top-right-radius:1.2em 50%;
+	-moz-border-radius-topright:1.2em 50%;
+	-webkit-border-top-right-radius:1.2em 50%;
+	border-bottom-left-radius:1.2em 50%;
+	-moz-border-radius-bottomleft:1.2em 50%;
+	-webkit-border-bottom-left-radius:1.2em 50%;
+	border-bottom-right-radius:1.2em 50%;
+	-moz-border-radius-bottomright:1.2em 50%;
+	-webkit-border-bottom-right-radius:1.2em 50%;
+	line-height:2.3;
+	font-size:11px;
+	color:#fff;
+	text-align:center;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	min-width:65px
+}
+.gif_img_tips.loading {
+	min-width:75px
+}
+.gif_img_tips i {
+	vertical-align:middle;
+	margin:-0.2em .73em 0 -2px
+}
+.gif_img_play_arrow {
+	display:inline-block;
+	width:0;
+	height:0;
+	border-width:8px;
+	border-style:dashed;
+	border-color:transparent;
+	border-right-width:0;
+	border-left-color:#fff;
+	border-left-style:solid;
+	border-width:5px 0 5px 8px
+}
+.gif_img_loading {
+	width:14px;
+	height:14px
+}
+i.gif_img_loading {
+	margin-left:-4px
+}
+.gif_bg_tips_wrp {
+	position:relative;
+	height:0;
+	line-height:0;
+	margin:0;
+	padding:0
+}
+.gif_bg_tips_wrp .gif_img_tips_group {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9999
+}
+.gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips {
+	top:0;
+	left:0;
+	bottom:auto
+}
+.rich_media_global_msg {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	padding:1em 35px 1em 15px;
+	z-index:1;
+	background-color:#c6e0f8;
+	color:#8c8c8c;
+	font-size:13px
+}
+.rich_media_global_msg .icon_closed {
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-5px;
+	line-height:300px;
+	overflow:hidden;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:11px;
+	height:11px;
+	vertical-align:middle;
+	display:inline-block;
+	-webkit-background-size:100% auto;
+	background-size:100% auto
+}
+.rich_media_global_msg .icon_closed:active {
+	background-position:0 -17px
+}
+.preview_appmsg .rich_media_title {
+	margin-top:1.9em
+}
+@media screen and (min-width:1024px) {
+	.rich_media_global_msg {
+	position:relative;
+	margin:0 20px
+}
+.preview_appmsg .rich_media_title {
+	margin-top:0
+}
+}
+    </style>
+
+    <body>
+
+
+    <div id="js_article" class="rich_media">
+
+        <div class="rich_media_inner">
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        启航巴士丨产品介绍 &amp; <?php echo ($title); ?> 
+                    </h2>
+                    <div class="rich_media_meta_list">
+     
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">启航巴士</span>
+
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+						<p>
+						<div style="text-align:center;">
+						<div><img src="/Public/images/mobiles/weixin/about_1.png" style="margin: 0;padding:0;width:100%;"></div>
+						<div style="background-color:#fefbf0;color:#af8308;font-size:14px;text-align:left;padding:2% 5%;line-height:35px;">在幼儿的教育中，一个是在幼儿园的教育，一个是在家庭中的教育，两个实际上都很重要。在幼儿园的教育，因为有专业的老师，教育是积极有步骤有体系的。然而幼儿在家庭中的教育，却容易面临着这样的现实：</div>
+						<div><img src="/Public/images/mobiles/weixin/about_2.png" style="margin: 0;padding:0;width:100%;"></div>
+						<div><img src="/Public/images/mobiles/weixin/about_3.png" style="padding:0;margin:10px auto;"></div>
+						<div>
+							<div style="color:#84b826;float:left;width:10%;font-size:14px;line-height:35px;">1、</div>
+							<div style="color:#fabf13;float:left;width:90%;color:#fabf13;font-size:14px;text-align:left;line-height:35px;">
+								俗话说“三岁看大,七岁看老”，在孩子3--6岁成长的关键期，因家长不是专业做幼儿教育的，自然对孩子的家庭教育缺乏系统化、体系化，出现摸着石头过河，按经验世袭教育的情况;
+							</div>
+						</div>
+						
+						<div><img src="/Public/images/mobiles/weixin/about_8.png" style="margin:10px 0;padding:0;width:100%;"></div>
+						
+						<div><img src="/Public/images/mobiles/weixin/about_3.png" style="padding:0;margin:10px auto;"></div>
+						
+						<div>
+							<div style="color:#84b826;float:left;width:10%;font-size:14px;line-height:35px;">2、</div>
+							<div style="color:#fabf13;float:left;width:90%;color:#fabf13;font-size:14px;text-align:left;line-height:35px;">
+								家长在工作、生活等比较忙碌的情况下，倾向于把孩子推给电脑电视、iPad、手机等电子产品，幼儿在获取一定有用信息外，也同时容易给幼儿带来视力、脑神经发育等不可逆的伤害，还容易出现上瘾、睡眠少、情绪不稳定等表现，极端的受某些暴力动画片等影响下产生暴力行为造成严重后果等;
+							</div>
+						</div>
+						
+						<div><img src="/Public/images/mobiles/weixin/about_2.png" style="margin:10px 0;padding:0;width:100%;"></div>
+						
+						<div><img src="/Public/images/mobiles/weixin/about_3.png" style="padding:0;margin:10px auto;"></div>
+						
+						<div style="background:url('/Public/images/mobiles/weixin/about_4.png') no-repeat;height:514px;width:100%;padding-top:15px;background-size:100% 100%;">
+							<div style="color:#84b826;float:left;width:10%;font-size:14px;line-height:35px;">3、</div>
+							<div style="color:#fabf13;float:left;width:90%;color:#fabf13;font-size:14px;text-align:left;line-height:35px;">
+								家长在幼儿教育方面再学习难度大，时间成本高，容易滞后，一般是有了孩子才会学，系统的学好了孩子也大了。
+							</div>
+						</div>
+						
+						<div style="height:45px"><img src="/Public/images/mobiles/weixin/about_2.png" style="margin:0;padding:0;width:100%;"></div>
+						
+						<div style="background:url('/Public/images/mobiles/weixin/about_5.png') no-repeat;height:673px;width:100%;padding-top:15px;background-size:100% 100%;">
+							
+							<div style="width:90%;color:#000000;font-weight:bold;font-size:14px;text-align:left;line-height:30px;margin:0 auto;">
+								幼儿在家庭教育中的不足，不同程度的弱化着孩子的身心健康及潜力发展。在这种背景下，2016年11月全国妇联联合教育部等九部委共同引发的《关于指导推进家庭教育的五年规划（2016-2020年）》文件，要求建成适应城乡发展、满足家长和儿童需求的家庭教育指导服务体系，标志着增强家庭教育，提升家园共育已经上升为国家战略。
+								为了落实文件精神，保证幼儿在家庭教育中受到系统、良好、积极正面的教育，由河南亲子教育志愿者联盟，中国少年表达力课题组，郑州市绘本阅读推广联盟，郑州移动互联网联盟，郑州市信息化促进会，郑州炫世信息技术有限公司，多家幼儿园，腾讯大豫网，大河网，映象网，新浪河南教育及其多家媒体，多名幼儿教育专家，绘本出版社等联合发起“起航巴士”幼儿亲子读书计划。<br>
+								计划联合发起人之一、著名幼儿节目主持人、幼儿教育专家陶真女士担任读书计划推广大使，郑州炫世信息技术有限公司具体承担计划的系统研发、实施、推广、运营等日常工作。
+							</div>
+						</div>
+						
+						<div style="background:url('/Public/images/mobiles/weixin/about_6.png') no-repeat;height:663px;width:100%;background-size:100% 100%;">
+							
+							<div style="width:90%;color:#000000;font-weight:bold;font-size:14px;text-align:left;line-height:30px;margin:0 auto;padding-top:70px;">
+								"起航巴士"幼儿亲子读书计划通过幼儿教育专家选择优化适合孩子教育的优质绘本，涵盖情商培养、好习惯养成、科普知识、智力开发、艺术熏陶等多种类成系统的绘本体系，来弥补家长在家庭教育中理论和实践上的不足。通过开发相应的互联网支撑系统，建立绘本读书的借阅归还体系、任务体系、奖励竞争体系、损坏赔偿体系等实施机制，保证读书计划能够有效推行实施。通过设计围绕着读书计划的譬如绘本剧表演、亲子读书分享等各种线下活动，为读书计划的可持续推行提供进一步支持。在幼儿教育专家、绘本出版社、幼儿园、家长、互联网技术支持公司、社会机构等共同参与，政府相<div style="width:75%;margin-left:25%;">关部门的指导支持下，“起航巴士”幼儿亲子读书计划争取早日实现收益全社会所有幼儿和家长，进而整体大幅提升下一代素质的目标。</div>
+							</div>
+						</div>
+						
+						<div><img src="/Public/images/mobiles/weixin/about_7.png" style="margin:0;padding:0;width:100%;height:378px;"></div>
+						
+						</div>
+
+
+						</p>
+                    </div>
+
+                    
+                    
+
+                    
+
+
+
+                                    </div>
+
+
+               
+            </div>
+
+        </div>
+    </div>
+ 
+</body>
+</html>

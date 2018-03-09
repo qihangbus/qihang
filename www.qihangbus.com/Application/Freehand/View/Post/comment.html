@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>论坛发帖_{:L('_WEBSITE_NAME_')}</title>
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="__PUBLIC__/js/data-tables/DT_bootstrap.css" />
+
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="./"><img src="__PUBLIC__/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="./"><img src="__PUBLIC__/images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="__PUBLIC__/images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">John Doe</a></h4>
+                        <span>"Hello There..."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                </ul>
+            </div>
+
+            <include file="common:menu"/>
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <include file="common:header"/>
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                帖子详情
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">后台首页</a>
+                </li>
+                <li>
+                    <a href="#">帖子详情</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <style type="text/css">
+            .col-lg-4{color:#65cea7}
+            .col-lg-4 label{color:#cccccc}
+            #content img{
+                width:70%;
+                height:70%;
+            }
+        </style>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <span class="pull">
+                                <a href="javascript:history.back(-1)" class="btn btn-primary">返回</a>
+                            </span>
+                            <span class="pull-right">
+                                <a href="{:U('post/index')}" class="btn btn-primary">学校列表</a>
+                            </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="span2 col-lg-12">
+                                    <div class="row-fluid col-lg-2">
+                                        <div style="margin: 30px;">
+                                            <div class="row-fluid">
+                                                <div class="span6">
+                                                    <img class="media-object" src="{$info.avatar|default='/Public/images/mobiles/default.png'}" style="width: 30px;height:30px;">
+                                                </div>
+                                            </div>
+                                            <div class="span6">{$info.name}</div>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid col-lg-8">
+                                        <div class="span6"><h2>{$info.title}</h2></div><br>
+                                        <div class="span6">{$info.add_time|date='Y-m-d H:i:s',###}</div><br>
+                                        <div class="span6" id="content"><h5>{$info.content}</h5></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <notempty name="data">
+                                <div class="text-center" style="margin-top:150px;">
+                                    <button class="btn btn-block" disabled="disabled">评论列表</button>
+                                </div>
+                                <volist name="data" id="vo">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <img class="media-object" src="{$vo.avatar|default='/Public/images/mobiles/default.png'}" style="width: 30px;height:
+                                             30px;">
+                                            <h6 class="media-heading">{$vo.name}</h6>
+                                            {$vo.content}
+                                            <h6>{$vo.add_time|date='Y-m-d H:i:s',###}发表</h6>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </volist>
+                            </notempty>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+        <include file="common:footer"/>
+    </div>
+    <!-- main content end-->
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<!--<script>
+    $(function(){
+        function initTableCheckbox() {
+            var $thr = $('table thead tr');
+            var $checkAllTh = $('<th><input type="checkbox" id="checkAll" name="checkAll"/>全选</th>');
+            /*将全选/反选复选框添加到表头最前，即增加一列*/
+            $thr.prepend($checkAllTh);
+            /*“全选/反选”复选框*/
+            var $checkAll = $thr.find('input');
+            $checkAll.click(function(event){
+                /*将所有行的选中状态设成全选框的选中状态*/
+                $tbr.find('input').prop('checked',$(this).prop('checked'));
+                /*并调整所有选中行的CSS样式*/
+                if ($(this).prop('checked')) {
+                    $tbr.find('input').parent().parent().addClass('success');
+                } else{
+                    $tbr.find('input').parent().parent().removeClass('success');
+                }
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            /*点击全选框所在单元格时也触发全选框的点击操作*/
+            $checkAllTh.click(function(){
+                $(this).find('input').click();
+            });
+            var $tbr = $('table tbody tr');
+            var $checkItemTd = $('<td><input type="checkbox" name="checkItem" /></td>');
+            /*每一行都在最前面插入一个选中复选框的单元格*/
+            $tbr.prepend($checkItemTd);
+            /*点击每一行的选中复选框时*/
+            $tbr.find('input').click(function(event){
+                /*调整选中行的CSS样式*/
+                $(this).parent().parent().toggleClass('success');
+                /*如果已经被选中行的行数等于表格的数据行数，将全选框设为选中状态，否则设为未选中状态*/
+                $checkAll.prop('checked',$tbr.find('input:checked').length == $tbr.length ? true : false);
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            /*点击每一行时也触发该行的选中操作*/
+            $tbr.click(function(){
+                $(this).find('input').click();
+            });
+        }
+        initTableCheckbox();
+    });
+</script>-->
+<script src="__PUBLIC__/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__PUBLIC__/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery.nicescroll.js"></script>
+<!--easy pie chart-->
+<script src="__PUBLIC__/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="__PUBLIC__/js/easypiechart/easypiechart-init.js"></script>
+<!--Sparkline Chart-->
+<script src="__PUBLIC__/js/sparkline/jquery.sparkline.js"></script>
+<script src="__PUBLIC__/js/sparkline/sparkline-init.js"></script>
+<!--icheck -->
+<script src="__PUBLIC__/js/iCheck/jquery.icheck.js"></script>
+<script src="__PUBLIC__/js/icheck-init.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.resize.js"></script>
+<!--Morris Chart-->
+<script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+<!--Calendar-->
+<script src="__PUBLIC__/js/calendar/clndr.js"></script>
+<script src="__PUBLIC__/js/calendar/evnt.calendar.init.js"></script>
+<script src="__PUBLIC__/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<!--common scripts for all pages-->
+<script src="__PUBLIC__/js/scripts.js"></script>
+<!--Dashboard Charts-->
+<script src="__PUBLIC__/js/dashboard-chart-init.js"></script>
+</body>
+</html>

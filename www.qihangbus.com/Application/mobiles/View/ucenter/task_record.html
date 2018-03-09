@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>任务记录</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+
+<div class="wrap2"> 
+<div class="jiaos_t jiaos_t_j">
+<dl>
+	<dt>
+		<a href="{:U('mobile.php/Ucenter/avatar',array('user_id'=>$userinfo['student_id'],'user_flag'=>3))}">
+			<img src="{$userinfo.student_avatar|default='/Public/images/mobiles/default.png'}" alt="" />
+		</a>
+	</dt>
+<dd class="dd_renw"><div class="d_name">{$userinfo.student_name}&nbsp;</div> <div class="d_renw">累计完成任务{$userinfo.task_number}个&nbsp;
+共获得{$userinfo.student_points}颗金豆</div></dd></dl>
+</div>
+<div class="line_hr"></div>
+<div class="datepicker"></div>
+
+<div class="line_hr"></div>
+
+<div class="renw_list">
+	
+	
+	<dl class="dl_rw">
+		<dt><span class="color2 p_title">{$info.task_title}</span>  </dt>
+		<dd class="dd_info"><b>任务描述：</b><span class="p_desc">{$info.task_desc}</dd>
+		<dd class="dd_btn"><b class="b_ke">可获得<span class="color2"><font class="p_points">{$info.task_award}</font>颗金豆</span></b>
+			<if condition="$info.comment_time lt 1">
+				<a href="{:U('mobile.php/Ucenter/task_comment',array('student_id'=>$student_id,'st_id'=>$info['st_id']))}" class="ibtn_1 r">未评价</a>
+			<else/>
+				<a href="javascript:void(0);" class="ibtn_1 r">已评价</a>
+			</if>
+		</dd>
+	</dl>
+</div>
+
+
+<a href="{:U('mobile.php/Ucenter/index')}">
+<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+</a>
+</div>
+<script  type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/mobiles/jquery.datePicker-min.js"></script>
+<link type="text/css" href="__PUBLIC__/css/mobiles/rili.css" rel="stylesheet" />
+<script type="text/javascript">
+	$(function(){
+		var datadata;
+		var curdata = "{$last_day}";
+		$.ajax({
+			type: "post",
+			url: "{:U('mobile.php/Ucenter/return_json/',array('student_id'=>$student_id))}",
+			async: false,
+			dataType: "json",
+			success: function(data) {
+				datadata=data.dList;
+			},
+			error: function(XMLHttpRequest, textStatus, errorThrown)
+			 {
+				alert(textStatus);
+			}
+		});
+		var ttt=new Date();
+		$(".datepicker").datePicker({
+			startDate: "2015-1-1",
+			inline:true,
+			selectMultiple:false,
+			renderCallback:function(y, m, B, p){
+				var str =m.getFullYear()+"-"+(m.getMonth()+1)+"-"+m.getDate();
+				$.each(datadata,function(commentIndex, datadata2) {
+					if(str == curdata){
+						y.addClass("selected");
+					}
+					if (str==datadata2.d) {
+						y.addClass("hasdata");
+					//	console.log("s---"+str+"************"+datadata2.d);
+						y.bind("click",function(event){
+							if(y.hasClass("hasdata")){
+								$("#calendar-NaN").children().find('td').removeClass('selected');
+								y.addClass("selected");
+								var da=new Date(y.find(".td_td").attr("da"));
+								var str =da.getFullYear()+"-"+(da.getMonth()+1)+"-"+da.getDate(); 
+								
+
+								$.ajax({
+									type: "post",
+									url: "/mobile.php?m=mobile.php&c=Ucenter&a=ajax_task&str_date="+encodeURI(str)+"&student_id="+{$student_id},
+									async: false,
+									dataType: "json",
+									success: function(data) {
+										$(".p_points").text(data.task_award);
+										$(".p_title").text(data.task_title);
+										$(".p_desc").text(data.task_desc);
+									},
+									error: function(XMLHttpRequest, textStatus, errorThrown)
+									 {
+										alert(textStatus);
+									}
+								});
+							}
+						});
+					}
+				});
+			}
+		});
+	
+	});
+</script>
+</body>
+</html>

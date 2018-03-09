@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>损坏赔偿</title>
+    <include file="Common:theme" />
+    <link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+<div class="wrap2">
+    <div class="head-cate">
+        <ul class="ul_2">
+            <li>
+                <a href="{:U('indemnify',['teacher_id'=>$teacher_id])}">
+                    <span>赔偿管理</span>
+                </a>
+            </li>
+            <li>
+                <a class="li_cur">
+                    <span>赔偿记录</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="line_hr"></div>
+    <ul class="cart_list ck_list" id="cart_list">
+        <empty name="borrows">
+            <div class="data-empty">
+                <p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+                <p>暂无数据</p>
+            </div>
+        </empty>
+        <volist name="data" id="vo">
+            <li class="" sid="{$vo.student_id}" style="margin-bottom:0px;padding-top:10px;border-bottom: 1px solid #F2F2F2;background-color: #fff;position: relative;">
+                <dl class="cart_pro">
+                    <dt class="dt_tx"><img src="{$vo['student_avatar']|default='Public/images/mobiles/default.png'}" alt="" /></dt>
+                    <dd class="dd_pname2">
+                        <p><if condition="$vo.flag lt '1'">
+
+                            <a href="javascript:void(0);" hf="{$vo['hardcover_flag']}" bid="{$vo['book_id']}" sid="{$vo['student_id']}" class="ibtn_1 compensate" style="background-color:#f00;float:right;">损坏赔偿</a>
+
+                            <else/>
+                            <a href="javascript:void(0);" style="float:right;" class="ibtn_1 ibtn_dis">{$vo.compen}</a>
+                        </if>
+                            <b>{$vo['student_name']}</b>
+
+                        </p>
+                        <p><strong>NO.{$vo.book_no}</strong> - {$vo['book_name']}</p>
+                    </dd>
+                </dl>
+            </li>
+        </volist>
+    </ul>
+</div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/js/mobiles/layer/layer.js"></script>
+<a href="{:U('mobile.php/TIndex/index',array('teacher_id'=>$teacher_id))}">
+    <span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a>
+<script type="text/javascript">
+    $(function(){
+
+
+        $(".compensate").click(function(){
+            var bid = $(this).attr("bid");
+            var sid = $(this).attr("sid");
+            var hf = 99;
+
+            layer.open({
+                title: false,
+                content: '确定给家长发送损坏赔偿提醒？',
+                btn:['确定','取消'],
+                yes:function(index,layero){
+
+                    $.post("{:U('mobile.php/TBorrow/push_msg')}",{bid:bid,sid:sid,hf:hf},function(result){
+                        if(result == 99){
+                            layer.open({
+                                title:false,
+                                content:'提醒成功',
+                                btn:['关闭'],
+                                yes:function(index){
+                                    layer.closeAll();
+                                    location.reload();
+                                },
+                            });
+                        }
+                    });
+
+                },
+                btn2:function(index,layero){
+                    layer.closeAll();
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>

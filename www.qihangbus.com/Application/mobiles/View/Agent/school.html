@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>幼儿园列表</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/Public/school2017/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Public/school2017/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Public/css/mobiles/iconfont.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/mobiles/font-awesome/css/font-awesome.min.css">
+    <style>
+        .f_index{ display:inline-block; background-size:20px auto;background:rgba(174,224,120,.5); text-align:center; vertical-align:middle;width: 40px;height: 40px; line-height:40px;position:fixed; left:10px; bottom:15px;color:#FFFFFF; border-radius:50%;z-index: 90}
+        .f_index .icon-shouyeshouye{
+            font-size: 30px;
+        }
+        .cashlist dl dd ul li {
+            line-height: 23px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cashlist">
+    <div class="list">
+        <foreach name="data" item="v">
+            <dl>
+                <dt>
+                    <span>{$v.school_name}</span>
+                    <em>
+                        {$v.school_num}人
+                    </em>
+                    <em style="color:#888">
+                        <switch name="v.meal_type">
+                            <case value="1">一周两本</case>
+                            <case value="2">一周四本</case>
+                        </switch>
+                    </em>
+                </dt>
+                <dd>
+                    <ul>
+                        <!--<li>-->
+                        <!--<i class="address">{$v.province_name}{$v.city_name}{$v.district_name}</i>-->
+                        <!--</li>-->
+                        <li>今日订购人数：<strong style="color:#fb8c8d">{$v.pay_today}</strong></li>
+                        <li>注册人数：<strong style="color:#fb8c8d">{$v.reg_num}</strong></li>
+                        <li>订购人数：<strong style="color:#fb8c8d">{$v.pay_num}</strong></li>
+                        <li>订购比例：<strong style="color:#fb8c8d">{$v.order_percent}%</strong></li>
+                        <!--<li><i class="fa fa-clock-o icon"></i>添加时间：{$v.reg_time|date='Y-m-d',###}</li>-->
+
+                    </ul>
+                    <eq name="type" value="1">
+                    <div class="button"><a href="{:U('rebateDetails',array('id'=>$v['school_id']))}">返利明细</a></div>
+                    </eq>
+                </dd>
+            </dl>
+        </foreach>
+    </div>
+    <a href="{:U('Agent/index')}">
+			<span class="f_index">
+				<span class="iconfont icon-shouyeshouye"></span>
+			</span>
+    </a>
+</div>
+<include file="Common:footer"/>
+
+</body>
+</html>

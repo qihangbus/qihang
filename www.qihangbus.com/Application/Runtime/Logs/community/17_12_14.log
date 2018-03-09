@@ -1,0 +1,1697 @@
+[ 2017-12-14T11:01:37+08:00 ] 117.136.61.118 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1638 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 2460 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 1 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 84 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 82 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 66 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 1 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-12-14T11:01:42+08:00 ] 117.136.61.118 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1638 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 2460 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 1 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 84 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 82 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 66 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 1 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-12-14T11:17:18+08:00 ] 123.151.77.72 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3229 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0004s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0007s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-12-14T11:17:20+08:00 ] 123.151.77.74 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2392 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3578 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-12-14T11:17:42+08:00 ] 115.60.185.182 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2043 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3278 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-12-14T11:17:47+08:00 ] 115.60.185.182 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2043 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3278 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2017-12-14T11:17:57+08:00 ] 123.151.77.71 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2282 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3554 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-12-14T11:18:12+08:00 ] 123.151.77.71 /sns.php?m=sns.php&c=Forum&a=bbs_info&id=100&school_id=17&user_id=2282&user_flag=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0006s ]
+SQL: UPDATE `fh_forum` SET `hit`=hit+1 WHERE `forum_id` = 100 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum_comment` WHERE `forum_id` = 100 ORDER BY add_time desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: data /data/wwwroot/www.qihangbus.com/Application/community/Controller/ForumController.class.php 第 152 行.
+SQL: SELECT * FROM `fh_forum` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT f.*,p.parent_avatar as avatar,p.parent_name as name FROM fh_forum f left join fh_students_parent p on p.parent_id = f.user_id  WHERE `forum_id` = '100' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum_pic` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum_pic` WHERE `forum_id` = 100  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-12-14T11:23:31+08:00 ] 123.151.77.70 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1957 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 2945 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 14 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 92 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 14 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 14 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 14  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-12-14T11:23:41+08:00 ] 120.204.17.71 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined variable: message /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/7319dfecfaa6a7ea61e4864cba63d084.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-12-14T11:24:19+08:00 ] 123.151.77.73 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2343 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3829 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 18 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 18 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 18 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 18  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-12-14T11:24:37+08:00 ] 123.151.76.248 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1960 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 2913 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 14 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 92 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 14 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 14 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 14  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-12-14T11:31:56+08:00 ] 223.104.105.81 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1607 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 2544 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 1 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 84 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 82 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 66 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 1 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-12-14T11:34:51+08:00 ] 123.151.77.81 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2070 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3336 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-12-14T11:41:04+08:00 ] 223.104.105.251 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2624 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3659 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-12-14T11:41:54+08:00 ] 123.151.77.81 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2070 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3336 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-12-14T11:43:28+08:00 ] 1.199.78.5 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2739 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3272 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-12-14T11:45:14+08:00 ] 42.248.42.88 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1592 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 2329 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 10 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 89 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 71 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 60 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 49 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 1494 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 1494 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 43 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 1494 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 1494 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 42 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 1494 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 1494 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 41 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 10 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 10 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 10  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-12-14T11:47:49+08:00 ] 123.151.77.70 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2605 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3499 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 16 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0003s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 98 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 16 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 16  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-12-14T11:51:23+08:00 ] 123.151.77.91 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2603 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3514 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 16 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 98 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 16 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 16  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-12-14T11:53:36+08:00 ] 61.158.146.144 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2378 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3568 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-12-14T11:54:50+08:00 ] 221.15.79.227 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2393 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3657 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-12-14T11:54:54+08:00 ] 123.151.76.158 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2684 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3485 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 16 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 98 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 16 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 16  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-12-14T12:03:05+08:00 ] 123.151.77.72 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2419 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3742 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-12-14T12:11:48+08:00 ] 123.151.77.91 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2363 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3469 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 16 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 98 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 16 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 16  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-12-14T12:12:07+08:00 ] 223.104.19.79 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2613 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 4021 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 16 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2717 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 98 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 16 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 16  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-12-14T12:12:47+08:00 ] 123.151.77.49 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2361 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3872 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 18 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 18 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 18 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 18  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-12-14T12:17:04+08:00 ] 115.60.191.29 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1762 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3262 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-12-14T12:17:56+08:00 ] 120.219.25.232 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2740 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3270 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-12-14T12:27:02+08:00 ] 223.104.19.64 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2643 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3875 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 18 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 18 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 18 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 18  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-12-14T12:59:14+08:00 ] 123.151.77.73 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2243 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3070 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 14 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 92 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 14 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 14 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 14  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-12-14T13:01:42+08:00 ] 123.151.77.72 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2398 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3649 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-12-14T13:14:22+08:00 ] 115.60.162.37 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2104 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3167 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-12-14T13:17:23+08:00 ] 123.151.77.73 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1994 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3408 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 15 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2165 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 96 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 95 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2128 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 94 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 15 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 15  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-12-14T13:37:27+08:00 ] 123.151.77.81 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 1813 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3027 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 14 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 92 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 14 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 14 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 14  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-12-14T14:09:15+08:00 ] 123.151.77.91 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2573 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3549 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 17 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum_comment` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 100 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_avatar` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `parent_name` FROM `fh_students_parent` WHERE `parent_id` = 2630 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_forum_comment` WHERE `forum_id` = 99 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 17 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 49 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 54 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 66 行.
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-12-14T21:06:58+08:00 ] 123.151.77.72 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2349 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3832 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 18 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 18 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 18 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 18  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-12-14T21:17:08+08:00 ] 125.43.69.133 /sns.php?m=sns.php&c=forum&a=bbs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE ( parent_id = 2522 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE ( student_id = 3811 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_forum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_forum` WHERE `school_id` = 18 AND `audit_status` = 1 ORDER BY add_time desc LIMIT 15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `school_name` FROM `fh_schools` WHERE `school_id` = 18 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `school_id` = 18 AND `is_paid` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `hit` FROM `fh_forum` WHERE `school_id` = 18  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: fake_id /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 96 行.
+NOTIC: [8] Undefined variable: cate /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 169 行.
+NOTIC: [8] Undefined variable: number /data/wwwroot/www.qihangbus.com/Application/Runtime/Cache/community/6220d5157c6cd6705003c05cee4c9462.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+

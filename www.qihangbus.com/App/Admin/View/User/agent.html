@@ -1,0 +1,215 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+
+                <div class="row maintop">
+                    <div class="col-xs-10">
+                        <form name="admin_list_sea" class="form-search" method="get">
+                            <div class="input-group col-xs-12">
+                                <div class="col-xs-7" style="padding-left:1px;position: relative;display: table;border-collapse: separate;">
+                                    <span class="input-group-addon col-xs-1" style="border-width: 1px 1px;padding: 7px 19px 7px 6px;">
+                                                <i class="ace-icon fa fa-check"></i>
+                                    </span>
+                                    <input name="value" value="{$value}" type="text" class="admin_sea col-xs-8" style="margin-right:5px" placeholder="输入姓名">
+                                </div>
+                                <div class="col-xs-5">
+                                    <span class="input-group-btn inline">
+                                        <button type="submit" class="btn btn-xs  btn-purple">
+                                            <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                            搜索
+                                        </button>
+                                    </span>
+                                    &nbsp;
+                                    <span class="input-group-btn inline"  style="margin: 0px 48px;">
+                                        <button id="clear" type="reset" class="btn btn-xs btn-warning">
+                                            <span class="ace-icon fa fa-trash icon-on-right bigger-110"></span>
+                                            清空
+                                        </button>
+                                    </span>
+                                    &nbsp;
+                                    <span class="input-group-btn inline">
+                                        <a href="__ACTION__">
+                                            <button type="button" class="btn btn-xs  btn-purple">
+                                                <span class="ace-icon fa fa-globe icon-on-right bigger-110"></span>
+                                                显示全部
+                                            </button>
+                                        </a>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div>
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dynamic-table">
+                                <form>
+                                <thead>
+                                <tr>
+                                    <th width="5%" class="center">
+                                        <label class="pos-rel">
+                                            <input type="checkbox" class="ace"  id='chkAll' onclick='CheckAll(this.form)' value="全选"/>
+                                            <span class="lbl"> </span>
+                                        </label>
+                                    </th>
+                                    <th>姓名</th>
+                                    <th>联系方式</th>
+                                    <th>省份</th>
+                                    <th>城市</th>
+                                    <th style="border-right:#CCC solid 1px;">操作</th>
+                                </tr>
+                                </thead>
+                                <form>
+                                <foreach name="data" item="v">
+                                    <tr>
+                                        <td class="center">
+                                            <label class="pos-rel">
+                                                <input name='left_id[]' class="ace"  type='checkbox' value='{$v.id}'>
+                                                <span class="lbl"> </span>
+                                            </label>
+                                        </td>
+                                        <td>{$v.name}</td>
+                                        <td>{$v.mobile}</td>
+                                        <td>{$v.province}</td>
+                                        <td>{$v.city}</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <a class="light-orange" href="javascript:void(0);" data-id="{$v['id']}" title="发送消息">
+                                                    <i class="ace-icon fa fa-envelope-o bigger-130"></i>
+                                                </a>
+                                                <a class="green" href="{:U('aEdit',['id'=>$v['id']])}" title="编辑">
+                                                    <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                                </a>
+                                                <a class="red" href="javascript:void(0);" data-id="{$v.id}" title="删除">
+                                                    <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                                </form>
+                                <tr>
+                                    <td colspan="1" align="left" class="center"><button  id="btnsubmit" class="btn btn-white btn-yellow btn-sm">删</button></td>
+                                    <td height="50" colspan="16" align="left">{$page}</td>
+                                </tr>
+                                </tbody>
+                                </form>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <include file='Common:header_nav' />
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    <include file='Common:footer' />
+</div><!-- /.main-container -->
+<link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css">
+<script src="__PUBLIC__/assets/js/date-time/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/layer/plugin/layer.js"></script>
+<style>
+    .input-daterange input{ text-align:left; }
+</style>
+</body>
+<script type="text/javascript">
+    jQuery(function($) {
+        $('.input-daterange').datepicker({autoclose: true});
+    });
+
+    $("#btnsubmit").click(function(){
+        layer.confirm('你确定要删除吗？', {icon: 3}, function(index){
+            layer.close(index);
+            var ids='';
+            $("input[name='left_id[]']:checkbox:checked").each(function() {
+                ids += $(this).val() + ',';
+            });
+            ids = ids.substring(0,ids.length-1);
+            if(ids == ''){
+                layer.msg('至少选择一项!',{time:1000});
+                return;
+            }
+            $.post(
+                    "{:U('aDelFew')}",
+                    {ids:ids},
+                    function(data){
+                        if(data.status == 1){
+                            layer.msg(data.info,{icon:6,time:800},function(){
+                                window.location.reload();
+                            });
+                        }else{
+                            layer.msg(data.info,{icon:5});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('.red').click(function(){
+        var id = $(this).attr('data-id');
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            $.post(
+                    "{:U('aDel')}",
+                    {id: id},
+                    function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.info, {icon: 6,time:1000}, function () {
+                                window.location.reload();
+                            });
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('.light-orange').click(function(){
+        var id = $(this).attr('data-id');
+        layer.prompt({
+            formType: 2,
+            title: '发送消息'
+        }, function(value, index, elem){
+            $.post(
+                "{:U('aSendMes')}",
+                {id:id,message:value},
+                function(data){
+                    layer.close(index);
+                    if (data.status == 1) {
+                        layer.msg(data.info, {icon: 6,time:1000});
+                    } else {
+                        layer.msg(data.info, {icon: 5,time:1000});
+                    }
+                }
+            );
+        });
+    });
+
+
+    function unselectall(){
+        if(document.myform.chkAll.checked){
+            document.myform.chkAll.checked = document.myform.chkAll.checked&0;
+        }
+    }
+    function CheckAll(form){
+        for (var i=0;i<form.elements.length;i++){
+            var e = form.elements[i];
+            if (e.Name != 'chkAll'&&e.disabled==false)
+                e.checked = form.chkAll.checked;
+        }
+    }
+</script>
+</html>

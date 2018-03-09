@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>机构信息_{:L('_WEBSITE_NAME_')}</title>
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="__PUBLIC__/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="__PUBLIC__/js/data-tables/DT_bootstrap.css" />
+
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="./"><img src="__PUBLIC__/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="./"><img src="__PUBLIC__/images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="__PUBLIC__/images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">John Doe</a></h4>
+                        <span>"Hello There..."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                </ul>
+            </div>
+
+            <include file="common:menu"/>
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <include file="common:header"/>
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                <if condition="$info.school_id gt 0">修改<else/>添加</if>机构信息
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">后台首页</a>
+                </li>
+                <li>
+                    <a href="#">系统设置</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <style type="text/css">
+            .col-lg-4{color:#65cea7}
+            .col-lg-4 label{color:#cccccc}
+        </style>
+        <div class="wrapper">
+            <div class="row">
+
+
+
+
+
+                <div class="col-lg-12">
+                    <section class="panel">
+
+                        <header class="panel-heading">
+                            <if condition="$info.school_id gt 0">修改<else/>添加</if>机构信息
+                                    <span class="pull-right">
+                                        <a href="{:U('/Schools/index')}" class="btn btn-primary">机构管理</a>
+                                        <a href="javascript:void(0)" class="btn disabled">添加机构</a>
+                                        <a href="{:U('/Schools/import')}" class="btn btn-primary">导入机构</a>
+                                        <a href="{:U('/Schools/batch_send')}" class="btn btn-primary">批量发送消息</a>
+                                     </span>
+                        </header>
+
+                        <div class="panel-body">
+                            <form class="form-horizontal" method="post" name="myform" action="{:U('/Schools/edit_handle')}" onsubmit="return check(this);" role="form">
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">机构名称</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control" name="school_name" value="{$info.school_name}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">负责人</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="school_leader" value="{$info.school_leader}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">负责人联系方式</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="leader_mobile" value="{$info.leader_mobile}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">园长姓名</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="school_teacher" value="{$info.school_teacher}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">园长联系方式</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="teacher_mobile" value="{$info.teacher_mobile}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">地址</label>
+                                    <div class="col-lg-1">
+                                        <select name="province" id="province">
+                                            <volist name="province_list" id="pl">
+                                                <option value="{$pl.region_id}" <if condition="$pl.region_name eq $info['province_name']">selected</if>>{$pl.region_name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <select name="city" id="city">
+                                            <volist name="city_list" id="cl">
+                                                <option value="{$cl.region_id}" <if condition="$cl.region_name eq $info['city_name']">selected</if>>{$cl.region_name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <select name="district" id="district">
+                                            <volist name="district_list" id="dl">
+                                                <option value="{$dl.region_id}" <if condition="$dl.region_name eq $info['district_name']">selected</if>>{$dl.region_name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">详细地址</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="school_address" value="{$info.school_address}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">描述</label>
+                                    <div class="col-lg-6">
+                                        <textarea name="school_desc" class="form-control" cols="20" rows="2">{$info.school_desc}</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">规模</label>
+                                    <div class="col-sm-2">
+                                        <input type="text" class="form-control" name="school_num" value="{$info.school_num}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">套餐类型</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control" name="meal_type">
+                                            <option value="1" <eq name="info.meal_type" value="1">selected</eq> >20元套餐</option>
+                                            <option value="2" <eq name="info.meal_type" value="2">selected</eq> >30元套餐</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">市场价(每月/元)</label>
+                                    <div class="col-sm-2">
+                                        <input type="text" class="form-control" name="meal_market_price" value="{$info.meal_market_price}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">渠道商手机号</label>
+                                    <div class="col-sm-2">
+                                        <input type="text" maxlength="11" class="form-control" name="agent_mobile" value="{$info.agent_mobile}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">最大班级人数</label>
+                                    <div class="col-sm-2">
+                                        <input type="text" class="form-control" name="class_max_num" value="{$info.class_max_num}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">第一学期开学时间</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="semester_one_start" placeholder="格式：2017-01-01,系统根据此日期计算收费金额" value="{$info.semester_one_start|date='Y-m-d',###}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">第一学期放假时间</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="semester_one" placeholder="格式：2017-01-01,系统根据此日期计算收费金额" value="{$info.semester_one|date='Y-m-d',###}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">第二学期开学时间</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="semester_two_start" placeholder="格式：2017-01-01,系统根据此日期计算收费金额" value="{$info.semester_two_start|date='Y-m-d',###}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">第二学期结束时间</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="semester_two" placeholder="格式：2017-01-01,系统根据此日期计算收费金额" value="{$info.semester_two|date='Y-m-d',###}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">备注</label>
+                                    <div class="col-lg-6">
+                                        <textarea name="remark" class="form-control" cols="20" rows="2">{$info.remark}</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-1 col-lg-10">
+                                        <input type="hidden" name="school_id" value="{$info.school_id}"/>
+                                        <input type="submit" class="btn btn-primary" value="提交"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!--body wrapper end-->
+        <include file="common:footer"/>
+    </div>
+    <!-- main content end-->
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__PUBLIC__/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery.nicescroll.js"></script>
+<!--easy pie chart-->
+<script src="__PUBLIC__/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="__PUBLIC__/js/easypiechart/easypiechart-init.js"></script>
+<!--Sparkline Chart-->
+<script src="__PUBLIC__/js/sparkline/jquery.sparkline.js"></script>
+<script src="__PUBLIC__/js/sparkline/sparkline-init.js"></script>
+<!--icheck -->
+<script src="__PUBLIC__/js/iCheck/jquery.icheck.js"></script>
+<script src="__PUBLIC__/js/icheck-init.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="__PUBLIC__/js/flot-chart/jquery.flot.resize.js"></script>
+<!--Morris Chart-->
+<script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+<!--Calendar-->
+<script src="__PUBLIC__/js/calendar/clndr.js"></script>
+<script src="__PUBLIC__/js/calendar/evnt.calendar.init.js"></script>
+<script src="__PUBLIC__/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<!--common scripts for all pages-->
+<script src="__PUBLIC__/js/scripts.js"></script>
+<!--Dashboard Charts-->
+<script src="__PUBLIC__/js/dashboard-chart-init.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#province").change(function(){
+            var region_id = $(this).val();
+            $.post("{:U('/Schools/ajax_address')}",{region_id:region_id,region_level:2},function(result){
+                $("#city")[0].options.length = 0;
+                $("#city")[0].options.add(new Option("请选择",""));
+                for (var i = 0; i < result.length; i++) {
+                    var date = result[i];
+                    $("#city")[0].options.add(new Option(date.region_name, date.region_id));
+                }
+                $("#district")[0].options.length = 0;
+                $("#district")[0].options.add(new Option("请选择",""));
+            },'json');
+        });
+
+        $("#city").change(function(){
+            var region_id = $(this).val();
+            $.post("{:U('/Schools/ajax_address')}",{region_id:region_id,region_level:3},function(result){
+                $("#district")[0].options.length = 0;
+                $("#district")[0].options.add(new Option("请选择",""));
+                for (var i = 0; i < result.length; i++) {
+                    var date = result[i];
+                    $("#district")[0].options.add(new Option(date.region_name, date.region_id));
+                }
+            },'json');
+        });
+    });
+</script>
+</body>
+</html>

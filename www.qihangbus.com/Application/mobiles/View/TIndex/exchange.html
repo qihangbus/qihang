@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/mobiles/iconfont.css"/> 
+    <title>兑换充值码</title>
+    <include file="Common:theme" />
+    <style type="text/css">
+       .d_signin{margin-top: 25px;} 
+    </style>
+</head>
+<body>
+
+    <div class="wrap2 have-bottom-swiper">
+		<div class="head-top">{$userinfo.school_name}</div>
+        <div class="jiaos_t">
+            <dl>
+                <dt>
+                    <a href="javascript:void(0);">
+                    <img src="{$teacher.teacher_avatar|default='/Public/images/mobiles/default.png'}" alt="" />
+                    </a>
+                </dt>
+                <dd>
+                    <div class="d_name">
+                        {$userinfo.teacher_name}-{$userinfo.grade_name}-{$userinfo.class_name}
+                        
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        
+        <div class="line_hr"></div>
+		<dl class="dl_paim">
+		<dd class="dd_pp" style="text-align:left;font-size:70%;line-height:20px;">您当前剩余钻石：<lable id="appre_price">{$userinfo.diamond}</label>颗</dd>
+		<dd class="dd_pp" style="text-align:left;font-size:70%;">兑换类型
+		<select name="month" id="appre">
+		  <option value="1">20元金额</option>
+          <option value="2">50元金额</option>
+		  <option value="3">100元金额</option>
+		</select>
+        <br>
+<div class="btn_box " style="text-align:center;"><a href="javascript:void(0);" style="border-radius: 10px;font-size: 13px;line-height: 25px;padding: 0px 10px 0;width: 40%;margin:0 auto;"  class="btn btn2 btn_address">确认兑换</a></div>
+		</dd>
+        </dl>
+    </div>
+
+    <script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/mobiles/layer/mobile/layer.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+            $(".btn_address").click(function(){
+                layer.open({
+                    title:false,
+                    content:'开发中,敬请期待...',
+                    btn:['关闭'],
+                    yes:function(index){
+                        layer.closeAll();
+                    },
+                });
+            });
+       })
+    </script>
+</body>
+</html>

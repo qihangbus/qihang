@@ -1,0 +1,2453 @@
+[ 2018-03-06T15:46:59+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:47:13+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:26+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:47:26+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:47:28+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:47:28+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:47:30+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:47:32+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:47:33+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:47:33+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:37+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:40+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:44+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:46+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:48+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:49+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:50+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:51+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:52+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:47:56+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:50:42+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:50:42+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:50:54+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:50:57+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:50:58+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:50:59+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:51:00+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:51:01+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:51:02+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-06T15:52:32+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:34+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:34+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:40+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 2 AND `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:41+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 3 AND `parent_id` = 2  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:52:43+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=schools
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `fh_schools` WHERE `district_id` = 3  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:52:44+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=grade
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `fh_grade` WHERE `school_id` = 11  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:51+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=schools
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_schools` WHERE `district_id` = 17  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:54+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentregister&a=schools
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_schools` WHERE `district_id` = 19  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:52:57+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:00+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:03+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:04+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:06+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:07+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:53:08+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:09+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Parentregister&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_region` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_region` WHERE `region_level` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: c_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: z_name E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: city_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: zone_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: school_list E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\ParentregisterController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 64 行.
+NOTIC: [8] Undefined variable: class_list E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\5d5f4acdbf2c1e60855280100326d2b9.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:53:14+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:53:39+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:53:55+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '14411111111' AND `pwd` = 'c33367701511b4f6020ec61ded352059' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fh_students_parent` SET `parent_avatar`=NULL,`wx_id`='' WHERE `parent_mobile` = '14411111111' [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `headimgurl` FROM `fh_weixin_user` WHERE `fake_id` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0080s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two`,`try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:53:56+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=index&pay_tips=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1520265600 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:54:12+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Vendor\WxPayPubHelper\WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0100s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0070s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0070s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:54:22+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Vendor\WxPayPubHelper\WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0090s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0090s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:54:27+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1520265600 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0070s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T15:54:28+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Mybag&a=index&user_flag=3&user_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schooltobook` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0100s ]
+SQL: SELECT `grade_name` FROM `fh_grade` WHERE `grade_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0070s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM fh_schooltobook stb left JOIN fh_books b ON stb.book_id = b.book_id  WHERE `class_id` = '6' ORDER BY stb.book_id desc  [ RunTime:0.0070s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_compensate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_compensate` WHERE `school_id` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_book_cate` [ RunTime:0.0100s ]
+SQL: SELECT `cate_id`,`cate_name` FROM `fh_book_cate` WHERE `cate_id` < 99  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T15:54:30+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=6019&user_id=1616&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_id` = 6019 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_book_gallery` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `fh_book_gallery` WHERE `book_id` = 6019  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:26:56+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1520265600 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:36:23+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=get_class_rank&student_id=1616&student_points=150099&class_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0080s ]
+SQL: SELECT `student_points` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0100s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Vendor\Weixin\jssdk.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Vendor\Weixin\jssdk.php 第 92 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Vendor\Weixin\jssdk.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Vendor\Weixin\jssdk.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE `class_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( student_points <= 150099 AND class_id = 6 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:45:51+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1520265600 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0070s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:45:52+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Borrowtoread&a=history&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_circul_log` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `fh_circul_log` WHERE `student_id` = 1616 AND `log_time` BETWEEN '2018-03-01 00:00:00' AND '2018-03-06 16:45:52' ORDER BY log_time asc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_circul_log` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: l E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\160e1c9c1fff6569c33fa0bcf4ec5359.php 第 32 行.
+NOTIC: [8] Undefined variable: last_day E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\160e1c9c1fff6569c33fa0bcf4ec5359.php 第 65 行.
+NOTIC: [8] Undefined variable: now_month E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\160e1c9c1fff6569c33fa0bcf4ec5359.php 第 66 行.
+NOTIC: [8] Undefined variable: now_year E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\160e1c9c1fff6569c33fa0bcf4ec5359.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:45:53+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Borrowtoread&a=return_json&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent E:\Long\Code\www.qihangbus.com\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `fh_circul_log` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_circul_log` WHERE `student_id` = 1616 AND `log_time` BETWEEN '2018-03-01  00:00:00' AND '2018-03-06 16:45:53'  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:46:04+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0130s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2328 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0130s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '1616' AND c.circul_status = 1  [ RunTime:0.0040s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '1616' AND c.circul_status = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0070s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:46:07+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=get_message_list&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: UPDATE `fh_students` SET `message_num`='0' WHERE `student_id` = 1616 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_message` WHERE ( (sender_id = 1616 and sender_name = '武梓琪') or (receiver_id = 1616 and user_flag = 3) ) ORDER BY message_id desc LIMIT 30   [ RunTime:0.0160s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `student_name` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:46:10+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0110s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325970' WHERE `message_id` = 4914 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:46:11+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0090s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325971' WHERE `message_id` = 4914 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:46:12+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0090s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325972' WHERE `message_id` = 4914 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:46:12+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0090s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325972' WHERE `message_id` = 4914 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:46:13+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0070s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325973' WHERE `message_id` = 4906 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:46:13+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0110s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325973' WHERE `message_id` = 4906 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T16:46:14+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0120s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325974' WHERE `message_id` = 3913 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T16:46:14+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=ajax_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_message` [ RunTime:0.0110s ]
+SQL: UPDATE `fh_message` SET `readed`='1',`read_time`='1520325974' WHERE `message_id` = 3716 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:43:55+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=index&pay_tips=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1520265600 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T17:43:57+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1520265600 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T17:43:59+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=setting&student_id=1616&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0090s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: end_time E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\UcenterController.class.php 第 305 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:44:01+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Ucenter&a=signOut
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0130s ]
+SQL: UPDATE `fh_students_parent` SET `wx_id`='' WHERE ( parent_id = 2328 ) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:44:03+08:00 ] 127.0.0.1 /mobile.php/Oauth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0130s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: code E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\OauthController.class.php 第 22 行.
+
+[ 2018-03-06T17:51:10+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T17:51:12+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:51:19+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:51:25+08:00 ] 127.0.0.1 /mobile.php/Parentlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:52:28+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:validate_code
+
+[ 2018-03-06T17:53:06+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:validate_code
+
+[ 2018-03-06T17:54:09+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:validate_code
+
+[ 2018-03-06T17:56:30+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '18937851567' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '18937851567' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '18937851567' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '18937851567' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '18937851567' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '18937851567' ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:56:32+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 17 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T17:56:45+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 17 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:10+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=setting
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:11+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=signOut
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: UPDATE `fh_agent` SET `openid`='' WHERE ( id = 17 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:12+08:00 ] 127.0.0.1 /mobile.php/Oauth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0130s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: code E:\Long\Code\www.qihangbus.com\Application\mobiles\Controller\OauthController.class.php 第 22 行.
+
+[ 2018-03-06T17:57:28+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '18613714093' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '18613714093' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '18613714093' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '18613714093' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '18613714093' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '18613714093' ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:29+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 18 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 18 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:49+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '15138950118' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '15138950118' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '15138950118' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '15138950118' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '15138950118' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '15138950118' ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T17:57:50+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 35 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1517932800 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 35 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 35 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:52+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=school&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 35 ) ORDER BY school_id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1517932800 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students_parent` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1520265600 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:57:56+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=setting
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:01+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 35 ) ORDER BY school_id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1517932800 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students_parent` WHERE `school_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1520265600 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:06+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 35 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1517932800 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 35 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 35 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:21+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '91111111111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '91111111111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '91111111111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '91111111111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '91111111111' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '91111111111' ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:22+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 33 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1519747200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1517328000 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 33 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 33 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:24+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=school&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 33 ) ORDER BY school_id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1517328000 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students_parent` WHERE `school_id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1520265600 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1519747200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students_parent` WHERE `school_id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1520265600 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:47+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '15239139086' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '15239139086' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '15239139086' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '15239139086' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '15239139086' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '15239139086' ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:58:48+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 26 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 26 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 26 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:59:04+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '13525500007' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '13525500007' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '13525500007' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '13525500007' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '13525500007' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '13525500007' ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T17:59:05+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 22 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 22 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:59:38+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '15519911111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `teacher_mobile` = '15519911111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE `teacher_mobile` = '15519911111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_admins` WHERE `admin_mobile` = '15519911111' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( mobile = '15519911111' and pwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE ( fake_id = '' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fh_agent` SET `avatar`=NULL,`openid`='' WHERE ( mobile = '15519911111' ) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:59:39+08:00 ] 127.0.0.1 /mobile.php?m=mobile.php&c=Agent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 13 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1518192000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `fh_agent` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_schools` WHERE ( agent_id = 13 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 69 行.
+NOTIC: [8] Undefined variable: userinfo E:\Long\Code\www.qihangbus.com\Application\Runtime\Cache\mobiles\b21eb232c2d8e6a9e0be2c967c8fc83c.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:59:46+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 13 ) ORDER BY school_id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1518192000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students_parent` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1520265600 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T17:59:52+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( agent_id = 13 ) ORDER BY school_id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1518192000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students_parent` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1520265600 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T17:59:54+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=rebateDetails&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 and agent_id = 13 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-03' and paid_time > 1518192000 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-04' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-05' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-06' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-07' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-08' and paid_time > 1518192000 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T18:11:40+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=rebateDetails&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 and agent_id = 13 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-03' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-04' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-05' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-06' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-07' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-08' and paid_time > 1518192000 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T18:37:20+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=rebateDetails&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 and agent_id = 13 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-03-06T18:41:05+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=rebateDetails&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 and agent_id = 13 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-03-06T18:41:19+08:00 ] 127.0.0.1 /mobile.php?m=mobiles&c=Agent&a=rebateDetails&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 and agent_id = 13 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-03' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-04' and paid_time > 1518192000 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-05' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-06' and paid_time > 1518192000 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-07' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_students` WHERE ( school_id = 2 and paid_time <> 0 and from_unixtime(paid_time,'%Y-%m') <= '2018-08' and paid_time > 1518192000 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/mobiles/View/Common/footer.html): failed to open stream: No such file or directory E:\Long\Code\www.qihangbus.com\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

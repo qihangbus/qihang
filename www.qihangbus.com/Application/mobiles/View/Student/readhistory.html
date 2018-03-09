@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>借阅历史</title>
+    <include file="Common:theme" />
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+    <script class="js_prejs" type="text/javascript" src="__STATIC__/lib/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="wrap2">
+
+        <ul class="cart_list ">
+            <empty name="circulations">
+				<div class="data-empty">
+				<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+				<p>暂无数据</p>
+				</div>
+			</empty>
+            <volist name="circulations" id="vo">
+                <li class="li_cart">
+                    <dl class="cart_pro">
+                        <dt><img src="{$vo['book_thumb']}" alt="" /></dt>
+                        <dd class="dd_pname2">
+                            <p><b>{$vo['book_name']}</b></p>
+                            <p><b>借阅时间 </b>{$vo['borrow_time']}</p>
+                            <p><b>归还时间 </b>{$vo['return_time']}</p>
+                        </dd>
+                    </dl>
+                </li>
+                
+            </volist>
+
+        </ul>
+<empty name="admin_id">
+  <a href="{:U('mobile.php/SIndex/index',array('id'=>$id))}">
+  <else />
+  <a href="{:U('mobile.php/MIndex/index',array('id'=>$admin_id))}">
+</empty>
+
+  <!-- <a href="{:U('mobile.php/SIndex/Index',array('id'=>$id))}"> -->
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+    </div>
+</body>
+</html>

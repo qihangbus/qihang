@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>发送消息</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+
+<div class="wrap2"> 
+	
+<div class="line_hr"></div>
+<form name="myform" id="myform" action="{:U('mobile.php/MIndex/message_handle')}" method="post">
+<input type="hidden" name="user_id" value="{$user_id}"/>
+<input type="hidden" name="receive_id" value="{$receive_id}"/>	
+<input type="hidden" name="t" value="{$type}"/>	
+	<dl class="pinglun_add" style="display:none;">
+		<dt class="pl_tit"><span>标题</span></dt>
+		<dd class="pl_textarea"><input type="text" name="title" style="border:none;width:100%;" placeholder="在这里输入消息标题"></dd>
+	</dl>
+	<div class="line_hr"></div>
+	<dl class="pinglun_add">
+		<dt class="pl_tit"><span>内容</span></dt>
+		<dd class="pl_textarea"><textarea id="ta" class="textarea" maxlength="100" placeholder="在这里输入消息内容" name="message"></textarea></dd>
+	</dl>
+
+
+<br><br><br>
+	<div class="btn_box btn_boxadd"><a href="javascript:void(0);" class="btn btn2 btn_addjz">发送</a></div>
+</form>
+
+<a href="{:U('mobile.php/Ucenter/index')}">
+<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+</a>
+</div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#ta").focus(function(){
+			$(".f_index").hide();
+		});
+		$("#ta").blur(function(){
+			$(".f_index").show();
+		});
+		$(".btn_addjz").click(function(){
+			$("#myform").submit();
+		});
+		
+		$(".img_del").click(function(){
+			$(this).parents(".btn_photo_upload").removeClass("btn_photo_del");
+			$(this).parent().find("img").remove();
+			$(this).parent().find(".input_file").val("");
+		})
+	 
+});
+
+function rate(obj,oEvent,hoverClass,inputObj){ 
+	var defaultClass = ""; 
+
+//	if(obj.rateFlag) return; 
+	var e = oEvent || window.event; 
+	var target = e.target || e.srcElement;  
+	var starArray = obj.getElementsByTagName("li"); 
+	for(var i=0;i<starArray.length;i++){ 
+		starArray[i]._num = starArray.length; 
+		starArray[i].onclick=function(){ 
+		//	if(obj.rateFlag)
+		//	return; 
+		//	obj.rateFlag=true; 
+			document.getElementById(inputObj).value=this._num+1;
+		}; 
+	} 
+	if(target.tagName=="LI"){ 
+		for(var j=0;j<starArray.length;j++){ 
+		//	console.log(j);
+			if(j<=target._num){ 
+				starArray[j].className=hoverClass; 
+				document.getElementById(inputObj).value=target._num+1;
+			}else{ 
+				starArray[j].className=defaultClass; 
+			} 
+		} 
+	}else{ 
+		for(var k=0;k<starArray.length;k++){ 
+		//	starArray[k].className=defaultClass; 
+		} 
+	} 
+	
+} 
+</script>
+</body>
+</html>

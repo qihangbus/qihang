@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>收益记录</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+</head>
+<body>
+
+<div class="wrap2"> 
+<div class="iban"><img src="__PUBLIC__/images/mobiles/ban_mx.jpg" alt="" /></div>
+<!-- <div class="mxjilu_t"><span>当前可用金豆<b class="color2">{$userinfo.student_points}</b>颗</span></div> -->
+<div class="line_hr"></div>
+<div class="mxjilu_list">
+	<empty name="list">
+		<div class="data-empty">
+		<p><img src="__PUBLIC__/images/mobiles/empty.png"><p>
+		<p>暂无收益记录</p>
+		</div>
+	</empty>
+	<volist name="list" id="vo">
+	<dl>
+	<dt>{$vo.change_desc} <span>{$vo.change_time|date="Y-m-d",###}</span></dt>
+	<dd><span class="iconfont icon-dadou"></span>&nbsp;<span class="color{$vo.change_type}">{$vo.student_points}</span></dd>
+	</dl>
+	</volist>
+</div>
+ <a href="{:U('mobile.php/TIndex/index',array('teacher_id'=>$user_id))}">
+<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+</div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

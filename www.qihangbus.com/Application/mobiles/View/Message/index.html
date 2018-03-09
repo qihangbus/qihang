@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport"
+	content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="renderer" content="webkit">
+<title>消息</title>
+<include file="Common:theme" />
+</head>
+<body class="">
+	<div class="wrap2">
+
+		<div class="xx_list">
+
+			<volist name="data" id="data">
+			<dl class="dd_xx dd_xx_s">
+				<dd class="d_time">{$data.sent_time}</dd>
+				<dt>
+					{$data.title}<span>{$data.sent_time}</span>
+				</dt>
+				<dd class="dd_p">{$data.message}</dd>
+			</dl>
+			</volist>
+		</div>
+
+	</div>
+	<script class="js_prejs" type="text/javascript"
+		src="__STATIC__/lib/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<!--sidebar nav start-->
+<ul class="nav nav-pills nav-stacked custom-nav">
+    <volist name="menu" id="vo" key="k">
+        <li class="<if condition='$vo[num] gt 0'>menu-list</if><php>foreach($vo[child] as $v){if(strtolower($v[c]) == strtolower(CONTROLLER_NAME) && $v[a] == ACTION_NAME)echo ' nav-active';}</php>">
+            <a href='<if condition="$vo[num] lt 1">{:U("/$vo[c]/$vo[a]/$vo[data]")}</if>'>
+                <i class="fa {$vo['icon']}"></i> <span>{$vo['language']}</span>
+            </a>
+            <if condition="$vo['num'] gt 0">
+                <ul class="sub-menu-list">
+                    <volist name="vo.child" id="sub">
+                        <li <php>if(strtolower($sub[c]) == strtolower(CONTROLLER_NAME) && $sub[a] == ACTION_NAME) echo 'class="active"';</php> >
+                        <a href='{:U("$sub[c]/$sub[a]")}'>{$sub['language']}</a>
+                        </li>
+                    </volist>
+                </ul>
+            </if>
+        </li>
+    </volist>
+</ul>
+<!--sidebar nav end-->

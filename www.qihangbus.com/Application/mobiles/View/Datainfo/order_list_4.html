@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>数据统计</title>
+    <include file="Common:theme" />
+    <script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/mobiles/jquery.datePicker-min.js"></script>
+    <script src="__PUBLIC__/js/morris-chart/morris.js"></script>
+    <script src="__PUBLIC__/js/morris-chart/raphael-min.js"></script>
+    <link type="text/css" href="__PUBLIC__/css/mobiles/rili.css" rel="stylesheet" />
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+    <div class="wrap2">
+        <div class="head-cate">
+            <ul class="ul_2">
+                <li style="width:33.33%" <eq name="t" value="1"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/Datainfo/index',array('id'=>$id,'t'=>1))}">
+                        <span>图书情况 </span>
+                    </a>
+                </li>
+                <li style="width:33.33%" <eq name="t" value="2"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/Datainfo/order_list',array('id'=>$id,'t'=>2))}">
+                        <span>订购情况</span>
+                    </a>
+                </li>
+                <li style="width:33.33%" <eq name="t" value="3"> class="li_cur"</eq>>
+                    <a href="{:U('mobile.php/Datainfo/book_list',array('id'=>$id,'t'=>3))}">
+                        <span>订阅情况</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="line_hr"></div>
+        <div class="address_t" style="text-align:center;"><span id="stat">{$day}</span>
+            <a href="{:U('mobile.php/Datainfo/order_list',array('id'=>$id,'t'=>2,'param'=>2,'grade_id'=>$grade_id))}">
+                <span id="month_stat" style="border:1px solid #6cc;border-radius:5px;margin-left:20px;padding:2px 8px;color:#6cc">月度统计</span>
+            </a>
+        </div>
+        <div class="line_hr"></div>
+        <style type="text/css">
+        .btnbtn{border:1px solid #6cc;border-radius:5px;padding:2px 8px;margin:0 5px;color:#6cc;}
+        .btnbtn1{border:1px solid #ccc;color:#ccc;}
+        </style>
+        <div style="height:25px;line-height:25px;margin-top:20px;text-align:center;">
+            <volist name="grade_list" id="vo">
+                <a class='btnbtn <if condition="$grade_id eq $vo[grade_id]">btnbtn1</if>' href="/mobile.php?m=mobile.php&c=Datainfo&a=order_list&id={$id}&t=2&param=1&d={$day}&grade_id={$vo.grade_id}">{$vo.grade_name}</a>
+            </volist>
+            <div style="clear:both;"></div>
+        </div>
+        <div id="div1" style="">
+            <div id="myChart" style="height:200px;width:100%;margin:0 auto;"></div>
+        </div>
+        <div class="line_hr"></div>
+        <div class="head-cate">
+            <ul class="ul_3">
+                <li><span><i class="i_ic">班级</i> </span></li>
+                <li><span><i class="i_ic">任课老师</i></span></li>
+                <li><span><i class="i_ic">学生</i></span></li>
+            </ul>
+        </div>
+        <div class="line_hr"></div>
+
+        <div class="head-cate" style="margin:0;height:30px;">
+            <volist name="list" id="vo" empty="暂无数据">
+            <ul class="ul_3"  style="height:30px;">
+                <li style="height:30px;"><span style="border:none;">{$vo.grade_name}{$vo.class_name} </span></li>
+                <li style="height:30px;"><span style="border:none;">{$vo.teacher_name}</span></li>
+                <li style="height:30px;"><span style="border:none;">{$vo.student_name}</span></li>
+            </ul>
+            </volist>
+        </div>  
+
+<a href="{:U('mobile.php/SIndex/Index',array('id'=>$id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a> 
+</div>
+<script type="text/javascript">
+function getM(c,n){
+    //console.log(c+'--c--'+n);
+}
+$(function(){
+    $("#stat").click(function(){
+        $("#month_stat").hide();
+        var sid = "{$id}";
+        $("#stat").datePicker({
+            startDate: "2016-1-1",
+            inline:true,
+            selectMultiple:false,
+            renderCallback:function(y, m, B, p){
+                var str =m.getFullYear()+"-"+(m.getMonth()+1)+"-"+m.getDate();
+                y.bind("click",function(event){
+                    var da=new Date(y.find(".td_td").attr("da"));
+                    var str =da.getFullYear()+"-"+(da.getMonth()+1)+"-"+da.getDate(); 
+                    //alert(str); 
+                    $("#calendar-NaN").hide();
+                    window.location.href="/mobile.php?m=mobile.php&c=Datainfo&a=order_list&id="+sid+"&t=2&param=1&d="+str;
+                });
+            }
+        });
+    })    
+})
+Morris.Bar({
+  element: 'myChart',
+  data: {$list_json},
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']
+});
+</script>    
+</body>
+</html>

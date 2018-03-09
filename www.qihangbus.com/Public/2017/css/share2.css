@@ -1,0 +1,52 @@
+/* CSS Document */
+body {background-color:#fff;font-family:"Microsoft YaHei";}
+*{ margin:0; padding:0;}
+li{ list-style:none;}
+img{ border:none;}
+a {text-decoration:none;}
+.clear {clear:both;}
+.main{
+	width:100%;
+	max-width:640px;
+	background-color:#fff; margin:0 auto;
+	
+}
+.w-640 img {width:100%;}
+.w-560 {padding:20px;}
+.tit1 {text-align:center;font-size:30px;font-weight:bold;color:#232c3b;line-height:40px;}
+.tit2 { text-transform : uppercase;text-align:center;color:#232c3b;line-height:30px;}
+.w-nr {margin-top:20px;display:block;}
+.w-nr img{width:100%;}
+.w-nr p{color:#474747;font-size:16px;line-height:35px;margin-top:10px;}
+.tit3 {border-left:10px #ffa6b5 solid;height:50px;font-size:30px;line-height:50px;padding-left:15px;margin:20px 0;}
+
+.header {text-align:center;margin:0 auto;}
+.header img {width:100%;max-width:640px;}
+.nr_left {text-align:left;line-height: 20px;font-size:13px;float:left;width:60%;padding-top:10px;}
+.nr_right {right:0;width:40%;float:left;}
+.nr_right img{width:100%;}
+.w_320 {padding: 20px 10px;}
+.w_xx { text-align:center;clear:both;}
+.w_xx img{ width:60%;}
+
+.w_do {border-radius: 10px 10px 10px 10px;background: #ffc24d; width: 80%;height: 240px; margin:15px auto;text-align:center;
+}
+.w_do p{color:#ffffff;font-size:1.1em;padding-top:10px;}
+.xuxian {background-color:#ff904d;height:2px;width:68%;margin:5px auto;}
+.wenben {color:#ffffff;text-align:left;margin:10px 15px;}
+.aniu {border-radius: 10px;border: #0C0407 1px solid;margin:0 auto;padding: 5px 20px;display: table;}
+.cpan {margin:0 auto;text-align:center;}
+.cpan img{width:100%;max-width:253px;margin:10px 0;}
+.gsjs {background-color:#232c3b; height:600px;width:100%;}
+.jsnr {color:#ffffff;line-height: 24px;margin: 10px 10px;}
+.foer {background-color:#ffa800;width:100%;height:220px;} 
+.footer {width:100%;padding-top:10px;}
+.footer img{width:100%; }
+.footer1 {width:100%;margin:0 auto;}
+.im {width:50%;float:left;}
+.im1 {width:50%;float:left;}
+.nav_list { background-color:#1f2227;width:30%;position:fixed;right:-40%;height:100%;top:0;z-index:1; }
+.nav_list ul li a{color:#ffffff;line-height:40px;text-align:center;display:block;text-decoration:none;font-size:16px;}
+.nav_list ul li {border-bottom:1px #ffffff dashed;}
+.close {position:absolute;width:30px;height:30px;line-height:30px;background-color:#1f2227;top:0;left:-30px;text-align:center;background-image:url(../img/close.png);background-repeat:no-repeat;background-size:28px;background-position:center;}
+.nav_list.show {right:0;}

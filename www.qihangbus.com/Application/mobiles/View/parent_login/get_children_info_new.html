@@ -1,0 +1,167 @@
+<html>
+<head>
+	<title>身份确认</title>
+	<meta type="html/text" charset="utf-8"/>
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="/Public/css/mobiles/iconfont.css">
+	<style>
+		body{font-size: 2.7em;letter-spacing:2px;font-family: "微软雅黑";color: rgb(51,51,51);background-color: #F2F2F2;}
+		.content{background-color: rgb(247,247,247);}
+		.info{background-color: #fff}
+		.info ul{list-style-type:none;}
+		.info ul li{line-height: 2.5em;border-bottom:1px solid rgb(229,229,229);}
+		.info ul li .right{float:right;margin-right: 25px;font-size: 0.9em}
+		.order{background-color: #fff}
+		.order ul{list-style-type:none;}
+		.order ul li{line-height: 2.5em;}
+		.order ul li .right{float:right;margin-right: 25px;font-size: 0.9em}
+		.order ul li .title{font-size: 1em}
+		.order .red{color: rgb(233,59,61)}
+		.order .btn{
+			width: 100%;
+			height: 100px;
+			color: rgb(255,255,255);
+			font-size: 48px;
+			border-radius: 15px;
+			border: 5px solid rgb(6,186,4);
+			background-color: rgb(6,186,4) !important;
+		}
+		.order .pay{
+			padding: 10px 20px 30px 20px;
+		}
+		.pay button{letter-spacing:2px;font-family: "微软雅黑";}
+		.year{
+			height: 225px;
+			padding-top: 55px;
+			border-top:1px solid rgb(229,229,229);
+		}
+		.year a{
+			color: rgb(51,51,51);
+		}
+		.year .active{
+			color: #1696F6;
+			border-color: #1696F6;
+			font-weight:bold;
+		}
+		.year .active .up{
+			border-color: #1696F6;
+		}
+		.option{
+			height: 190px;
+			border:1px solid rgb(229,229,229);
+			width:20%;
+			float:left;
+			margin:0px 2%;
+			text-align: center;
+			font-size: 36px;
+		}
+		.option span{
+			font-size:35px;
+		}
+
+		.option .up{
+			height:90px;
+			margin:0 40px;
+			display: block;
+			border-bottom: 1px solid rgb(229,229,229);
+		}
+		.f_index {
+			display: inline-block;
+			background-size: 20px auto;
+			background: rgba(174,224,120,.5);
+			text-align: center;
+			vertical-align: middle;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			position: fixed;
+			left: 37px;
+			bottom: 37px;
+			color: #FFFFFF;
+			border-radius: 50%;
+			z-index: 90;
+		}
+		.f_index .icon-shouyeshouye {
+			font-size: 80px;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="info">
+		<ul>
+			<li>
+				<span>学生姓名</span>
+				<span class="right">{$student_info.student_name}</span>
+			</li>
+			<li>
+				<span>幼儿园</span>
+				<span class="right">{$student_info.school_name}</span>
+			</li>
+			<li>
+				<span>班级</span>
+				<span class="right">{$student_info.class_name}</span>
+			</li>
+			<li>
+				<span>任课老师</span>
+				<span class="right">{$student_info.teacher_name}</span>
+			</li>
+		</ul>
+	</div>
+	<div class="order">
+		<ul>
+			<eq name="charge_type" value="1">
+				<li style="line-height:105px;">
+					<span class="title">资费标准</span>
+					<div class="year">
+						<a href="{:U('mobile.php/Parentlogin/getChildrenInfo', ['student_id' => $student_id,'year'=>0.5])}">
+							<div class="option <eq name='year' value='0.5'>active</eq>">
+								<span class="up">半年</span>
+								<span>180元</span>
+							</div>
+						</a>
+						<a href="{:U('mobile.php/Parentlogin/getChildrenInfo', ['student_id' => $student_id,'year'=>1])}">
+							<div class="option <eq name='year' value='1'>active</eq>">
+								<span class="up">1年</span>
+								<span>360元</span>
+							</div>
+						</a>
+						<a href="{:U('mobile.php/Parentlogin/getChildrenInfo', ['student_id' => $student_id,'year'=>2])}">
+							<div class="option <eq name='year' value='2'>active</eq>">
+								<span class="up">2年</span>
+								<span>600元</span>
+							</div>
+						</a>
+						<a href="{:U('mobile.php/Parentlogin/getChildrenInfo', ['student_id' => $student_id,'year'=>3])}">
+							<div class="option <eq name='year' value='3'>active</eq>">
+								<span class="up">3年</span>
+								<span>900元</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="text-align: right;margin-right:25px;clear: both">
+					<strong class="title">支付金额:</strong>
+					<span class="red">{$order_amount|default='0.00'} 元</span>
+				</li>
+				<else/>
+				<li>
+					<strong class="title red">您还未开通，请联系任课老师。</strong>
+				</li>
+			</eq>
+		</ul>
+		<eq name="charge_type" value="1">
+			<div class="pay">
+				<button class="btn" type="button" onclick="callpay()">微信支付</button>
+			</div>
+		</eq>
+	</div>
+</div>
+<a href="/mobile.php?m=mobile.php&c=Ucenter&a=index">
+	<span class="f_index"><span class="iconfont icon-shouyeshouye"></span></span>
+</a>
+{$jsapi}
+</body>
+</html>

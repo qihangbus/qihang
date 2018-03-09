@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="effect">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="UEMO">
+	<link type="text/css" href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+	<link type="text/css" href="__PUBLIC__/css/bxslider.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/animate.min.css">
+	<link type="text/css" href="__PUBLIC__/css/stylem.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/380m.css">
+	<title>精选绘本_{:C('site_title')}</title>
+</head>
+<body>
+<include file="Common:header"/>
+<div id="sitecontent" class="transform">
+	<div id="header">
+		<div id="openlc" class="fl btn">
+			<div class="lcbody">
+				<div class="lcitem top">
+					<div class="rect top"></div>
+				</div>
+				<div class="lcitem bottom">
+					<div class="rect bottom"></div>
+				</div>
+			</div>
+		</div>
+		<a id="logo" href="/default.php"><img src="__PUBLIC__/image/mlogo.png"/></a>
+	</div>
+	<div class="scrollView">
+		<div class="npagePage">
+			<div class="content">
+				<div id="category" class="dropmenu" style="margin-bottom: 0px;">
+					<div class="label plr20"><i class="down fa fa-angle-down transform"></i>
+						<div class="text">全部</div>
+					</div>
+					<ul class="transform" data-height_bak="164" data-height="auto" style="height: 0px;">
+						<li><a href="/default.php/Home/Book/index" class="active">全部</a></li>
+
+						<li><a href="/default.php/Home/Book/index/type/2">小班</a></li>
+
+						<li><a href="/default.php/Home/Book/index/type/3">中班</a></li>
+
+						<li><a href="/default.php/Home/Book/index/type/4">大班</a></li>
+
+					</ul>
+				</div>
+				<div id="projectlist" style="margin-top:3px;">
+					<div class="wrapper plr5">
+						<foreach name="data" item="v">
+						<div class="projectitem wow fadeIn" style="visibility: visible; animation-name: slideInUp;">
+							<a href="{:U('view',['id'=>$v['book_id']])}">
+								<img src="{$v.book_thumb}" width="500" height="320">
+								<div class="project_info">
+									<div>
+										<p class="title">{$v.book_name}</p>
+										<p class="subtitle">{$v.book_author}</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						</foreach>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div id="pages">
+					{$page}
+				</div>
+			</div>
+		</div>
+		<include file="Common:footer"/>
+		<div id="bgmask" class="iPage hide"></div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">var YYConfig = {};</script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.bxslider.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/wow.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/masonry_4.min.js"></script>
+<script type="text/javascript">$(function () {
+	new WOW({scrollContainer: ".scrollView"}).init();
+})</script>
+<script type="text/javascript" src="__PUBLIC__/js/org.min.js" data-main="ListMain"></script>
+</html>

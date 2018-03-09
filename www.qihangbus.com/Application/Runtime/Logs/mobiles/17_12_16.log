@@ -1,0 +1,2458 @@
+[ 2017-12-16T20:59:14+08:00 ] 120.204.17.69 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3663
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T20:59:14+08:00 ] 120.204.17.69 /mobile.php?m=&&m=mobile.php&c=Parentlogin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-12-16T20:59:22+08:00 ] 123.151.77.91 /mobile.php?m=mobile.php&c=Ucenter&a=comment_handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2387 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_circulation` WHERE `circul_status` = 1 AND `student_id` = 3663 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_num` FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_task_option` WHERE ( task_id = 4007 and option_id = 9249 and correct_value = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_task` [ RunTime:0.0003s ]
+SQL: SELECT `task_award` FROM `fh_task` WHERE ( task_id = 4007 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0004s ]
+SQL: INSERT INTO `fh_student_task` (`task_id`,`student_id`,`option_id`,`task_time`,`comment_time`,`content`,`image`) VALUES ('4007','3663','9249','1513429162','1513429162','','') [ RunTime:0.0003s ]
+SQL: select * from fh_book_video where video not in (select video from fh_task_video where student_id = 3663) limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_task_video` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_task_video` (`task_id`,`student_id`,`video`) VALUES ('4007','3663','978753504976612.wav') [ RunTime:0.0002s ]
+SQL: UPDATE `fh_students` SET `student_points`=student_points+50 WHERE `student_id` = 3663 [ RunTime:0.0002s ]
+SQL: UPDATE `fh_students` SET `task_number`=task_number+1,`task_num`='0' WHERE `student_id` = 3663 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0004s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('3663','50','1513429162','任务金豆','1','1') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-12-16T20:59:23+08:00 ] 123.151.77.91 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3663
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0007s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2387 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0005s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3663' AND c.circul_status = 1  [ RunTime:0.0001s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3663' AND c.circul_status = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 4007 ORDER BY option_id asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0005s ]
+SQL: SELECT `option_id` FROM `fh_student_task` WHERE ( task_id = 4007 and student_id = 3663 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-12-16T20:59:32+08:00 ] 120.204.17.70 /mobile.php?m=mobile.php&c=Ucenter&a=comment_handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T20:59:32+08:00 ] 120.204.17.70 /mobile.php?m=&&m=mobile.php&c=Parentlogin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-12-16T20:59:37+08:00 ] 111.30.142.78 /mobile.php/Oauth/index/?code=071GsLTi2UCZkJ0VvSUi28EvTi2GsLTp&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T20:59:37+08:00 ] 123.151.77.91 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwrO4jvsiuOcHr-B3-Qkwirc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwrO4jvsiuOcHr-B3-Qkwirc' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T20:59:37+08:00 ] 123.151.77.91 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3663 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3663 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3663 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-12-16T20:59:40+08:00 ] 123.151.77.91 /mobile.php?m=mobile.php&c=Mybag&a=index&user_flag=3&user_id=3663
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `fh_schooltobook` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0003s ]
+SQL: SELECT `grade_name` FROM `fh_grade` WHERE `grade_id` = 32 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM fh_schooltobook stb left JOIN fh_books b ON stb.book_id = b.book_id  WHERE `class_id` = '99' ORDER BY stb.book_id desc  [ RunTime:0.0002s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_compensate` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_compensate` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_book_cate` [ RunTime:0.0003s ]
+SQL: SELECT `cate_id`,`cate_name` FROM `fh_book_cate` WHERE `cate_id` < 99  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-12-16T21:00:11+08:00 ] 111.30.142.78 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=5074&user_id=3663&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_id` = 5074 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_book_gallery` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_book_gallery` WHERE `book_id` = 5074  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-12-16T21:00:19+08:00 ] 123.151.77.91 /mobile.php?m=mobile.php&c=Borrowtoread&a=add_to_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3663 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two`,`try_charge_time` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_circulation` WHERE `student_id` = 3663 AND `class_id` = 99 AND `book_id` = 5074 AND `circul_status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_circulation` WHERE `student_id` = 3663 AND `class_id` = 99 AND `circul_status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:03:30+08:00 ] 1.193.196.88 /mobile.php/Oauth/index/?code=0615PK1V1JIpLV0b4t3V1EUR1V15PK17&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:03:30+08:00 ] 1.193.196.88 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwt0hGqbzjdodecz3IOuhIBc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwt0hGqbzjdodecz3IOuhIBc' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:03:30+08:00 ] 1.193.196.88 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3659 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-12-16T21:03:32+08:00 ] 1.193.196.88 /mobile.php?m=mobile.php&c=Ucenter&a=signin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0005s ]
+SQL: SELECT `add_time` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_signin` (`user_id`,`user_flag`,`signin_num`,`user_points`,`add_time`) VALUES ('3659','3','3','15','1513429412') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: UPDATE `fh_students` SET `student_points`=student_points+15 WHERE `student_id` = 3659 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('3659','15','1513429412','签到金豆','1','3') [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:03:33+08:00 ] 1.193.196.88 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3659 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-12-16T21:03:34+08:00 ] 1.193.196.88 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3659
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2624 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0003s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3659' AND c.circul_status = 1  [ RunTime:0.0018s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3659' AND c.circul_status = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 3475 ORDER BY option_id asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-12-16T21:03:39+08:00 ] 120.204.17.68 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwt0hGqbzjdodecz3IOuhIBc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwt0hGqbzjdodecz3IOuhIBc' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:03:39+08:00 ] 1.193.196.88 /mobile.php?m=mobile.php&c=Ucenter&a=comment_handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2624 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_circulation` WHERE `circul_status` = 1 AND `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_num` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_task_option` WHERE ( task_id = 3475 and option_id = 8176 and correct_value = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_task` [ RunTime:0.0003s ]
+SQL: SELECT `task_award` FROM `fh_task` WHERE ( task_id = 3475 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_student_task` (`task_id`,`student_id`,`option_id`,`task_time`,`comment_time`,`content`,`image`) VALUES ('3475','3659','8176','1513429419','1513429419','','') [ RunTime:0.0002s ]
+SQL: select * from fh_book_video where video not in (select video from fh_task_video where student_id = 3659) limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_task_video` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_task_video` (`task_id`,`student_id`,`video`) VALUES ('3475','3659','978753504976602.wav') [ RunTime:0.0002s ]
+SQL: UPDATE `fh_students` SET `student_points`=student_points+50 WHERE `student_id` = 3659 [ RunTime:0.0002s ]
+SQL: UPDATE `fh_students` SET `task_number`=task_number+1,`task_num`='0' WHERE `student_id` = 3659 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('3659','50','1513429419','任务金豆','1','1') [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-12-16T21:03:39+08:00 ] 120.204.17.68 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3659 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-12-16T21:03:41+08:00 ] 1.193.196.88 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3659
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2624 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0004s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3659' AND c.circul_status = 1  [ RunTime:0.0001s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3659' AND c.circul_status = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 3475 ORDER BY option_id asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0003s ]
+SQL: SELECT `option_id` FROM `fh_student_task` WHERE ( task_id = 3475 and student_id = 3659 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-12-16T21:03:43+08:00 ] 1.193.196.88 /mobile.php?m=mobiles&c=Ucenter&a=taskVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0007s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2624 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_circulation c WHERE c.student_id = '3659' AND c.circul_status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3659' AND c.circul_status = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_task_video` [ RunTime:0.0003s ]
+SQL: SELECT `video` FROM `fh_task_video` WHERE `student_id` = 3659 AND `task_id` IN ('3475') ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_isbn` = '978753504976602' LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-12-16T21:03:44+08:00 ] 120.204.17.70 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3659
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:03:45+08:00 ] 120.204.17.70 /mobile.php?m=&&m=mobile.php&c=Parentlogin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-12-16T21:04:46+08:00 ] 1.193.196.88 /mobile.php/Oauth/index/?code=061ne0a71JO0NS1bTa971hGY971ne0ac&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:04:46+08:00 ] 1.193.196.88 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwt0hGqbzjdodecz3IOuhIBc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwt0hGqbzjdodecz3IOuhIBc' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:04:46+08:00 ] 1.193.196.88 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3659 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3659 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-12-16T21:04:48+08:00 ] 1.193.196.88 /mobile.php?m=mobile.php&c=Mybag&a=index&user_flag=3&user_id=3659
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `fh_schooltobook` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0004s ]
+SQL: SELECT `grade_name` FROM `fh_grade` WHERE `grade_id` = 32 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM fh_schooltobook stb left JOIN fh_books b ON stb.book_id = b.book_id  WHERE `class_id` = '99' ORDER BY stb.book_id desc  [ RunTime:0.0003s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 3659 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_compensate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_compensate` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_book_cate` [ RunTime:0.0003s ]
+SQL: SELECT `cate_id`,`cate_name` FROM `fh_book_cate` WHERE `cate_id` < 99  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-12-16T21:04:58+08:00 ] 1.193.196.88 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=5093&user_id=3659&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_id` = 5093 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_book_gallery` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_book_gallery` WHERE `book_id` = 5093  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-12-16T21:15:02+08:00 ] 123.151.77.91 /mobile.php/Oauth/index/?code=071AaeOn1Bnx2k0KsUOn1oBlOn1AaeOg&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-16T21:15:02+08:00 ] 123.151.77.91 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwlcAXVyEQDMW7bAG_wUXauM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwlcAXVyEQDMW7bAG_wUXauM' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3559 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:15:03+08:00 ] 123.151.77.91 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3559 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3559 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3559 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3559 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3559 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-12-16T21:15:11+08:00 ] 123.151.77.91 /mobile.php?m=mobile.php&c=Mybag&a=index&user_flag=3&user_id=3559
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `fh_schooltobook` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0003s ]
+SQL: SELECT `grade_name` FROM `fh_grade` WHERE `grade_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 3559 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM fh_schooltobook stb left JOIN fh_books b ON stb.book_id = b.book_id  WHERE `class_id` = '94' ORDER BY stb.book_id desc  [ RunTime:0.0011s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 3559 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_compensate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_compensate` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_book_cate` [ RunTime:0.0004s ]
+SQL: SELECT `cate_id`,`cate_name` FROM `fh_book_cate` WHERE `cate_id` < 99  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-12-16T21:27:20+08:00 ] 223.88.5.42 /mobile.php/Oauth/index/?code=011q0OHo0TCjNs1tJTJo0NvOHo0q0OHt&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:27:20+08:00 ] 223.88.5.42 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwhKSfg30jh_Wtd5qT8VyBzI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:27:21+08:00 ] 223.88.5.42 /mobile.php?m=&&m=mobile.php&c=TIndex&a=index&teacher_id=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0006s ]
+SQL: SELECT `teacher_id`,fh_teacher.message_num,fh_teacher.teacher_avatar,fh_teacher.rank_points,fh_teacher.teacher_rank,fh_teacher.school_id,fh_teacher.grade_id,fh_class.class_id,`school_name`,`grade_name`,`class_name`,`teacher_name` FROM `fh_teacher` INNER JOIN fh_class on fh_class.class_id=fh_teacher.class_id INNER JOIN fh_grade on fh_grade.grade_id=fh_class.grade_id INNER JOIN fh_schools on fh_schools.school_id=fh_grade.school_id  WHERE ( teacher_id=111 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 111 AND `user_flag` = 2 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 111 AND `user_flag` = 2 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-12-16T21:27:23+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=TIndex&a=signin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0005s ]
+SQL: SELECT `add_time` FROM `fh_signin` WHERE `user_id` = 111 AND `user_flag` = 2 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_signin` (`user_id`,`user_flag`,`signin_num`,`user_points`,`add_time`) VALUES ('111','2','4','20','1513430843') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0004s ]
+SQL: UPDATE `fh_teacher` SET `rank_points`=rank_points+20 WHERE `teacher_id` = 111 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0004s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('111','20','1513430843','签到金豆','1','2') [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:27:24+08:00 ] 223.88.5.42 /mobile.php?m=&&m=mobile.php&c=TIndex&a=index&teacher_id=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0006s ]
+SQL: SELECT `teacher_id`,fh_teacher.message_num,fh_teacher.teacher_avatar,fh_teacher.rank_points,fh_teacher.teacher_rank,fh_teacher.school_id,fh_teacher.grade_id,fh_class.class_id,`school_name`,`grade_name`,`class_name`,`teacher_name` FROM `fh_teacher` INNER JOIN fh_class on fh_class.class_id=fh_teacher.class_id INNER JOIN fh_grade on fh_grade.grade_id=fh_class.grade_id INNER JOIN fh_schools on fh_schools.school_id=fh_grade.school_id  WHERE ( teacher_id=111 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 111 AND `user_flag` = 2 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 111 AND `user_flag` = 2 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-12-16T21:27:31+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=TIndex&a=setting&user_id=111&user_flag=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0006s ]
+SQL: SELECT `first_flag` FROM `fh_teacher` WHERE `teacher_id` = 111 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-12-16T21:27:33+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=TIndex&a=signOut&user_id=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0006s ]
+SQL: UPDATE `fh_teacher` SET `wx_id`='' WHERE ( teacher_id = 111 ) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2017-12-16T21:27:34+08:00 ] 111.30.142.78 /mobile.php/Oauth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/OauthController.class.php 第 22 行.
+
+[ 2017-12-16T21:27:35+08:00 ] 223.88.5.42 /mobile.php/Oauth/index/?code=001whOeo1QdQ9k0e1Odo1vP9fo1whOel&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:27:35+08:00 ] 223.88.5.42 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwhKSfg30jh_Wtd5qT8VyBzI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_schools` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_admins` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( openid = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:27:35+08:00 ] 223.88.5.42 /mobile.php?m=&&m=mobile.php&c=Parentlogin&a=index&fack_id=oKJMMwhKSfg30jh_Wtd5qT8VyBzI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-12-16T21:27:41+08:00 ] 120.204.17.68 /mobile.php?m=mobile.php&c=TIndex&a=setting&user_id=111&user_flag=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0006s ]
+SQL: SELECT `first_flag` FROM `fh_teacher` WHERE `teacher_id` = 111 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-12-16T21:28:00+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=Parentlogin&a=validate_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `parent_mobile` = '13783446962' AND `pwd` = '8260c7ce5505123686211e199cbea73a' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_weixin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `fh_students_parent` SET `parent_avatar`='http://wx.qlogo.cn/mmopen/gwhELYibibFdRId5T8F3jE9mia0qO5LjhNegZOQARpHK6UsqfCLV10vCSeThaxGUDmZGYqF9RDWyLJI9m1icAkaZg39u7aJNBUSx/0',`wx_id`='oKJMMwhKSfg30jh_Wtd5qT8VyBzI' WHERE `parent_mobile` = '13783446962' [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `headimgurl` FROM `fh_weixin_user` WHERE `fake_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two`,`try_charge_time` FROM `fh_schools` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-12-16T21:28:01+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3523 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-12-16T21:28:04+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=Ucenter&a=signin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0005s ]
+SQL: SELECT `add_time` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_signin` (`user_id`,`user_flag`,`signin_num`,`user_points`,`add_time`) VALUES ('3523','3','3','15','1513430884') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: UPDATE `fh_students` SET `student_points`=student_points+15 WHERE `student_id` = 3523 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('3523','15','1513430884','签到金豆','1','3') [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:28:05+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3523 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-12-16T21:28:10+08:00 ] 223.88.5.42 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3523
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2666 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0004s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3523' AND c.circul_status = 1  [ RunTime:0.0011s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3523' AND c.circul_status = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 2932 ORDER BY option_id asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-12-16T21:28:32+08:00 ] 111.30.142.78 /mobile.php/Oauth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/OauthController.class.php 第 22 行.
+
+[ 2017-12-16T21:28:33+08:00 ] 223.88.5.42 /mobile.php/Oauth/index/?code=061JTzb62BmJ6K0bgnc624yMb62JTzbT&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-16T21:28:33+08:00 ] 223.88.5.42 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwhKSfg30jh_Wtd5qT8VyBzI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwhKSfg30jh_Wtd5qT8VyBzI' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:28:33+08:00 ] 223.88.5.42 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3523 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3523 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 16 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3523 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-12-16T21:43:20+08:00 ] 123.162.167.76 /mobile.php/Oauth/index/?code=0714kowf2jLbhB09cZyf23Hjwf24kows&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:43:20+08:00 ] 123.162.167.76 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwvbeDLU8g1U7tedFatPwQyI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwvbeDLU8g1U7tedFatPwQyI' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:43:20+08:00 ] 123.162.167.76 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3562 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-12-16T21:43:23+08:00 ] 123.162.167.76 /mobile.php?m=mobile.php&c=Ucenter&a=signin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0005s ]
+SQL: SELECT `add_time` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_signin` (`user_id`,`user_flag`,`signin_num`,`user_points`,`add_time`) VALUES ('3562','3','3','15','1513431803') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: UPDATE `fh_students` SET `student_points`=student_points+15 WHERE `student_id` = 3562 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('3562','15','1513431803','签到金豆','1','3') [ RunTime:0.0002s ]
+
+[ 2017-12-16T21:43:24+08:00 ] 123.162.167.76 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3562 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-12-16T21:43:30+08:00 ] 120.204.17.71 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwvbeDLU8g1U7tedFatPwQyI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwvbeDLU8g1U7tedFatPwQyI' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:43:30+08:00 ] 120.204.17.71 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3562 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3562 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3562 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-12-16T21:45:18+08:00 ] 111.30.142.233 /mobile.php/Oauth/index/?code=0619kMhb1BXJmu0WpUfb1LJLhb19kMh4&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-16T21:45:18+08:00 ] 123.151.77.90 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwvwsgQD6o_e7K8KxSY8xnrE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwvwsgQD6o_e7K8KxSY8xnrE' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T21:45:19+08:00 ] 123.151.77.90 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: end_time /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 44 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-12-16T21:45:23+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-12-16T21:45:24+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&appre=1&year=1&code=08104DQ21lseAO15raQ21WilQ2104DQc&state=8701
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0008s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_pay_log` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_pay_log` (`order_amount`,`order_type`,`user_id`,`user_flag`,`log_time`,`expires`,`pay_year`,`remark`) VALUES ('300','2','1616','3','1513431924','1545235200','1','1') [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_close(): 37 is not a valid cURL handle resource /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 175 行.
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-12-16T21:45:38+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&year=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-12-16T21:45:39+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&appre=1&year=2&code=021gbBme1c53Us0hYpne1Vuvme1gbBm9&state=7524
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0008s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_pay_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `fh_pay_log` (`order_amount`,`order_type`,`user_id`,`user_flag`,`log_time`,`expires`,`pay_year`,`remark`) VALUES ('560','2','1616','3','1513431939','1576771200','2','1') [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_close(): 37 is not a valid cURL handle resource /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 175 行.
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-12-16T21:45:41+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&year=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-12-16T21:45:42+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&appre=1&year=3&code=001z37320p57rG1tldZ10e4i320z373l&state=7009
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0008s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_pay_log` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_pay_log` (`order_amount`,`order_type`,`user_id`,`user_flag`,`log_time`,`expires`,`pay_year`,`remark`) VALUES ('780','2','1616','3','1513431942','1608307200','3','1') [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_close(): 37 is not a valid cURL handle resource /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 175 行.
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-12-16T21:45:44+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&year=0.5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-12-16T21:45:45+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&appre=1&year=0.5&code=011VNI0Q0XFQdc2sKf0Q0luK0Q0VNI0C&state=4976
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_pay_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `fh_pay_log` (`order_amount`,`order_type`,`user_id`,`user_flag`,`log_time`,`expires`,`pay_year`,`remark`) VALUES ('160','2','1616','3','1513431945','1529467200','0.5','1') [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_close(): 37 is not a valid cURL handle resource /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 175 行.
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-12-16T21:45:49+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 1616 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 1616 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: end_time /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 44 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-12-16T21:45:50+08:00 ] 58.247.212.98 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&year=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-12-16T21:45:56+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0006s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-12-16T21:45:57+08:00 ] 123.151.77.90 /mobile.php?m=mobile.php&c=Parentlogin&a=getChildrenInfo&student_id=1616&appre=1&year=1&code=071rL7eS1RHzA61t1XdS1ZFTdS1rL7eW&state=6200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8] Use of undefined constant WXCURL_TIMEOUT - assumed 'WXCURL_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 782 行.
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 824 行.
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `try_charge_time` FROM `fh_schools` WHERE ( school_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_pay_log` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_pay_log` (`order_amount`,`order_type`,`user_id`,`user_flag`,`log_time`,`expires`,`pay_year`,`remark`) VALUES ('300','2','1616','3','1513431957','1545235200','1','1') [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 155 行.
+NOTIC: [2] curl_close(): 37 is not a valid cURL handle resource /data/wwwroot/www.qihangbus.com/ThinkPHP/Library/Vendor/WxPayPubHelper/WxPayPubHelper.php 第 175 行.
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 1616 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `charge_type` FROM `fh_schools` WHERE `school_id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-12-16T23:01:01+08:00 ] 123.151.76.158 /mobile.php/Oauth/index/?code=071PmPop0BqgLo13ghnp0WRWop0PmPow&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-16T23:01:01+08:00 ] 123.151.76.158 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwrHTFAPkpFa68j0tmpZks1c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwrHTFAPkpFa68j0tmpZks1c' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T23:01:01+08:00 ] 123.151.76.158 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3660 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3660 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3660 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-12-16T23:01:03+08:00 ] 123.151.76.158 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3660
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2639 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0004s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3660' AND c.circul_status = 1  [ RunTime:0.0019s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3660' AND c.circul_status = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 3220 ORDER BY option_id asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-12-16T23:01:43+08:00 ] 123.151.76.158 /mobile.php?m=mobile.php&c=Ucenter&a=comment_handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2639 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_circulation` WHERE `circul_status` = 1 AND `student_id` = 3660 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_num` FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_task_option` WHERE ( task_id = 3220 and option_id = 7827 and correct_value = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_task` [ RunTime:0.0003s ]
+SQL: SELECT `task_award` FROM `fh_task` WHERE ( task_id = 3220 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_student_task` (`task_id`,`student_id`,`option_id`,`task_time`,`comment_time`,`content`,`image`) VALUES ('3220','3660','7827','1513436503','1513436503','','') [ RunTime:0.0002s ]
+SQL: select * from fh_book_video where video not in (select video from fh_task_video where student_id = 3660) limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_task_video` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_task_video` (`task_id`,`student_id`,`video`) VALUES ('3220','3660','978753504976613.wav') [ RunTime:0.0002s ]
+SQL: UPDATE `fh_students` SET `student_points`=student_points+50 WHERE `student_id` = 3660 [ RunTime:0.0003s ]
+SQL: UPDATE `fh_students` SET `task_number`=task_number+1,`task_num`='0' WHERE `student_id` = 3660 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_points_record` [ RunTime:0.0003s ]
+SQL: INSERT INTO `fh_points_record` (`user_id`,`student_points`,`change_time`,`change_desc`,`change_type`,`user_flag`) VALUES ('3660','50','1513436503','任务金豆','1','1') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-12-16T23:01:44+08:00 ] 123.151.76.158 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3660
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2639 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0004s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3660' AND c.circul_status = 1  [ RunTime:0.0001s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3660' AND c.circul_status = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 3220 ORDER BY option_id asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0004s ]
+SQL: SELECT `option_id` FROM `fh_student_task` WHERE ( task_id = 3220 and student_id = 3660 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-12-16T23:01:49+08:00 ] 111.30.142.233 /mobile.php?m=mobile.php&c=Ucenter&a=task&student_id=3660
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0006s ]
+SQL: SELECT `student_id` FROM `fh_students_parent` WHERE ( parent_id = 2639 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_circulation` [ RunTime:0.0003s ]
+SQL: SELECT t.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id  WHERE c.student_id = '3660' AND c.circul_status = 1  [ RunTime:0.0001s ]
+SQL: SELECT st.* FROM fh_circulation c left join fh_task t on t.task_book_id = c.book_id INNER JOIN fh_student_task st on st.task_id = t.task_id and st.student_id = c.student_id  WHERE c.student_id = '3660' AND c.circul_status = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_task_option` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_task_option` WHERE `task_id` = 3220 ORDER BY option_id asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_student_task` [ RunTime:0.0004s ]
+SQL: SELECT `option_id` FROM `fh_student_task` WHERE ( task_id = 3220 and student_id = 3660 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0004s ]
+SQL: SELECT `task_number` FROM `fh_students` WHERE `student_id` = 3660 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-12-16T23:02:30+08:00 ] 123.151.77.121 /mobile.php/Oauth/index/?code=021lNwpI0r9w6i2lBrpI0gkbpI0lNwpd&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-16T23:02:30+08:00 ] 123.151.77.121 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwhcqtZx5jsuENjJlAj6AaAU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwhcqtZx5jsuENjJlAj6AaAU' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T23:02:30+08:00 ] 111.30.142.78 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3708 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3708 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3708 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-12-16T23:02:38+08:00 ] 123.151.77.121 /mobile.php?m=mobile.php&c=Mybag&a=index&user_flag=3&user_id=3708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `fh_schooltobook` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0004s ]
+SQL: SELECT `grade_name` FROM `fh_grade` WHERE `grade_id` = 32 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM fh_schooltobook stb left JOIN fh_books b ON stb.book_id = b.book_id  WHERE `class_id` = '100' ORDER BY stb.book_id desc  [ RunTime:0.0010s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_compensate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_compensate` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_book_cate` [ RunTime:0.0003s ]
+SQL: SELECT `cate_id`,`cate_name` FROM `fh_book_cate` WHERE `cate_id` < 99  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2017-12-16T23:02:40+08:00 ] 120.204.17.68 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwhcqtZx5jsuENjJlAj6AaAU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwhcqtZx5jsuENjJlAj6AaAU' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T23:02:40+08:00 ] 120.204.17.68 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3708 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3708 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3708 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-12-16T23:03:00+08:00 ] 123.151.77.121 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=5272&user_id=3708&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_id` = 5272 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_book_gallery` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_book_gallery` WHERE `book_id` = 5272  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-12-16T23:04:05+08:00 ] 111.30.142.78 /mobile.php/Oauth/index/?code=061s1n2e1AYY9s01n64e1dmt2e1s1n2w&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-16T23:04:05+08:00 ] 123.151.77.121 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwhcqtZx5jsuENjJlAj6AaAU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwhcqtZx5jsuENjJlAj6AaAU' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T23:04:05+08:00 ] 123.151.77.121 /mobile.php?m=&&m=mobile.php&c=Ucenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_students` WHERE ( student_id = 3708 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_signin` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_signin` WHERE `user_id` = 3708 AND `user_flag` = 3 AND `add_time` >= 1513353600 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `signin_num` FROM `fh_signin` WHERE `user_id` = 3708 AND `user_flag` = 3 ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT `semester_one_start`,`semester_one`,`semester_two_start`,`semester_two` FROM `fh_schools` WHERE ( school_id = 17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `punch_num` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: pay_url /data/wwwroot/www.qihangbus.com/Application/mobiles/Controller/UcenterController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-12-16T23:04:11+08:00 ] 123.151.77.121 /mobile.php?m=mobile.php&c=Mybag&a=index&user_flag=3&user_id=3708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `fh_schooltobook` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `fh_grade` [ RunTime:0.0003s ]
+SQL: SELECT `grade_name` FROM `fh_grade` WHERE `grade_id` = 32 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT `class_id` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schooltobook stb left JOIN fh_books b ON stb.book_id = b.book_id  WHERE `class_id` = '100' ORDER BY stb.book_id desc  [ RunTime:0.0003s ]
+SQL: SELECT `school_id` FROM `fh_students` WHERE `student_id` = 3708 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_compensate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_compensate` WHERE `school_id` = 17  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_book_cate` [ RunTime:0.0003s ]
+SQL: SELECT `cate_id`,`cate_name` FROM `fh_book_cate` WHERE `cate_id` < 99  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-12-16T23:05:00+08:00 ] 123.151.77.121 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=5195&user_id=3708&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_id` = 5195 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_book_gallery` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_book_gallery` WHERE `book_id` = 5195  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-12-16T23:05:09+08:00 ] 120.204.17.71 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=5195&user_id=3708&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T23:05:10+08:00 ] 120.204.17.71 /mobile.php?m=&&m=mobile.php&c=Parentlogin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-12-16T23:06:39+08:00 ] 123.151.77.121 /mobile.php?m=mobile.php&c=Mybag&a=read_info&book_id=5138&user_id=3708&user_flag=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `fh_books` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_books` WHERE `book_id` = 5138 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_book_gallery` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_book_gallery` WHERE `book_id` = 5138  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-12-16T23:09:48+08:00 ] 221.176.163.51 /mobile.php/Oauth/index/?code=0018QrxS1rtFL61wRzAS1UpNxS18Qrxj&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `fh_config` [ RunTime:0.0005s ]
+SQL: SELECT `code`,`value` FROM `fh_config` WHERE `parent_id` = 13  [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `fh_config` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-16T23:09:49+08:00 ] 221.176.163.51 /mobile.php/Parentlogin/select_manage?fack_id=oKJMMwuF969jPA-GZUDmbQJ1I9ag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `fh_students_parent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_students_parent` WHERE `wx_id` = 'oKJMMwuF969jPA-GZUDmbQJ1I9ag' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fh_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_teacher` WHERE `wx_id` = 'oKJMMwuF969jPA-GZUDmbQJ1I9ag' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_schools` WHERE `wx_id` = 'oKJMMwuF969jPA-GZUDmbQJ1I9ag' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_admins` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_admins` WHERE `wx_id` = 'oKJMMwuF969jPA-GZUDmbQJ1I9ag' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_agent` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fh_agent` WHERE ( openid = 'oKJMMwuF969jPA-GZUDmbQJ1I9ag' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: module /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/wwwroot/www.qihangbus.com/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-12-16T23:09:49+08:00 ] 221.176.163.51 /mobile.php?m=&&m=mobile.php&c=Parentlogin&a=index&fack_id=oKJMMwuF969jPA-GZUDmbQJ1I9ag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+

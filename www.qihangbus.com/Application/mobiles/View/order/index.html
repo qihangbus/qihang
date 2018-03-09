@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="m">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="renderer" content="webkit">
+<title>我的订单</title>
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+</head>
+<body>
+
+<div class="wrap2"> 
+	<div class="head-cate">
+		<ul class="ul_3">
+			<li <if condition="$status eq 1">class="li_cur"</if>><a href="{:U('mobile.php/order/index',array('student_id'=>$student_id,'status'=>1))}"><span><i class="i_ic i_ic_fk">待付款</i> </span></a></li>
+			<li <if condition="$status eq 2">class="li_cur"</if>><a href="{:U('mobile.php/order/index',array('student_id'=>$student_id,'status'=>2))}"><span><i class="i_ic i_ic_sh">待收货</i></span></a></li>
+			<li <if condition="$status eq 99">class="li_cur"</if>><a href="{:U('mobile.php/order/index',array('student_id'=>$student_id,'status'=>99))}"><span><i class="i_ic i_ic_all">全部订单</i></span></a></li>
+		</ul>
+	</div>
+	
+	<if condition="$status eq 1">   
+	<ul class="cart_list order_list ck_list">
+			<div class="dian_tit">萌星商城 <span class="color2 r s_heb">合并付款</span></div>
+	 		<li class="li_cart">
+				<dl class="cart_pro">
+				<dt><img src="style/images/pp.png" alt="" /></dt>
+				<dd class="dd_pname">猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你[Guess Ho</dd>
+				<dd class="dd_price"><span class="s_price">198</span> 萌星 
+				<a href="" class="ibtn_1">去结算</a></dd>
+				</dl>
+			</li>
+
+			<li class="li_cart">
+				<dl class="cart_pro">
+				<dt><img src="style/images/pp.png" alt="" /></dt>
+				<dd class="dd_pname">猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你[Guess Ho</dd>
+				<dd class="dd_price"><span class="s_price">198</span> 萌星 
+				<a href="" class="ibtn_1">去结算</a></dd>
+				</dl>
+			</li>
+	</ul>
+	<div class="line_hr"></div>
+   	<ul class="cart_list order_list ck_list">
+		<div class="dian_tit">宝宝商城 <span class="color2 r s_heb">合并付款</span></div>
+ 		<li class="li_cart ">
+			<dl class="cart_pro">
+			<dt><img src="style/images/pp.png" alt="" /></dt>
+			<dd class="dd_pname">猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你[Guess Ho</dd>
+			<dd class="dd_price"><span class="s_price">198</span> 萌星 
+			<a href="" class="ibtn_1">去结算</a></dd>
+			</dl>
+		</li>
+		<li class="li_cart">
+			<dl class="cart_pro">
+			<dt><img src="style/images/pp.png" alt="" /></dt>
+			<dd class="dd_pname">猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你猜猜我有多爱你[Guess Ho</dd>
+			<dd class="dd_price"><span class="s_price">198</span> 萌星 
+			<a href="" class="ibtn_1">去结算</a></dd>
+			</dl>
+		</li>
+	</ul>
+	<div class="line_hr"></div>
+	</if>
+
+	<if condition="$status eq 2">   
+	<ul class="cart_list order_list">
+		<li class="li_cart">
+			<div class="i_tit">下单时间 <span class="color4">2016-9-30</span></div>
+			<dl class="cart_pro">
+			<dt><img src="style/images/pp.png" alt="" /></dt>
+			<dd class="dd_pname2">
+			<p><b>订单金额 </b><span class="s_price">198</span> 萌星</p>
+			<p><b>订单编号 </b>2016093029203129_123</p>
+			<p><b>订单状态 </b><span class="color1">已出库</span></p>
+			</dd>
+			</dl>
+			<div class="i_btn"><a href="" class="ibtn_1">订单详情</a></div>
+		</li>
+		<li class="li_cart">
+			<div class="i_tit">下单时间 <span class="color4">2016-9-30</span></div>
+			<dl class="cart_pro">
+			<dt><img src="style/images/pp.png" alt="" /></dt>
+			<dd class="dd_pname2">
+			<p><b>订单金额 </b><span class="s_price">198</span> 萌星</p>
+			<p><b>订单编号 </b>2016093029203129_123</p>
+			<p><b>订单状态 </b><span class="color1">已处理</span></p>
+			</dd>
+			</dl>
+			<div class="i_btn"><a href="" class="ibtn_1">订单详情</a></div>
+		</li>
+	</ul>
+	</if>
+
+
+	<if condition="$status eq 99">   
+	<ul class="cart_list order_list">
+		<li class="li_cart">
+			<div class="i_tit">下单时间 <span class="color4">2016-9-30</span></div>
+			<dl class="cart_pro">
+			<dt><img src="style/images/pp.png" alt="" /></dt>
+			<dd class="dd_pname2">
+			<p><b>订单金额 </b><span class="s_price">198</span> 萌星</p>
+			<p><b>订单编号 </b>2016093029203129_123</p>
+			<p><b>订单状态 </b><span class="color1">已出库</span></p>
+			</dd>
+			</dl>
+			<div class="i_btn"><a href="" class="ibtn_1">订单详情</a></div>
+		</li>
+		<li class="li_cart">
+			<div class="i_tit">下单时间 <span class="color4">2016-9-30</span></div>
+			<dl class="cart_pro">
+			<dt><img src="style/images/pp.png" alt="" /></dt>
+			<dd class="dd_pname2">
+			<p><b>订单金额 </b><span class="s_price">198</span> 萌星</p>
+			<p><b>订单编号 </b>2016093029203129_123</p>
+			<p><b>订单状态 </b><span class="color1">已处理</span></p>
+			</dd>
+			</dl>
+			<div class="i_btn"><a href="" class="ibtn_1">订单详情</a></div>
+		</li>
+	</ul>
+	</if>
+
+ </div>
+<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.each($(".ck_list"),function(b, c) {
+		$.each($(c).find(".li_cart"),function(b2, c2) {
+			$(c2).click(function(event){
+				$(this).toggleClass("li_cart_ck");
+			});	
+		});
+	});
+})
+</script>
+</body>
+</html>

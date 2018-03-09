@@ -1,0 +1,144 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+
+
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+
+                <!--主题-->
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            修改<strong>网站设置</strong>信息
+                        </small>
+                    </h1>
+                </div>
+<style type="text/css">
+    .row .profile-info-row{line-height: 2.5}
+    .row .profile-info-row input{padding:0 0;width: 80%}
+</style>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" id="base" method="post" action="{:U('siteSave')}">
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 平台名称： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_name" value="{:C('site_name')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 平台标题： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_title" value="{:C('site_title')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 平台描述： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_des" value="{:C('site_des')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 平台关键字： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_keywords" value="{:C('site_keywords')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 客服QQ： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_qq" value="{:C('site_qq')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 客服电话： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_tel" value="{:C('site_tel')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 招商电话： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_join" value="{:C('site_join')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 地点： </label>
+                                <div class="col-sm-10" >
+                                    <input class="col-sm-3" name="site_addr" value="{:C('site_addr')}" type="text"/>
+                                </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        保存
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="hr hr-24"></div>
+
+                <include file='Common:header_nav' />
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+    <include file='Common:footer' />
+
+</div><!-- /.main-container -->
+
+<script>
+    $(function(){
+        $('#base').ajaxForm({
+            //beforeSubmit: checkForm, // 此方法主要是提交前执行的方法，根据需要设置
+            success: complete, // 这是提交后的方法
+            dataType: 'json'
+        });
+
+        function complete(data){
+            if(data.status==1){
+                layer.msg(data.info, {icon: 6,time:800}, function(index){
+                    layer.close(index);
+                });
+            }else{
+                layer.msg(data.info,{icon:5});
+                return false;
+            }
+        }
+
+    });
+</script>
+</body>
+</html>

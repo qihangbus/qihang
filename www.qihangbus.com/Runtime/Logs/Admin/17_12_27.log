@@ -1,0 +1,1053 @@
+[ 2017-12-27T13:41:00+08:00 ] 1.192.31.217 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-12-27T13:41:00+08:00 ] 1.192.31.217 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-12-27T13:41:03+08:00 ] 1.192.31.217 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = 'root' AND `pwd` = 'b3481f4b01ba3e61da37890cadaa99a1' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-27T13:41:36+08:00 ] 1.192.31.217 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = 'admin' AND `pwd` = 'b3481f4b01ba3e61da37890cadaa99a1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xs_admin` SET `ip`='1.192.31.217',`login_time`='1514353296' WHERE `id` = 1 [ RunTime:0.0003s ]
+
+[ 2017-12-27T13:41:36+08:00 ] 1.192.31.217 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-12-27T13:41:44+08:00 ] 1.192.31.217 /default.php/Admin/Config/banner/s/123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_banner` ORDER BY sort  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: c_id /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/36fb10fd6cc11827731f55990282e608.php 第 250 行.
+NOTIC: [8] Undefined index: c_id /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/36fb10fd6cc11827731f55990282e608.php 第 250 行.
+NOTIC: [8] Undefined index: c_id /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/36fb10fd6cc11827731f55990282e608.php 第 250 行.
+NOTIC: [8] Undefined index: c_id /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/36fb10fd6cc11827731f55990282e608.php 第 250 行.
+NOTIC: [8] Undefined index: c_id /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/36fb10fd6cc11827731f55990282e608.php 第 250 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 123 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-12-27T13:41:52+08:00 ] 1.192.31.217 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) ORDER BY school_id desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 18 group by student_id) as t1 [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 17 group by student_id) as t1 [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 16 group by student_id) as t1 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 15 group by student_id) as t1 [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 14 group by student_id) as t1 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 11 group by student_id) as t1 [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 10 group by student_id) as t1 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_num = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 2 group by student_id) as t1 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 1 group by student_id) as t1 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: value /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/2fdb3649e99fa64257090a3b61a7465e.php 第 227 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 173 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-12-27T13:42:01+08:00 ] 1.192.31.217 /default.php/Admin/Sys/admin_rule/s/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_auth_rule` ORDER BY sort  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-12-27T13:42:24+08:00 ] 1.192.31.217 /default.php/Admin/Sys/admin_rule/s/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_auth_rule` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-12-27T13:49:59+08:00 ] 223.104.105.167 /default.php/Admin/Index/index.html?from=singlemessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-12-27T13:49:59+08:00 ] 223.104.105.167 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-12-27T13:50:12+08:00 ] 223.104.105.167 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = '18538767777' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xs_admin` SET `ip`='223.104.105.167',`login_time`='1514353812' WHERE `id` = 9 [ RunTime:0.0003s ]
+
+[ 2017-12-27T13:50:12+08:00 ] 223.104.105.167 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: select version() as ver [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='9' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('172','173','176','178') AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-12-27T13:50:15+08:00 ] 223.104.105.167 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='9' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('172','173','176','178') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) ORDER BY school_id desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 18 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 17 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 16 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 15 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 14 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 11 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 10 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_num = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 2 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 1 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: value /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/2fdb3649e99fa64257090a3b61a7465e.php 第 227 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 173 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2017-12-27T13:50:27+08:00 ] 1.192.31.217 /default.php/Admin/Sys/admin_rule/s/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_auth_rule` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-12-27T13:50:35+08:00 ] 1.192.31.217 /default.php/Admin/Sys/adminList/s/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM xs_admin a LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 24 行.
+SQL: SELECT a.*,g.title FROM xs_admin a left join xs_auth_group_access ga on ga.uid = a.id left join xs_auth_group g on g.id = ga.group_id  ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: username /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 234 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 21 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-12-27T14:05:29+08:00 ] 1.192.31.217 /default.php/Admin/Sys/adminList/s/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM xs_admin a LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 24 行.
+SQL: SELECT a.*,g.title FROM xs_admin a left join xs_auth_group_access ga on ga.uid = a.id left join xs_auth_group g on g.id = ga.group_id  ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: username /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 234 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 21 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-12-27T14:05:49+08:00 ] 1.192.31.217 /default.php/Admin/Sys/admin_rule/s/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_auth_rule` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/bbab2aa7152d3564d85394288ec64d3a.php 第 344 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-12-27T14:05:53+08:00 ] 1.192.31.217 /default.php/Admin/Sys/adminGroup/s/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_auth_group`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/d2e68f06bfbbbd6e7316f2ed3e98435f.php 第 253 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 22 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-12-27T14:05:57+08:00 ] 1.192.31.217 /default.php/Admin/Sys/adminList/s/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM xs_admin a LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 24 行.
+SQL: SELECT a.*,g.title FROM xs_admin a left join xs_auth_group_access ga on ga.uid = a.id left join xs_auth_group g on g.id = ga.group_id  ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: username /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 234 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 21 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-12-27T14:39:38+08:00 ] 1.192.31.217 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-12-27T14:39:56+08:00 ] 1.192.31.217 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = 'cq' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xs_admin` SET `ip`='1.192.31.217',`login_time`='1514356796' WHERE `id` = 5 [ RunTime:0.0003s ]
+
+[ 2017-12-27T14:39:56+08:00 ] 1.192.31.217 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='5' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-12-27T14:40:01+08:00 ] 1.192.31.217 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='5' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) ORDER BY school_id desc LIMIT 0,15   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 18 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 17 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 16 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 15 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 14 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 11 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 10 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_num = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 2 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 1 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and paid_time > 1514304000 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: value /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/2fdb3649e99fa64257090a3b61a7465e.php 第 227 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 173 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+

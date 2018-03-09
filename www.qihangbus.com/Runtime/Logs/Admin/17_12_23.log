@@ -1,0 +1,545 @@
+[ 2017-12-23T09:29:07+08:00 ] 123.151.77.90 /default.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-12-23T09:29:19+08:00 ] 111.30.142.233 /default.php/Admin/Sys/adminList/s/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('94','143','153','154','155','123','124','125','160','161','7','9','13','14','156','157','8','12','158','159','148','149','150','151','152','162','166','163','165','164','167','168','169','170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','1','21','23','22') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM xs_admin a LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: map /data/wwwroot/www.qihangbus.com/App/Admin/Controller/SysController.class.php 第 24 行.
+SQL: SELECT a.*,g.title FROM xs_admin a left join xs_auth_group_access ga on ga.uid = a.id left join xs_auth_group g on g.id = ga.group_id  ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 94 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 7 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 148 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 162 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: username /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 234 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/38e71d24fece962df298bb89ff2c94c5.php 第 284 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 21 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-12-23T12:24:29+08:00 ] 61.158.152.83 /default.php/Admin/Index/index.html?from=singlemessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-12-23T12:24:30+08:00 ] 61.158.152.83 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-12-23T12:24:41+08:00 ] 61.158.152.83 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = '18538767777' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xs_admin` SET `ip`='61.158.152.83',`login_time`='1514003081' WHERE `id` = 9 [ RunTime:0.0199s ]
+
+[ 2017-12-23T12:24:41+08:00 ] 61.158.152.83 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: select version() as ver [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='9' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('172','173','176','178') AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-12-23T12:24:46+08:00 ] 61.158.152.83 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='9' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('172','173','176','178') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) ORDER BY school_id desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 18 group by student_id) as t1 [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 17 group by student_id) as t1 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 16 group by student_id) as t1 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 15 group by student_id) as t1 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 14 group by student_id) as t1 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 11 group by student_id) as t1 [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 10 group by student_id) as t1 [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 2 group by student_id) as t1 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 1 group by student_id) as t1 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: value /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/2fdb3649e99fa64257090a3b61a7465e.php 第 227 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 173 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-12-23T17:05:45+08:00 ] 61.54.73.115 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-12-23T17:05:57+08:00 ] 61.54.73.115 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = 'cq' AND `pwd` = 'd4e9d74194fac0d98e534f32f69464a1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-12-23T17:06:09+08:00 ] 61.54.73.115 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = 'cq' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xs_admin` SET `ip`='61.54.73.115',`login_time`='1514019969' WHERE `id` = 5 [ RunTime:0.0003s ]
+
+[ 2017-12-23T17:06:09+08:00 ] 61.54.73.115 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='5' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-12-23T17:06:15+08:00 ] 61.54.73.115 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='5' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('170','171','175','191','172','173','174','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) ORDER BY school_id desc LIMIT 0,15   [ RunTime:0.0001s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 18 group by student_id) as t1 [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 17 group by student_id) as t1 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 16 group by student_id) as t1 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 15 group by student_id) as t1 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 14 group by student_id) as t1 [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 11 group by student_id) as t1 [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 10 group by student_id) as t1 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 2 group by student_id) as t1 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 1 group by student_id) as t1 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: value /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/2fdb3649e99fa64257090a3b61a7465e.php 第 227 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 173 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-12-23T19:22:21+08:00 ] 123.151.77.72 /default.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-12-23T19:22:21+08:00 ] 123.151.77.72 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-12-23T19:22:23+08:00 ] 123.151.77.72 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `xs_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_admin` WHERE `username` = 'dgw' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xs_admin` SET `ip`='123.151.77.72',`login_time`='1514028143' WHERE `id` = 8 [ RunTime:0.0003s ]
+
+[ 2017-12-23T19:22:24+08:00 ] 123.151.77.72 /default.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='8' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('170','171','172','173','176','178','180','181','184','187','189','190') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+NOTIC: [8] Undefined index: s /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-12-23T19:23:08+08:00 ] 123.151.77.72 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='8' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('170','171','172','173','176','178','180','181','184','187','189','190') AND `type` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM fh_schools s WHERE ( s.school_id not in (4,8,9,12) ) ORDER BY school_id desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 18 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_students` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 18 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 17 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 17 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 16 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 16 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 15 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 15 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 14 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 14 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 11 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 11 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 10 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 10 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 2 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 2 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select count(*) as count from (select student_id from fh_students_parent where school_id = 1 group by student_id) as t1 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and is_paid <> 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_students` WHERE ( school_id = 1 and paid_time > 1513958400 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`css` FROM `xs_auth_rule` WHERE ( pid=0 AND status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 170 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 172 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 180 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: value /data/wwwroot/www.qihangbus.com/Runtime/Cache/Admin/2fdb3649e99fa64257090a3b61a7465e.php 第 227 行.
+SQL: SELECT * FROM `xs_auth_rule` WHERE `pid` = 173 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-12-23T19:24:08+08:00 ] 183.192.201.97 /default.php/Admin/School/index/s/173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-12-23T19:24:08+08:00 ] 183.192.201.97 /default.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-12-23T20:00:01+08:00 ] 118.190.78.211 /default.php/Admin/TimedTask/bookReminder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `fh_schools` [ RunTime:0.0008s ]
+SQL: SELECT `school_id`,`book_reminder_first`,`book_reminder_second` FROM `fh_schools`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+

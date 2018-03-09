@@ -1,0 +1,185 @@
+<include file='Common:header' />
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+    <!-- #section:basics/sidebar -->
+
+    <include file='Common:left' />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+                <div class="row maintop">
+                    <div class="col-xs-2">
+                        <div class="input-group-btn">
+                            <a href="{:U('sOutExcel',['school_id'=>$school_id,'type'=>$type])}">
+                                <button type="button" class="btn btn-xs  btn-success">
+                                    <span class="ace-icon fa  fa-file-excel-o icon-on-right bigger-110"></span>
+                                    导出到EXCEL
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div>
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dynamic-table">
+                                <form>
+                                <thead>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>学校</th>
+                                    <th>年级</th>
+                                    <th>班级</th>
+                                    <eq name="type" value="2">
+                                        <th>交费时间</th>
+                                    </eq>
+                                </tr>
+                                </thead>
+                                <form>
+                                <foreach name="data" item="v">
+                                    <tr>
+                                        <td>{$v.student_name}</td>
+                                        <td>{$v.school_name}</td>
+                                        <td>{$v.grade_name}</td>
+                                        <td>{$v.class_name}</td>
+                                        <eq name="type" value="2">
+                                            <td>{$v.paid_time|date='Y-m-d H:i:s',###}</td>
+                                        </eq>
+                                    </tr>
+                                </foreach>
+                                </form>
+                                <tr>
+                                    <td height="50" colspan="16" align="left">{$page}</td>
+                                </tr>
+                                </tbody>
+                                </form>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <include file='Common:header_nav' />
+
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    <include file='Common:footer' />
+</div><!-- /.main-container -->
+<link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css">
+<script src="__PUBLIC__/assets/js/date-time/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/layer/plugin/layer.js"></script>
+<style>
+    .input-daterange input{ text-align:left; }
+</style>
+</body>
+<script type="text/javascript">
+    jQuery(function($) {
+        $('.input-daterange').datepicker({autoclose: true});
+    });
+
+    $("#btnsubmit").click(function(){
+        layer.confirm('你确定要删除吗？', {icon: 3}, function(index){
+            layer.close(index);
+            var ids='';
+            $("input[name='left_id[]']:checkbox:checked").each(function() {
+                ids += $(this).val() + ',';
+            });
+            ids = ids.substring(0,ids.length-1);
+            if(ids == ''){
+                layer.msg('至少选择一项!',{time:1000});
+                return;
+            }
+            $.post(
+                    "{:U('delFew')}",
+                    {ids:ids},
+                    function(data){
+                        if(data.status == 1){
+                            layer.msg(data.info,{icon:6,time:800},function(){
+                                window.location.reload();
+                            });
+                        }else{
+                            layer.msg(data.info,{icon:5});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('.red').click(function(){
+        var id = $(this).attr('data-id');
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            $.post(
+                    "{:U('del')}",
+                    {id: id},
+                    function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.info, {icon: 6,time:1000}, function () {
+                                window.location.reload();
+                            });
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    }
+            );
+        });
+    });
+
+    $('.light-orange').click(function(){
+        var id = $(this).attr('data-id');
+        layer.prompt({
+            formType: 2,
+            title: '发送消息'
+        }, function(value, index, elem){
+            $.post(
+                "{:U('sSendMes')}",
+                {id:id,message:value},
+                function(data){
+                    layer.close(index);
+                    if (data.status == 1) {
+                        layer.msg(data.info, {icon: 6,time:1000});
+                    } else {
+                        layer.msg(data.info, {icon: 5,time:1000});
+                    }
+                }
+            );
+        });
+    });
+
+    //生成目录
+    $('.create').click(function(){
+        var id = $(this).attr('data-id');
+        var load = layer.load(2);
+        $.post(
+            "{:U('createDir')}",
+            {id:id},
+            function(data){
+                layer.close(load);
+                if(data.status == 1){
+                    layer.msg(data.info,{icon:6,time:1000});
+                    location.href = location.href;
+                }else{
+                    layer.msg(data.info,{icon:5,time:1000});
+                }
+            }
+        );
+    });
+
+    function unselectall(){
+        if(document.myform.chkAll.checked){
+            document.myform.chkAll.checked = document.myform.chkAll.checked&0;
+        }
+    }
+    function CheckAll(form){
+        for (var i=0;i<form.elements.length;i++){
+            var e = form.elements[i];
+            if (e.Name != 'chkAll'&&e.disabled==false)
+                e.checked = form.chkAll.checked;
+        }
+    }
+</script>
+</html>

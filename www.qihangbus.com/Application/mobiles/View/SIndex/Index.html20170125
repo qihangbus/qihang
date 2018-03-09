@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="m">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport"
+	content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="renderer" content="webkit">
+<title>园长-首页</title>
+
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/base.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/app.css">
+<link rel="stylesheet" href="__PUBLIC__/css/mobiles/swiper.min.css">
+</head>
+
+<body>
+
+	<div class="wrap2" style="bottom:120px;">
+		<div class="yuanzhang_t">
+			<dl>
+				<dt>
+					<a href="{:U('mobile.php/SIndex/avatar',array('user_id'=>$userinfo['student_id'],'user_flag'=>1))}">
+					<img src="{$data.teacher_avatar}" alt="background_image" />
+					</a>
+				<dd>
+					<if condition="$signin lt '0'">
+			            <div class="d_signin" id="signin" uid="{$userinfo.student_id}">签到</div>
+			        <else/>
+			            <div class="d_signin d_signin_d">已签到</div>
+			        </if>
+			        <input type="hidden" id="signnum" value="{$signnum}">
+					<div class="d_name">
+						{$data.school_leader} <img src="__PUBLIC__/images/mobiles/sex_w.png"
+							alt="avatar" />
+					</div>
+					<div class="d_class">{$data.school_name}</div>
+				</dd>
+				</dt>
+			</dl>
+		</div>
+		<div class="head-cate">
+			<ul class="ul_2">
+				<a href="{:U('Cash/index',array('user_id'=>$userinfo['student_id'],'user_flag'=>1))}">
+					<li style="display:none;"><span><i class="i_ic ic_f_dengj">等级</i> </span></li>
+				</a>
+				<li><a href="{:U('mobile.php/SIndex/get_levle_info',array('student_id'=>$userinfo['student_id'],'student_points'=>$userinfo['student_points'],'student_rank'=>$userinfo['school_rank']))}"><span><i class="i_ic ic_f_dengj">等级</i> </span></a></li>
+				<li><a href="mobile.php?m=mobile.php&c=Book&a=index&user_id={$userinfo.student_id}&user_points={$userinfo.student_points}&user_flag=1"><span><i class="i_ic ic_f_star">兑换中心</i></span></a></li>
+			</ul>
+		</div>
+		<ul class="m_menu clearfix">
+			<li class="li_item">
+			<a href="mobile.php?m=mobile.php&c=Library&a=index&id={$data.school_id}">
+			<span class="ic_m_shu">图书馆</span>
+			</a>
+			</li>
+			<li class="li_item">
+			<a href="mobile.php?m=mobile.php&c=Teacher&a=index&id={$data.school_id}"><span class="ic_m_jiaoshi">教师信息</span>
+			</a>
+			</li>
+			<li class="li_item">
+				<a href="mobile.php?m=mobile.php&c=Student&a=index&id={$data.school_id}">
+				<span class="ic_m_xuesheng">学生信息</span>
+				</a>
+			</li>
+			<li class="li_item">
+				<a href="{:U('Datainfo/index',array('id'=>$id))}">
+				<span class="ic_m_tongji">数据统计</span>
+				</a>
+			</li>
+			<li class="li_item ">
+			<a href="mobile.php?m=mobile.php&c=Cart&a=index&user_id={$userinfo.student_id}&user_flag=1">	
+			<span class="ic_m_cart">购物车</span>
+			</a>
+			</li>
+			<li class="li_item">
+			<a href="mobile.php?m=mobile.php&c=Order&a=index&user_id={$userinfo.student_id}&user_flag=1">
+			<span class="ic_m_order">订单</span>
+			</a>
+			</li>
+			<li class="li_item <if condition="$userinfo.message_num gt '0'">li_item_p</if>">
+				<a href="{:U('SIndex/get_message_list',array('user_id'=>$userinfo['student_id'],'user_flag'=>1))}">
+				<span class="ic_m_xx">消息</span>
+				</a>
+			</li>
+			<li class="li_item" style="display:none;">
+				<span class="ic_m_order">我的推荐</span>
+			</li>
+			<li class="li_item ">
+				<a href="{:U('SIndex/setting',array('user_id'=>$userinfo['student_id'],'user_flag'=>1))}">
+				<span class="ic_m_setting">设置</span>
+				</a>
+			</li>
+		</ul>
+
+		<div class="line_hr"></div>
+	</div>
+		 <div class="footer2" style="height:120px;">
+		 <!-- Swiper -->
+		    <div class="swiper-home swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/mobiles/ban_mx.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/mobiles/ban_mx.jpg)"></div>
+		        </div>
+		        <!-- Add Pagination -->
+				<div class="swiperp_box"><div class="swiper-pagination"></div></div>
+				<div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+		    </div>
+		<!-- Swiper -->
+		</div>
+
+	<script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/mobiles/lib/swiper.min.js"></script>
+	<script src="__PUBLIC__/js/mobiles/layer/layer.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var swiper = new Swiper('.swiper-container', {
+				pagination : '.swiper-pagination',
+				nextButton : '.swiper-button-next',
+				prevButton : '.swiper-button-prev',
+				loop : true,
+				paginationClickable : true
+			});
+
+
+			$("#signin").click(function(){
+		        var uid = $(this).attr('uid');
+		        var num = $("#signnum").val();
+		        var uflag = 1;
+		        $.post("{:U('mobile.php/SIndex/signin')}",{user_id:uid,user_flag:uflag,signnum:num},function(ret){
+		            if(ret.code > 0){
+		                layer.alert('签到成功,本次签到获得'+ret.user_points+'萌星', {
+		                    title: false,
+		                    closeBtn: 0,
+		                    btn: ['关闭']
+		                },function(){
+		                    layer.closeAll();
+		                    location.reload();
+		                });
+		            }
+		        },'json');
+		    });
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="m">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <title>轮换日期</title>
+    <include file="Common:theme" />
+    <script class="js_prejs" type="text/javascript" src="__PUBLIC__/js/mobiles/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/mobiles/jquery.datePicker-min.js"></script>
+    <link type="text/css" href="__PUBLIC__/css/mobiles/rili.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/css/mobiles/iconfont.css" rel="stylesheet" />
+	<link rel="stylesheet" href="__PUBLIC__/css/mobiles/iconfont.css">
+</head>
+<body>
+    <div class="wrap2">
+        <style type="text/css">
+        .cart_pro{height:30px;line-height:30px;margin-bottom:5px;}
+        .ddpname{padding-left:10px!important;}
+        .dd_pname{padding-left:40px!important;}
+        </style>
+
+        <ul class="cart_list order_list">
+            <li class="li_cart" style="padding-bottom:0px;background:#ffd887;color:#fff;">
+                <dl class="cart_pro">
+                <dd class="ddpname">下次图书系统自动轮换日期：</dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="head-cate clearfix" style="margin:0;height:auto;">
+            <ul class="ul_3" style="border-bottom:1px solid #F2F2F2;padding:0;">
+                <volist name="list" id="vo">
+                    <li style="width:100%;text-align:left;">
+                        <span style="margin-left:20px;">
+                            {$vo.grade_name} 调整日期为：<label id="grade_time{$vo.grade_id}">{$vo.change_time|date='Y-m-d',###}</label>
+                        </span></li>
+                    <volist name="vo.lt" id="v">
+                    <div style="margin-left:20px;height:40px;line-height:40px;float:left;clear:both;">{$v.class_name} <span class="iconfont icon-youjiantou"></span> {$v.next_name}</div>
+                    </volist>
+                    <div class="line_hr"></div>
+                </volist>
+            </ul>
+        </div>    
+<a href="{:U('mobile.php/SIndex/Index',array('id'=>$id))}">
+<span class="f_index" style="bottom:15px;"><span class="iconfont icon-shouyeshouye"></span></span>
+</a>		
+</div>
+<script type="text/javascript">
+$(function(){
+    $(".ibtn_1").click(function(){
+        var gid = $(this).attr('gid'); 
+        $("#grade_time"+gid).datePicker({
+            inline:true,
+            selectMultiple:false,
+            renderCallback:function(y, m, B, p){ 
+                y.bind("click",function(event){
+                    var da=new Date(y.find(".td_td").attr("da"));
+                    var str =da.getFullYear()+"-"+(da.getMonth()+1)+"-"+da.getDate(); 
+
+                    $.ajax({
+                        type: "get",
+                        url: "/mobile.php?m=mobile.php&c=MIndex&a=ajax_time&str_date="+encodeURI(str)+"&grade_id="+gid,
+                        async: false,
+                        dataType: "json",
+                        success: function(data) {
+                            $("#grade_time"+gid).text(str);
+                            //$(".p_title").text(data.task_title);
+                            //$(".p_desc").text(data.task_desc);
+                        },
+                        error: function(XMLHttpRequest, textStatus, errorThrown)
+                         {
+                            alert(textStatus);
+                        }
+                    });
+                });
+            }
+        });
+    });
+});
+</script>    
+</body>
+</html>
